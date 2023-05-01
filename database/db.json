@@ -1,50 +1,277 @@
 {
     "packages":[
+      
         {
-            "id" : 1,
-            "title" : "Statue of Unity Tour Package with Cultural Ahmedabad",
-            "duration" : "3 Nights / 4 Days",
-            "location" : "Ahmedabad(2N) → Vadodara(1N)",
+            "id" :1,
+            "title" : "Wonderful Kerala Family Holiday Package for 6 Nights",
+            "duration" : "6 Nights / 7 Days",
+            "destination":"kerala",
+            "location" : "Kochi(2N) → Munnar(2N) → Thekkady(1N) → Kumarakom(1N)",
             "description" : [
-                "A rapidly growing metropolis, an industrial hub, an educational hotspot, and a city with a magnificent past - Ahmedabad is one of the most important cities in Gujarat. Located on the banks of the Sabarmati River, Ahmedabad is the former capital of Gujarat, and its delicious food, colourful culture is making it a fast-growing tourist destination. The historic city of Ahmedabad or the old part of the city was declared as the UNESCO World Heritage Site.",
-            "Home to a plethora of remarkable temples like Swaminarayan Temple, intriguing museums and classy markets, with a little bit of colonial history attached to it, Ahmedabad is an excellent example of how a city can still retain every bit of its old-world charm while still rapidly progressing on the path of globalisation.",
-            "Ahmedabad is famous for its textiles and its tie-dye bandhani handloom technique, which makes it a great place to shop. From bandhani sarees, dupattas to traditionally embroidered dress materials, and other local handicrafts.",
-            "Sabarmati Ashram, situated directly beside the Sabarmati river, is a quaint and peaceful ashram built by Mahatma Gandhi after he returned from South Africa. To this date, Gandhiji's living quarters are preserved here and is now used as a museum where visitors can learn all about his life and his teachings. The infamous Dandi Salt March, which was a crucial point in India's independence struggle, originated from this ashram."
+                " Kerala is a sought-after tourist destination in India and all over, well-known for its expansive backwaters, beaches, and lush greenery. Its breathtaking natural beauty earned it the title `God's own country` , and it is no less than a paradise on earth, one that you get to experience by choosing one of Holidify’s Kerala tour packages!"
             ],
             "image" : [
-                "https://www.holidify.com/images/cmsuploads/compres…tock_1317845540_20191031110021_20191031110103.png",
-                "https://www.holidify.com/images/cmsuploads/compres…Akshardham_Gandhinagar_Gujarat_20170803175920.jpg",
-                "https://www.holidify.com/images/compressed/dest_wiki_12514.jpg",
-                "https://www.holidify.com/images/cmsuploads/compres…40_cddeeded42_b_20170405165221_20190806170113.jpg",
-                "https://www.holidify.com/images/compressed/attractions/attr_1654.jpg",
-                "https://www.holidify.com/images/cmsuploads/compressed/5129689068_118d671872_b_20170609164516.jpg",
-                "https://www.holidify.com/images/cmsuploads/compressed/1024px-2T1A1747_20190729135522.jpg",
-                "https://www.holidify.com/images/cmsuploads/compres…ple,_Modhera_-_Sabha_Mandap_01_20180804140521.jpg"
-
+                "https://www.holidify.com/images/cmsuploads/compressed/11_20200226103703.jpg",
+                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2016/06/munnar-tea-plantations.jpg",
+                "https://www.holidify.com/images/cmsuploads/compressed/1024px-Mattupetty_Dam_reservoir2C_near_Munnar2C_Kerala_20190729133540.jpg",
+                "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_614665760_20190705171529.jpg",
+                "https://www.holidify.com/images/cmsuploads/compressed/4182528602_dab87a317c_b_20190207124130jpg"
             ],
             "tour" : [
                 {
-                    "title" : "Day 1: Arrive at Ahmedabad",
-                    "description" : "On arrival at Ahmedabad, you will be picked up from the airport/railway station.Transfer to the hotel and check in to the hotel.Afterwards, visit Gandhi Ashram, Hutheesing Jain Temple, and Adalaj Step-well.Later visit Akshardham Temple and enjoy the sound & light show.In the evening, return to the hotel.Overnight stay at Ahmedabad."
+                    "title" : "Day 1: Arrival in Kochi",
+                    "description" : "On arrival at Kochi International Airport/Railway Station, you will meet our representative."
                     
                 },
                 {
-                    "title" : "Day 2: Ahmedabad Sightseeing",
-                    "description" : "After breakfast, proceed for sightseeing in Ahmedabad. Visit Sun Temple, Rani Ki Vav, Matrugaya, and Bindu Sarovar. Overnight stay in Ahmedabad."
+                    "title" : "Day 2: Kochi to Munnar",
+                    "description" : "After breakfast, proceed to Munnar."
                 }, 
                 {
-                    "title" : "Day 3: Ahmedabad to Vadodara",
-                    "description" : "After breakfast, check out from the hotel. Visit Statue of Unity, Museum, Viewing Gallery, Valley of Flower, and Sardar Sarovar Dam. Enjoy the laser light show at 7:00 PM (tentative). Drive to Vadodara. On arrival in Vadodara, check in to the hotel. Overnight stay at Vadodara."
+                    "title" : "Day 3: Munnar Sightseeing",
+                    "description" : "Visit Rajmalai, Tea Museum, Mattupetty Dam, and Echo Point."
 
+                }, {
+                    "title" : "Day 4: Munnar to Thekkady",
+                    "description" : "On arrival at Thekkady, check in to the hotel. Later, visit Periyar Wildlife Sanctuary or enjoy Elephant Ride (can also add Spice Plantation tour)"
+                }
+               ,
+               {
+                "title" : "Day 5: Thekkady to Kumarakom",
+                "description" : "On arrival at Kumarakom, check in to the traditional houseboat.Enjoy the cruise through the backwaters."
+            }, {
+                "title" : "Day 6: Kumarakom to Kochi",
+                "description" : "Visit Fort Kochi, Jews Street, Marine Drive, and enjoy shopping at Lulu Mall."
+            }
+            ],
+            "price" : 16000 
+
+        },
+        {
+            "id" : 2,
+            "title" : "Kerala Munnar Tour Package with Thekkady and Alleppey",
+            "duration" : "4 Nights / 5 Days",
+            "destination":"kerala",
+            "location" : "Kochi(0N) → Munnar(2N) → Thekkady(1N) → Alleppey(1N)",
+            "description" : [
+                " Kerala is a sought-after tourist destination in India and all over, well-known for its expansive backwaters, beaches, and lush greenery. Its breathtaking natural beauty earned it the title `God's own country` , and it is no less than a paradise on earth, one that you get to experience by choosing one of Holidify’s Kerala tour packages!"
+            ],
+            "image" : [
+               "https://www.holidify.com/images/cmsuploads/compressed/kathakali_cont_2_20190415105528.jpg",
+               "https://www.holidify.com/images/cmsuploads/compressed/5565536388_2488286a99_z_20190315174116.jpg",
+               "https://www.holidify.com/images/bgImages/MUNNAR.jpg",
+               "https://www.holidify.com/images/bgImages/THEKKADY.jpg",
+               "https://www.holidify.com/images/cmsuploads/compressed/kerala-houseboat-2242698_960_720_20190710133310.jpg"
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Arrive in Kochi & Transfer to Munnar",
+                    "description" :"Arrive in Kochi and transfer to Munnar. On the way, visit Kodanad Elephant Care Center, Cheeyappara waterfalls, Valara waterfalls,"
+                    
                 },
                 {
-                    "title" : "Day 4: Departure",
-                    "description" : "After breakfast, visit Lakshmi Villas Palace and EME Temple. Later, spend the time at leisure or go shopping. In the evening, transfer to Vadodara/Ahmedabad Airport or railway station for your onward journey back home."
+                    "title" : "Day 2: Explore Munnar",
+                    "description" : "After breakfast, go for a sightseeing tour of Munnar. Visit Eravikulam National Park (Rajamalai), Mattupetty Dam, Tea Estates, Echo Point, Spice Plantation, Rose Garden, Photo Point, Honey Bee Tree, Tea Museum, Blossom Park, Kundala Dam, and Top Station."
+                }, 
+                {
+                    "title" : "Day 3: Munnar to Thekkady",
+                    "description" : "Sightseeing tour of Thekkady.  Visit Periyar Wildlife Sanctuary, Mulla Periyar Dam, and Spice Plantations tour where one can shop exotic spices."
+
+                }, {
+                    "title" : "Day 4: Thekkady to Alleppey",
+                    "description" : "In Alleppey, enjoy the backwaters, scenery, and different places for 21 hrs in Kerala-style houseboats from 12 noon."
                 }
+               ,
+               {
+                "title" : "Day 5: Departure",
+                "description" : "Drive to Kochi for sightseeing.Visit Fort Kochi, Navy Museum, St. Francis Church, Chinese Fishing Net, Santa Cruz Basilica, Mattanchery Palace, Jewish Synagogue, Marian drive, Marine walkway, boating, and Tripunithura Hill Palace."
+            }
+            ],
+            "price" : 15000 
+
+        },
+        {
+            "id" : 3,
+            "title" : "Kerala Houseboat Package - Houseboat Stay For One Night",
+            "duration" : "3 Nights / 4 Days",
+            "destination":"kerala",
+            "location" : "Kochi(1N) → Munnar(2N) → Alleppey (1N)",
+            "description" : [
+                " Kerala is a sought-after tourist destination in India and all over, well-known for its expansive backwaters, beaches, and lush greenery. Its breathtaking natural beauty earned it the title `God's own country` , and it is no less than a paradise on earth, one that you get to experience by choosing one of Holidify’s Kerala tour packages!"
+            ],
+            "image" : [
+              "https://www.tripcrafters.com/agent/trip_photos/Crazy-KL-01-04.jpg",
+              "https://www.tripcrafters.com/agent/trip_photos/Crazy-KL-01-05.jpg",
+              "https://www.holidify.com/images/cmsuploads/compressed/1024px-Mattupetty_Dam_20190729133531.jpg",
+              "https://www.holidify.com/images/compressed/dest_pixa_16404.jpg"
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Arrival in Kochi & Transfer to Munnar",
+                    "description" : "On arrival at Kochi Airport, our representative will meet and assist you with the transfer to Munnar."
+                    
+                },
+                {
+                    "title" : "Day 2: Explore Munnar",
+                    "description" : "After breakfast, visit Flower Garden, Photo Point, Mattupetty Dam, Kundala dam, Echo Point, Rajamala, etc."
+                }, 
+                {
+                    "title" : "Day 3: Munnar to Alleppey",
+                    "description" : "On arrival check in to the traditional Kerala Kettuvallam (houseboat) by 12 noon (AC Deluxe houseboat on full board basis)."
+
+                }, {
+                    "title" : "Day 4: Departure",
+                    "description" : "After breakfast check out from the hotel and drive to Kochin railway station for your onward destination. "
+                }
+         
+            ],
+            "price" : 11000 
+
+        },
+        {
+            "id" : 4,
+            "title" : "Kerala Delight Tour Package",
+            "duration" : "5 Nights / 6 Days",
+            "destination":"kerala",
+            "location" : "Kochi(1N) → Munnar(2N) → Thekkady(1N) → Alleppey(1N)",
+            "description" : [
+                " Kerala is a sought-after tourist destination in India and all over, well-known for its expansive backwaters, beaches, and lush greenery. Its breathtaking natural beauty earned it the title `God's own country` , and it is no less than a paradise on earth, one that you get to experience by choosing one of Holidify’s Kerala tour packages!"
+            ],
+            "image" : [
+             "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_649838029_20190705171629.jpg",
+             "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_409553653_20190705175301.jpg",
+             "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/11/acj-2211-most-romantic-honeymoon-destinations-in-india-26.jpg",
+             "https://www.holidify.com/images/cmsuploads/compressed/kochi_20190312140407.jpg"
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Arrival at Kochi",
+                    "description" : "On arrival at Kochi Airport, meet our representative and transfer to the hotel.Kochi (colonial name Cochin) is a vibrant city, also referred to as the Gateway to Kerala."
+                    
+                },
+                {
+                    "title" : "Day 2: Kochi Sightseeing & Transfer to Munnar",
+                    "description" : "Next morning after breakfast, proceed for city tour of Kochi. Visit Fort Kochi, walk to the Church of St Francis, the oldest European-built church in the country."
+                }, 
+                {
+                    "title" : "Day 3: Munnar",
+                    "description" : "Enjoy visiting sections of Old Munnar, which includes the charming Old Christ Church with its original fourteen rows of wooden pews."
+
+                }, {
+                    "title" : "Day 4: Transfer to Thekkady (104 kms / approx. 5 hour drive)",
+                    "description" : "Drive to Thekkady (Periyar) - the land of the spice plantations.The evening is at leisure for shopping at the bustling spice market in Kumily village on your own."
+                },
+                {
+                    "title" : "Day 5: Transfer to Alleppey (153 kms / approx. 5 hour drive)",
+                    "description" : "Drive to the idyllic backwaters of Alleppey. Alleppey is Kerala's Venice of the East, a heartland of lagoons and mangrove fields, inter-linked with hundreds of narrow winding canals."
+                },
+                {
+                    "title" : "Day 6: Departure to Kochi (85 kms / approx. 2 hour drive)",
+                    "description" : "Bid farewell to your tour, as you are transferred to Kochi airport for your onward journey"
+                }
+         
             ],
             "price" : 14500 
 
+        },
+        {
+            "id" : 5,
+            "title" : "Beautiful Wayanad, Calicut, Kottakal",
+            "duration" : "5 Nights / 6 Days",
+            "destination":"kerala",
+            "location" : "Wayanad (2N) → Calicut (1N) → Kottakal (1N) → Kochi (1N)",
+            "description" : [
+                " Kerala is a sought-after tourist destination in India and all over, well-known for its expansive backwaters, beaches, and lush greenery. Its breathtaking natural beauty earned it the title `God's own country` , and it is no less than a paradise on earth, one that you get to experience by choosing one of Holidify’s Kerala tour packages!"
+            ],
+            "image" : [
+                  "https://www.holidify.com/images/cmsuploads/compressed/soochipara-waterfalls_20220915144034.jpg",
+                  "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/05/68.jpg",
+                  "https://www.holidify.com/images/compressed/3888.jpg?v=1.1",
+                  "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2014/11/neelimala-view-point.jpg"
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Arrival in Wayand",
+                    "description" : "On arrival at Wayanad, transfer to the hotel and check in.Visit Banasura Sagar Dam"
+                    
+                },
+                {
+                    "title" : "Day 2: Wayanad Sightseeing",
+                    "description" : "Visit Kalpetta, Edakkal Cave, Kanthanpara Waterfalls, Heritage Museum, and Amabalavayal Farm."
+                }, 
+                {
+                    "title" : "Day 3: Wayanad to Kozhikode",
+                    "description" : "After check-in, proceed to Kappad beach, Tail temple, and a visit to Sargaalaya visit."
+
+                }, {
+                    "title" : "Day 4: Kozhikode to Kottakal",
+                    "description" : "Visit Kotakkal Arya Vaidya Sala, one of the main tourist attractions of Kerala. It is an Ayurvedic Therapy Center, and you can spend the afternoon relaxing and taking one of the sessions to calm your soul."
+                },
+                {
+                    "title" : "Day 5: Kottakal to Kochi",
+                    "description" : "Visit the Jewish Synagogue, St.Francis Church, Dutch Palace, Chinese Fishing Nets, etc. Return to the hotel."
+                },
+                {
+                    "title" : "Day 6: Departure",
+                    "description" : "Proceed to Kochi airport to board the flight for your onward destination."
+                }
+         
+            ],
+            "price" : 17000 
+
         }
+        
+        ,
+        {
+            "id" : 26,
+            "title" : "Munnar Alleppey Tour Package with Ayurvedic Spa & Treatment",
+            "duration" : "5 Nights / 6 Days",
+            "destination":"kerala",
+            "location" : "Kochi(0N) → Munnar(2N) → Alleppey(3N)",
+            "description" : [
+                " Kerala is a sought-after tourist destination in India and all over, well-known for its expansive backwaters, beaches, and lush greenery. Its breathtaking natural beauty earned it the title `God's own country` , and it is no less than a paradise on earth, one that you get to experience by choosing one of Holidify’s Kerala tour packages!"
+            ],
+            "image" : [
+                  "https://www.holidify.com/images/compressed/attractions/attr_59.jpg",
+                  "https://www.holidify.com/images/cmsuploads/compressed/ayurvedic-massage-foot_20190429184937.jpg",
+                  "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2016/06/Ayurvedic-massage-in-Rishikesh.jpg",
+                  "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/07/ayurvedic-massage-at-barefoot.jpg"
+                 
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Kochi to Munnar",
+                    "description" : "Upon arrival at Kochi, drive to Munnar.On arrival in Munnar, check in to the hotel."
+                    
+                },
+                {
+                    "title" : "Day 2: Munnar Sightseeing",
+                    "description" : "After breakfast, proceed for a full day of sightseeing in Munnar.Visit places such as Echo Point, Kundala Dam, Tata Tea Museum, etc."
+                }, 
+                {
+                    "title" : "Day 3: Munnar to Alleppey",
+                    "description" : "After breakfast, proceed to Alleppey. On arrival in Alleppey, check in to the hotel. Afterward, go boating in Alleppey. Spend the rest of the day at leisure."
+
+                }, {
+                    "title" : "Day 4: Ayurvedic Massage & Treatment",
+                    "description" : "After breakfast, do yoga for 2 hrs.Afterwards, ayurvedic massage and treatment for 3 hrs.After lunch rest for 2 hrs.In the evening,  yoga for 2 more hours.Overnight stay at the hotel."
+                },
+                {
+                    "title" : "Day 5: Ayurvedic Massage & Treatment",
+                    "description" : "After breakfast, do yoga for 2 hrs.Afterward, ayurvedic massage and treatment for 3 hrs. After lunch, rest for 2 hrs. In the evening, yoga for 2 more hours. Overnight stay at the hotel."
+                },
+                {
+                    "title" : "Day 6: Departure",
+                    "description" : "After breakfast, check out from the hotel and transfer to Kochi airport for your onward journey back home."
+                }
+         
+            ],
+            "price" : 20000 
+
+        }
+        
+        
+        
         
     ]
 }
