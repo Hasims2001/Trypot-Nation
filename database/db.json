@@ -522,7 +522,212 @@
             "price" : 22500,
             "destination" : "Gujarat"
 
+        },
+        {
+            "id" : 16,
+            "title" : "Bastar Tour Package Explore the Nature ",
+            "duration" : "3 Nights / 4 Days",
+            "location" : "Raipur(1N) → Jagdalpur(1N) → Dantwada(1N)",
+            "description" : [
+                "Bastar is a district of Chhattisgarh State. The headquarters of Bastar district and Bastar division is Jagdalpur. It was  known as Dakshin Kaushal.",
+                "It is known for the beautiful forests and tribal culture,because of this it is called as the cultural capital of the state.",
+                " Spread over 6596.90 sq km, this district was once bigger than a state like Kerala and countries like Belgium, Israel. ",
+                "For the district to be systematically managed, two separate districts, Kanker and Dantewada, were constructed in 1999. It is surrounded by Kondagaon, Dantewada, Sukma and Bijapur .",
+                " The district headquarters Jagdalpur is located at a distance of 305 kilometers from the capital city Raipur."
+            ],
+            "image" : [
+                "https://cdn.s3waas.gov.in/s324681928425f5a9133504de568f5f6df/uploads/2018/09/2018092992-1.jpg",
+                "https://cdn.s3waas.gov.in/s324681928425f5a9133504de568f5f6df/uploads/2018/10/2018100591.jpg",
+                "https://1.bp.blogspot.com/-aq859SOQjxk/XdSOdkt6AnI/AAAAAAAAEbk/6ukCk9UJ7EsPF-tm7_GLAea_oPIDpbnqACEwYBhgL/w1200-h630-p-k-no-nu/Tourist%2BPlaces%2Bin%2BBastar.jpg",
+                "https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20190109174351/Chitrakote-Waterfalls-1.jpg",
+                "https://www.noblehousetours.com/wp-content/uploads/2017/06/bastar-chhattisgarh.jpg"
+               
+
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Arrive at Raipur",
+                    "description" : "On arrival at Raipur, you will be picked up from the airport/railway station.Transfer to the hotel and check in to the hotel.Afterwards, visit old haritage of Raipur.Later visit Naya Raipur and enjoy the sound & light show.In the evening, return to the hotel.Overnight stay at Raipur."
+                    
+                },
+                {
+                    "title" : "Day 1: Jagdalpur Sightseeing",
+                    "description" : "After breakfast, proceed for sightseeing in Jagdalpur. Visit Barsoor, Danteshwari Temple,Chitrkoot waterfall. Overnight stay in Jagdalpur."
+                }, 
+                {
+                    "title" : "Day 3: Jagdalpur to Dantewada",
+                    "description" : "After breakfast, check out from the hotel. Visit  Museum, Viewing Gallery, Local Trible Market, and Kuubsar Cave. Enjoy Coutriside Stay with live folk Bastar band and authentic Foods . Drive to Jagdalpur. On arrival in Jagdalpur, check in to the hotel. Overnight stay at Jagdalpur."
+
+                },
+                {
+                    "title" : "Day 4: Departure",
+                    "description" : "After breakfast,spend the time at leisure or go shopping. In the evening, transfer to Raipur Airport or railway station for your onward journey back home."
+                }
+            ],
+            "price" : 14500,
+            "destination" : "Chhattisgarh"
+
+        },
+        {
+            "id" : 17,
+            "title" : "Heritage Walk Tour with BhoramDev",
+            "duration" : "3 Nights / 2 Days",
+            "location" : "Bhoramdev(3N) → Kanaha National Park(1N)",
+            "description" : [
+                "Bhoramdeo a thousand year old temple situated in Chouragaon is 18 km from Kawardha in Kabirdham district of Chhattisgarh and 125 Km from Raipur .",
+                " this temple is dedicated to Lord Shiva. The temple is artificially situated between the mountain ranges, it was built during the period from 7th to 11th century.",
+                " There is a glimpse of the Khajuraho temple in the temple here, hence this temple is also called “Khajuraho of Chhattisgarh”."
+            ],
+            "image" : [
+                "https://blogger.googleusercontent.com/img/a/AVvXsEi3DQdel21foG8IY-F7M8djE9kir5IfzwtivgoHnWafr8i06CSn4KNJJdnYr-3NGsu_IRXcesGTA9qx60sxmwgUSyIhS5GO6nYiMoDHAH95ZamnIF73Mdxt5rrq_qskbMG5Ji7caRdxjrGrrftPKgtZ_e6Hum6SSrhEz1wQQ5cDNjtWgagPicSMzW-S=w1200-h630-p-k-no-nu",
+                "https://www.santrip.net/wp-content/uploads/2020/07/bhoramdeo.jpg",
+                "https://www.pugdundeesafaris.com/blog/wp-content/uploads/2017/06/Kanha-National-Park.jpg",
+                "https://www.kanha-national-park.com/blog/wp-content/uploads/2018/01/Kanha-National-Park.jpg",
+                "https://www.trawell.in/admin/images/upload/145067964Kanha_Safari_Main.jpg"
+                
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Arrival in Raipur",
+                    "description" : "On arrival at Raipur airport/railway station, 100 KM drive to Kawardha(kabirdham) . In the evening, enjoy some sightseeing and shopping. Visit the OLd Mahal. Overnight stay at Kawardha."
+
+                },
+                {
+                    "title" : "Day 2: Heritage Walk",
+                    "description" : "After breakfast, drive to Bhoramdev through Chilfi Ghathi . Visit the Bhoramdev Temple , Overnight stay at Chilfi."
+
+                },
+                {
+                    "title" : "Day 3: Kanah NAtional Park Jungle Safari",
+                    "description" : "After breakfast, check out from the hotle and drive to Kanha National Park. Enjoy the Jungle Safari At Kanha. In the afternoon, drive to MUkki Gate. On arrival in Mukki Gate, check in to the hotel. Overnight stay at Mukki Gate."
+
+                },
+                
+                {
+                    "title" : "Day 4: Departure",
+                    "description" : "After breakfast, check out from the hotel and drive to Raipur. On the way, visit the famous Lakshman Mandir. On arrival at Raipur, transfer to the airport/railway station for your onward journey back home."
+
+                }
+
+            ],
+            "price" : 24633,
+            "destination" : "Chhattisgarh"
+
+        },
+        {
+            "id" : 18,
+            "title" : "Barnawapara Wildlife Sanctuary",
+            "duration" : "1 Nights / 1 Days",
+            "location" : "Barnawapara (1N) → Raipur(1D)",
+            "description" : [
+                " Lying on a flat and terrain area, the sanctuary gives shelter to number of Tigers, leopards, porcupine, pythons, antelopes, bison and many other species.",
+                " As you walk in through the muddy paths, parrots, herons, egrets, black bucks, porcupines, monkeys, pea fowl and other species are sure to catch your attention, and you are sure to get surprised by seeing the barking deers. "
+            
+            ],
+            "image" : [
+                "https://images.thrillophilia.com/image/upload/s--azAkJZxT--/c_fill,g_center,h_450,q_auto,w_753/dpr_1.0,f_auto,fl_strip_profile/v1/images/photos/000/103/304/original/1479388363_Barnawapara-wildlife-sanctuary-4.jpg.jpg",
+                "https://www.tourmyindia.com/blog//wp-content/uploads/2014/09/Barnawapara-Wildlife-Sanctu.jpg",
+                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2015/12/diu.jpg",
+                "https://chhattisgarhtourism.co.in/barnawapara-wildlife-sanctuary-chhattisgarh.html",
+                "https://www.gosahin.com/go/p/i/1563697293_laxman-temple-sirpur1.jpg"
+              
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Arrival in Raipur",
+                    "description" : "On arrival at Raipur airport/railway station, 60 KM drive to Sirpur . In the evening, enjoy some sightseeing and shopping. Visit the OLd Mahal. Overnight stay at Kawardha."
+
+                },
+                {
+                    
+                    "title" : "Day 4: Departure",
+                    "description" : "After breakfast, check out from the hotel and drive to Raipur. On the way, visit the famous Lakshman Mandir. On arrival at Raipur, transfer to the airport/railway station for your onward journey back home."
+
+                }
+                
+               
+
+            ],
+            "price" : 12000,
+            "destination" : "Chhattisgarh"
+
+        },
+        
+        {
+            "id" : 19,
+            "title" : "Panch Koshi Yatra",
+            "duration" : "1 Nights / 1 Days",
+            "location" : "Raipur(1N) → Rajim(1N)",
+            "description" : [
+                "The temple consists of twelve pillars, each of the pillars are beautifully carved with figures of various God and Goddess like – Lord Vishnu, Lord Rama, Lord Narasimha and Goddess Durga.",
+                " Standing at the congregation of three rivers – Pairy, Sondhu and Mahanadi, the temple impresses its tourists with its main design made of Chaitya arch wooden motif. If you observe closely you can also make out that the shrine entrance has been adorned with the sculptures of Snake Goddess."
+            ],
+            "image" : [
+                "https://images.thrillophilia.com/image/upload/s--tFlScI2O--/c_fill,g_center,h_450,q_auto,w_753/dpr_1.0,f_auto,fl_strip_profile/v1/images/photos/000/103/299/original/1479387792_rajiv_lochan.jpg.jpg",
+                "https://cdn.s3waas.gov.in/s3f033ab37c30201f73f142449d037028d/uploads/2018/05/2018052697.jpg",
+                "https://media-cdn.tripadvisor.com/media/photo-s/0e/65/9b/a0/ghatarani-jatmai-raipur.jpg",
+                "https://www.chhattisgarhtourism.in/img1/Rajim/002.jpg"
+               
+            ],
+            "tour" : [
+                {
+                    
+                    "title" : "Day 1: Arrival in Raipur",
+                    "description" : "On arrival at Raipur airport/railway station, 60 KM drive to Rajim . In the evening, enjoy some sightseeing and shopping. Visit the OLd Mahal. Overnight stay at Kawardha."
+
+                },
+                {
+                    "title" : "Day 2: Departure",
+                    "description" : "After breakfast, check out from the hotel and drive to Raipur. On the way, visit the famous Jatmai Temple. On arrival at Raipur, transfer to the airport/railway station for your onward journey back home."
+
+                }
+              
+
+            ],
+            "price" : 10000,
+            "destination" : "Chhattisgarh"
+
+        },
+        {
+            "id" : 20,
+            "title" : "Ratanpur The Old Capital Of Dakshin Kaushal",
+            "duration" : "1 Nights / 2 Days",
+            "location" :"Raipur(1N) → Bilaspur(1N) → Ratanpur(1N)",
+            "description" : [
+                "Bilaspur – 25 km on Korba main road The ancient and glorious history of the holy mythological city of Ratanpur is the Adishakti Mahamaya Devi situated on the banks of the river.",
+                " Kalchurio of Tripuri made Ratanpur its capital and extended it for a long time. I ruled. It is also called Chaturugi Nagri.",
+                " Which means that its existence has existed in four eras. Raja Ratnadeva I settled in the name of Ratanpur."
+                
+            ],
+            "image" : [
+                "https://www.cgpsc.info/wp-content/uploads/2022/11/satrenga.png",
+                "https://1.bp.blogspot.com/-Het7SwgwLlY/X7dB-fpkeYI/AAAAAAAAD6E/NBXlV6leffAEWTOmOo1AzcCQ5LvJLONoACNcBGAsYHQ/s1024/Mahamaya-Temple-Ratanpur-2.png",
+                "https://img.naidunia.com/naidunia/ndnimg/18092021/18_09_2021-17rsk1.jpg",
+                "https://www.holidify.com/images/bgImages/SOMNATH.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/0010722_11th_century_Ratanpur_Mahamaya_Temple_Chhattisgarh_051.jpg/640px-0010722_11th_century_Ratanpur_Mahamaya_Temple_Chhattisgarh_051.jpg"
+               
+            ],
+            "tour" : [
+                {
+                    
+                    "title" : "Day 1: Arrival in Raipur / Bilaspur",
+                    "description" : "On arrival at Raipur airport/railway station, 225 KM drive to Ratanpur . In the evening, enjoy some sightseeing and shopping. Visit the OLd Mahal. Overnight stay at Ratanpur."
+
+                },
+                {
+                    "title" : "Day 2: Departure",
+                    "description" : "After breakfast, check out from the hotel and drive to Raipur. On the way, visit the famous Mahamaya Temple Temple. On arrival at Raipur, transfer to the airport/railway station for your onward journey back home."
+
+                }
+             
+            ],
+            "price" : 9000,
+            "destination" : "Chhattisgarh"
+
         } 
+              
+ 
+         
               
         
     ],
