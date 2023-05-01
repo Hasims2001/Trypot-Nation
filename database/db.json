@@ -1,7 +1,7 @@
 {
     "packages":[
         {
-            "id" : 1,
+            "id" : 21,
             "title" : "Statue of Unity Tour Package with Cultural Ahmedabad",
             "duration" : "3 Nights / 4 Days",
             "location" : "Ahmedabad(2N) → Vadodara(1N)",
@@ -42,9 +42,229 @@
                     "description" : "After breakfast, visit Lakshmi Villas Palace and EME Temple. Later, spend the time at leisure or go shopping. In the evening, transfer to Vadodara/Ahmedabad Airport or railway station for your onward journey back home."
                 }
             ],
-            "price" : 14500 
+            "price" : 14500,
+            "destination" : "Gujarat"
+
+        },
+        {
+            "id" : 22,
+            "title" : "Heritage Bhuj and Dholavira Tour with Rann Utsav",
+            "duration" : "4 Nights / 5 Days",
+            "location" : "Bhuj(2N) → Hodka(2N)",
+            "description" : [
+                "Virtually an island that resembles the shape of a tortoise, Kutch is an erstwhile princely state of India holding onto its grandeur nature from the past. Kutch is probably one of the most beautiful, yet surreal places in India with the vast expanses of the white salt desert.  The place comes to life during the winters when the Rann Festival is held during December-February everywhere in which there are huge camp settlements with cultural programs, functions and adventure activities like hot-air ballooning.",
+                "Kutch is also among the largest district of India with a terribly low population density. Also, Kutch lies on the India-Pakistan border and you can see parts of Pakistan from Kutch. Kutch is also famous for crafts and embroidery works, Flamingo Sanctuary and Wild Ass Sanctuary. Bhuj is an ideal starting point to visit the Rann of Kutch. Beautiful beaches of Mandvi near Bhuj are also totally worth visiting during your trip to Kutch. Don't miss to see the ancient town of Dholavira."
+            ],
+            "image" : [
+                "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1293713017(1)_20191205141054.jpg",
+                "https://www.holidify.com/images/compressed/2317.jpg?v=1.1",
+                "https://www.tripcrafters.com/agent/trip_photos/5d34a7cda42b17f3a7a6872865a741a7.jpg",
+                "https://www.tripcrafters.com/agent/trip_photos/4e68adfb7fe616c93b5cf81ce20a46eb.jpg",
+                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/05/226.jpg",
+                "https://www.holidify.com/images/compressed/dest_wiki_1967.jpg",
+                "https://www.holidify.com/images/compressed/dest_wiki_3817.jpg"
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Arrival in Bhuj",
+                    "description" : "On arrival at Bhuj airport/railway station, check in to the homestay at Bhuj. In the evening, enjoy some sightseeing and shopping. Visit the Prag Mahal. Overnight stay at Bhuj."
+
+                },
+                {
+                    "title" : "Day 2: Excursion to Dholavira",
+                    "description" : "After breakfast, drive to Dholavira. Visit the archeological ruins. Enjoy the simple local food at the town center. Return to Bhuj. Overnight stay at Bhuj."
+
+                },
+                {
+                    "title" : "Day 3: Bhuj to Mandvi to Hodka",
+                    "description" : "After breakfast, check out from the and drive to Mandvi. Enjoy the day at Mandvi beach. In the afternoon, drive to Hodka. On arrival in Hodka, check in to the hotel. Overnight stay at Hodka."
+
+                },
+                {
+                    "title" : "Day 4: Excursion to Rann of Kutch",
+                    "description" : "After breakfast, spend the day at leisure and explore the village of Hodka. After lunch, drive to the Rann of Kutch. On arrival at Rann of Kutch, check-in at the Rann Utsav. Spend the evening visiting the many melas put up in the beautiful Shaminanas and indulging in some Kutchi food. Enjoy the evening on the Rann and the culture shows hosted by the Rann Utsav. Return to Hodka. Overnight stay at Hodka."
+
+                },
+                {
+                    "title" : "Day 5: Departure",
+                    "description" : "After breakfast, check out from the hotel and drive to Bhuj. On the way, visit the famous Kalo Dungar and Naroni village. On arrival at Bhuj, transfer to the airport/railway station for your onward journey back home."
+
+                }
+
+            ],
+            "price" : 24633,
+            "destination" : "Gujarat"
+
+        },
+        {
+            "id" : 23,
+            "title" : "Wildlife & Beach of Gujarat: Gir with Diu Tour",
+            "duration" : "4 Nights / 5 Days",
+            "location" : "Sasangir (2N) → Diu(2N)",
+            "description" : [
+                "Gir National Park and Wildlife Sanctuary is the only remaining home for the Asiatic Lions. Located in Talala Gir in Gujarat, the Sanctuary is a part of Kathiawar- Gir dry deciduous forests ecoregion. Gir National Park is closed from 16 June to 15 October every year and the best time for wildlife spotting is April and May.",
+                "Gir provides you with the unique experience of visiting a place which almost singularly plays a crucial and defining role in the preservation and sustaining of a certain species. The preservation of these lions was initiated by the Nawab of Junagadh when these were just about to enter the phase of extinction due to hunting.",
+                "The official count said that there were 411 lions in 2010. Also, there are roughly different 2375 species of fauna here with 38 species of mammals, over 300 species of birds, 37 species of reptiles and over 2000 species of insects. Other important wildlife forms found here are leopard, chausingha, spotted deer, hyena, sambar deer and chinkara."
+            
+            ],
+            "image" : [
+                "https://www.holidify.com/images/cmsuploads/compres…oto-1527073620320-77635188c627_20191011222401.jpg",
+                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/08/Crocodile-Breeding-Farm.jpg",
+                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2015/12/diu.jpg",
+                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/u…he-Portuguese-fort-in-the-Diu-town-in-Gujarat.jpg",
+                "https://www.holidify.com/images/compressed/3488.jpg?v=1.1",
+                "https://www.holidify.com/images/compressed/3495.jpg",
+                "https://holidify.com/images/attr_wiki/compressed/attr_wiki_3281.jpg",
+                "https://www.holidify.com/images/cmsuploads/compressed/10715835233_d1621f3c0c_b_20190701095540.jpg",
+                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/u…2015/02/White-Winter-at-Lake-Tahoe-California.jpg"
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Arrival in Sasangir",
+                    "description" : "On arrival Sasangir, transfer to the hotel and check-in. In the afternoon, visit Gir Interpretation Zone at Devaliya, Crocodile breeding farm, and Gir Information centre. In the evening, watch a movie on lions at Gir Information centre. Overnight stay at the hotel."
+
+                },
+                {
+                    "title" : "Day 2: Gir National Park Safari",
+                    "description" : "After breakfast, enjoy the morning and evening game drives in Gir National Park. Overnight stay at the hotel."
+
+                },
+                {
+                    "title" : "Day 3: Sasangir to Diu",
+                    "description" : "After breakfast, proceed to Diu. On arrival in Diu, check in to the hotel. Spend the day at leisure and relax on the beach. Overnight stay at the hotel."
+
+                },
+                {
+                    "title" : "Day 4: Diu Sightseeing",
+                    "description" : "After breakfast, spend the morning at leisure. OR enjoy the wide variety of water sports facilities available at Nagoa Beach. Later, visit St. Paul's Church, Diu Museum, and Diu Fort. Overnight stay at the hotel."
+
+                },
+                {
+                    "title" : "Day 5: Departure",
+                    "description" : "After breakfast, check out from the hotel and transfer to the railway station or airport for your onward journey back home."
+
+                }
+
+            ],
+            "price" : 19500,
+            "destination" : "Gujarat"
+
+        },
+        
+        {
+            "id" : 24,
+            "title" : "Beautiful Gujarat with Dwarka & Somnath",
+            "duration" : "4 Nights / 5 Days",
+            "location" : "Ahmedabad(0N) → Jamnagar(1N) → Dwarka(1N) → Somnath(1N) → Rajkot(1N)",
+            "description" : [
+                "Somnath, literally meaning 'lord of the moon' is a pilgrim center and is home to one of the 12 Jyotirlingas. It is a town which derives much of its identity from the mythology, religion, and legends that surround it.",
+                "Primarily a temple town, Somnath is a place where a strong scent of religion and legends lingers around tourism and even daily life. Its spiritual environment is ornamented by the huge number of temples in the area, however, Somnath also offers beaches, museums and other attractions. While the Somnath temple and Somnath beach are the primary places to visit here, Gita Mandir, Balukha Tirtha, Kamnath Mahadev Temple, Somnath Museum are some of the other places that one can visit."
+            ],
+            "image" : [
+                "https://www.holidify.com/images/cmsuploads/compres…,_Gujarat_-_India_(3417857288)_20190416141443.jpg",
+                "https://www.holidify.com/images/cmsuploads/compressed/1024px-JagMandir_20190729162715.jpg",
+                "https://www.holidify.com/images/cmsuploads/compres…024px-Jama_Masjid_Ahmedabad_01_20190806170311.jpg",
+                "https://www.holidify.com/images/cmsuploads/compressed/1392_0_1377854374_20210615165606.jpg",
+                "https://www.tripcrafters.com/agent/trip_photos/1392_2_1377854374.jpg",
+                "https://www.tripcrafters.com/agent/trip_photos/1392_4_1377854374.jpg"
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Arrival in Jamnagar",
+                    "description" : "On arrival in Ahmedabad, proceed to Jamnagar. On arrival check in to the hotel. Visit Lakhota Lake & Lakhota Museum. In the evening, visit Bala Hanuman Temple known for its nonstop Ramdhun since 1956 and it is mentioned in the Guinness Book of World Records. The rest of the evening is free for shopping. Overnight stay at the hotel."
+
+                },
+                {
+                    "title" : "Day 2: Jamnagar to Dwarka",
+                    "description" : "Proceed to the sacred town of Dwarka. On arrival check in to the hotel. Visit Dwarkadeesh Temple. Take a holy dip in the Gomti river, later leave to visit Nageshwar Jyotirling, Gopi Talav, Bet Dwarka. On the way back, visit Rukmani Temple. In the evening, visit other temples in the coastal area. Attend evening aarti at Dwarkadish temple. Overnight stay at the hotel."
+
+                },
+                {
+                    "title" : "Day 3: Dwarka to Porbandar to Somnath",
+                    "description" : "In the morning depart to Porbandar. At Porbandar visit Kirti Mandir. Later proceed to Somnath On arrival check in to the hotel. Visit Bhalka Tirth, Triveni Ghat & Somnath Temple. In the evening, attend aarti and later watch light and sound show. Overnight stay at the hotel."
+
+                },
+                {
+                    "title" : "Day 4: Somnath to Rajkot",
+                    "description" : "Proceed to Rajkot. En-route visit Jalaram Temple at Virpur and Swaminarayan temple, Navlakha Palace and Vintage Car museum at Gondal. In the late evening arrive at Rajkot. On arrival check in to the hotel. Overnight stay at the hotel."
+
+                },
+                {
+                    "title" : "Day 5: Departure",
+                    "description" : "Proceed to Ahmedabad. On arrival in Ahmedabad, visit Hathising Jain Temple, Gandhi Ashram, City Museum & Kakaria Lake & Park. In the evening, you will be dropped at the railway station or airport."
+
+                }
+
+            ],
+            "price" : 15000,
+            "destination" : "Gujarat"
+
+        },
+        {
+            "id" : 25,
+            "title" : "Best of Gujarat : Temples, Statues and Wildlife",
+            "duration" : "6 Nights / 7 Days",
+            "location" : "Ahmedabad(1N) → Dwarka(2N) → Somnath(1N) → Sasan Gir(1N) → Vadodara(1N)",
+            "description" : [
+                "Vadodara or Baroda is a cosmopolitan city located in Gujarat. Home to some of the most exemplary displays of architecture, Vadodara is a fitting memorial to Maratha leader Sayaji Rao Gaekwad III who had envisioned a dream to make this Big City an educational, industrial and commercial centre.",
+                "Known for one of the most lavish palaces in India- the Lakshmi Vilas Palace and plenty more legendary monuments, Vadodara is the cultural capital of Gujarat. With a prominent part of it being occupied by the Gujaratis, this place is the most sought after during the nine days of the Navratri festival. No city in India celebrates the festival of Navratri with as much zeal and exuberance as Vadodara does. It houses one of the premier universities of India- the Maharaja Sayajirao University."
+            ],
+            "image" : [
+                "https://www.holidify.com/images/compressed/attractions/attr_1084.jpg",
+                "https://www.holidify.com/images/compressed/attractions/attr_38.jpg",
+                "https://www.holidify.com/images/cmsuploads/compressed/5129689068_118d671872_b_20170609164516.jpg",
+                "https://www.holidify.com/images/bgImages/SOMNATH.jpg",
+                "https://www.holidify.com/images/cmsuploads/compres…hat_near_Somnath_Temple_Gujrat_20191001132214.jpg",
+                "https://www.holidify.com/images/cmsuploads/compres…oto-1527073620320-77635188c627_20191011222401.jpg"
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Arrival in Ahmedabad",
+                    "description" : "Pick-up on arrival at Ahmedabad railway station or airport. Transfer to the hotel and check-in (standard check-in 12:00 noon) Ahmedabad sightseeing Visit Sabarmati Ashram, Adalaj Vav, and Akshardham Temple Overnight stay in Ahmedabad. (NOTE: Ahmedabad closed on Monday)"
+
+                },
+                {
+                    "title" : "Day 2: Ahmedabad to Dwarka",
+                    "description" : "After breakfast, proceed to Dwarka (450 Kms – 08/09 hours) On arrival check in to the hotel If time permits, visit Dwarkadhish Temple in the evening Overnight stay in Dwarka."
+
+                },
+                {
+                    "title" : "Day 3: Dwarka Sightseeing",
+                    "description" : "After breakfast, a sightseeing tour of Dwarka Visit Dwarkadhish Temple, Rukmani Mandir, Beyt Dwarka(Mul Dwarka), Nageshwer Temple (Jyotiling), Gopi Talav Overnight stay in Dwarka."
+
+                },
+                {
+                    "title" : "Day 4: Dwarka to Somnath",
+                    "description" : "After breakfast, proceed to Somnath (260 Kms - 6hours) En route visit Porbandar. At Porbandar visit Kirti Mandir and Sudama Mandir. On arrival in Somnath, check in to the hotel. If time permits, enjoy a light and sound show in Somnath at 7:00 PM (tentative time) Overnight stay in Somnath."
+
+                },
+                {
+                    "title" : "Day 5: Somnath to Sasan Gir",
+                    "description" : "After breakfast, check out from the hotel. Visit local Somnath Mandir, Bhalka Tirth, Gita Mandir, Triveni Sangam. Proceed to Sasan Gir (60 Kma - 90 minutes) On arrival check in to the hotel. Overnight stay in Sasan Gir."
+
+                },
+                {
+                    "title" : "Day 6: Sasan Gir to Vadodara",
+                    "description" : "In the early morning go for a Jeep safari in Main Jungle (at extra cost). After breakfast, check out from the hotel. Proceed to Vadodara (410 Kms - 8 hours) Visit the Lothal Archeology site (if interested) On arrival check in to the hotel. Overnight stay in Vadodara."
+                },
+                {
+                    "title" : "Day 7: Departure",
+                    "description" : "After breakfast, proceed to the Statue of Unity (100 Kms - 2 hours) at 7:30 AM (note: Statue of Unity closed on Monday) Visit the Statue of Unity from Viewing Gallery, Valley of Flowers, and Narmada dam viewing point. Proceed to Vadodara airport for your onward journey back home. Tour ends"
+                }
+            ],
+            "price" : 22500,
+            "destination" : "Gujarat"
 
         }
-        
+    ],
+    "users" : [
+
+     ],
+    "admin" : [
+        {
+            "username" : "admin",
+            "password" : "admin"
+        }
     ]
+
 }

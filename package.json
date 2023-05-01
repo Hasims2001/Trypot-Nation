@@ -1,0 +1,23 @@
+{
+  "name": "indigo-price-1615",
+  "version": "1.0.0",
+  "description": "Block 25 - Construct Week Group Project",
+  "main": "index.js",
+  "scripts": {
+    "start" : "json-server --watch ./database/db.json" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hasims2001/indigo-price-1615.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hasims2001/indigo-price-1615/issues"
+  },
+  "homepage": "https://github.com/Hasims2001/indigo-price-1615#readme",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
