@@ -1,0 +1,50 @@
+{
+    "packages":[
+        {
+            "id" : 1,
+            "title" : "Statue of Unity Tour Package with Cultural Ahmedabad",
+            "duration" : "3 Nights / 4 Days",
+            "location" : "Ahmedabad(2N) → Vadodara(1N)",
+            "description" : [
+                "A rapidly growing metropolis, an industrial hub, an educational hotspot, and a city with a magnificent past - Ahmedabad is one of the most important cities in Gujarat. Located on the banks of the Sabarmati River, Ahmedabad is the former capital of Gujarat, and its delicious food, colourful culture is making it a fast-growing tourist destination. The historic city of Ahmedabad or the old part of the city was declared as the UNESCO World Heritage Site.",
+            "Home to a plethora of remarkable temples like Swaminarayan Temple, intriguing museums and classy markets, with a little bit of colonial history attached to it, Ahmedabad is an excellent example of how a city can still retain every bit of its old-world charm while still rapidly progressing on the path of globalisation.",
+            "Ahmedabad is famous for its textiles and its tie-dye bandhani handloom technique, which makes it a great place to shop. From bandhani sarees, dupattas to traditionally embroidered dress materials, and other local handicrafts.",
+            "Sabarmati Ashram, situated directly beside the Sabarmati river, is a quaint and peaceful ashram built by Mahatma Gandhi after he returned from South Africa. To this date, Gandhiji's living quarters are preserved here and is now used as a museum where visitors can learn all about his life and his teachings. The infamous Dandi Salt March, which was a crucial point in India's independence struggle, originated from this ashram."
+            ],
+            "image" : [
+                "https://www.holidify.com/images/cmsuploads/compres…tock_1317845540_20191031110021_20191031110103.png",
+                "https://www.holidify.com/images/cmsuploads/compres…Akshardham_Gandhinagar_Gujarat_20170803175920.jpg",
+                "https://www.holidify.com/images/compressed/dest_wiki_12514.jpg",
+                "https://www.holidify.com/images/cmsuploads/compres…40_cddeeded42_b_20170405165221_20190806170113.jpg",
+                "https://www.holidify.com/images/compressed/attractions/attr_1654.jpg",
+                "https://www.holidify.com/images/cmsuploads/compressed/5129689068_118d671872_b_20170609164516.jpg",
+                "https://www.holidify.com/images/cmsuploads/compressed/1024px-2T1A1747_20190729135522.jpg",
+                "https://www.holidify.com/images/cmsuploads/compres…ple,_Modhera_-_Sabha_Mandap_01_20180804140521.jpg"
+
+            ],
+            "tour" : [
+                {
+                    "title" : "Day 1: Arrive at Ahmedabad",
+                    "description" : "On arrival at Ahmedabad, you will be picked up from the airport/railway station.Transfer to the hotel and check in to the hotel.Afterwards, visit Gandhi Ashram, Hutheesing Jain Temple, and Adalaj Step-well.Later visit Akshardham Temple and enjoy the sound & light show.In the evening, return to the hotel.Overnight stay at Ahmedabad."
+                    
+                },
+                {
+                    "title" : "Day 2: Ahmedabad Sightseeing",
+                    "description" : "After breakfast, proceed for sightseeing in Ahmedabad. Visit Sun Temple, Rani Ki Vav, Matrugaya, and Bindu Sarovar. Overnight stay in Ahmedabad."
+                }, 
+                {
+                    "title" : "Day 3: Ahmedabad to Vadodara",
+                    "description" : "After breakfast, check out from the hotel. Visit Statue of Unity, Museum, Viewing Gallery, Valley of Flower, and Sardar Sarovar Dam. Enjoy the laser light show at 7:00 PM (tentative). Drive to Vadodara. On arrival in Vadodara, check in to the hotel. Overnight stay at Vadodara."
+
+                },
+                {
+                    "title" : "Day 4: Departure",
+                    "description" : "After breakfast, visit Lakshmi Villas Palace and EME Temple. Later, spend the time at leisure or go shopping. In the evening, transfer to Vadodara/Ahmedabad Airport or railway station for your onward journey back home."
+                }
+            ],
+            "price" : 14500 
+
+        }
+        
+    ]
+}
