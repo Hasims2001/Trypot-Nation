@@ -724,12 +724,210 @@
             "price" : 9000,
             "destination" : "Chhattisgarh"
 
-        } 
-              
- 
-         
-              
+        },
+
         
+
+        {
+            "id" : 11,
+            "title" : "Ajanta and Ellora Tour",
+            "duration" : "3 Nights / 4 Days",
+            "location" : "Aurangabad(3N) → Mumbai(1N)",
+            "description" : [
+              "Explore the ancient caves of Ajanta and Ellora, a UNESCO World Heritage site",
+              "Visit the Bibi Ka Maqbara, also known as the mini Taj Mahal",
+              "Experience the bustling city of Mumbai"
+            ],
+            "image" : [
+              "https://www.tourmyindia.com/images/ajanta-and-ellora-caves-maharashtra.jpg",
+              "https://static.toiimg.com/photo/77734260.cms",
+              "https://www.greaterkashmir.com/wp-content/uploads/2021/02/ELLORA.jpg",
+              "https://www.tourmyindia.com/images/bibi-ka-maqbara-aurangabad.jpg",
+              "https://www.tourmyindia.com/images/gateway-of-india-mumbai.jpg"
+            ],
+            "tour" : [
+              {
+                "title" : "Day 1: Arrival in Aurangabad",
+                "description" : "On arrival at Aurangabad railway station, transfer to the hotel. Enjoy the rest of the day at leisure. Overnight stay in Aurangabad."
+              },
+              {
+                "title" : "Day 2: Ajanta Caves",
+                "description" : "After breakfast, visit the Ajanta Caves, a UNESCO World Heritage site. In the evening, return to the hotel. Overnight stay in Aurangabad."
+              },
+              {
+                "title" : "Day 3: Ellora Caves and Bibi Ka Maqbara",
+                "description" : "After breakfast, visit the Ellora Caves, another UNESCO World Heritage site. Then, visit the Bibi Ka Maqbara, also known as the mini Taj Mahal. In the evening, return to the hotel. Overnight stay in Aurangabad."
+              },
+              {
+                "title" : "Day 4: Mumbai",
+                "description" : "After breakfast, check out from the hotel and drive to Mumbai. On arrival in Mumbai, check in to the hotel. In the afternoon, visit the Gateway of India and Marine Drive. Overnight stay in Mumbai."
+              },
+              {
+                "title" : "Day 5: Departure",
+                "description" : "After breakfast, check out from the hotel and transfer to the railway station for your onward journey back home."
+              }
+            ],
+            "price" : 19999,
+            "destination" : "Maharashtra"
+          },
+        
+        
+        
+        {
+            "id" : 12,
+            "title" : "Mahabaleshwar Tour",
+            "duration" : "2 Nights / 3 Days",
+            "location" : "Mahabaleshwar(2N)",
+            "description" : [
+              "Experience the scenic beauty of Mahabaleshwar, a hill station in the Western Ghats",
+              "Visit the famous viewpoints of Mahabaleshwar, including Wilson Point, Kate's Point, and Arthur's Seat",
+              "Enjoy boating in Venna Lake and explore the Pratapgad Fort"
+            ],
+            "image" : [
+              "https://www.tourmyindia.com/images/mahabaleshwar-tourism.jpg",
+              "https://www.tourmyindia.com/images/pratapgad-fort-maharashtra.jpg",
+              "https://www.tourmyindia.com/images/venna-lake-mahabaleshwar.jpg",
+              "https://www.tourmyindia.com/images/wilson-point-mahabaleshwar.jpg"
+        ],
+        "tour" : [
+          {
+            "title" : "Day 1: Arrival in Mahabaleshwar",
+            "description" : "On arrival at Mahabaleshwar, check in to the hotel. Enjoy the rest of the day at leisure. Overnight stay in Mahabaleshwar."
+          },
+          {
+            "title" : "Day 2: Sightseeing in Mahabaleshwar",
+            "description" : "After breakfast, visit the famous viewpoints of Mahabaleshwar, including Wilson Point, Kate's Point, and Arthur's Seat. In the afternoon, enjoy boating in Venna Lake. Overnight stay in Mahabaleshwar."
+          },
+          {
+            "title" : "Day 3: Pratapgad Fort",
+            "description" : "After breakfast, check out from the hotel and visit the historic Pratapgad Fort. In the evening, transfer to the railway station for your onward journey back home."
+          }
+        ],
+        "price" : 9999,
+        "destination" : "Maharashtra"
+        },
+        
+        
+        
+        {
+        "id" : 13,
+        "title" : "Kokan Beach Tour",
+        "duration" : "4 Nights / 5 Days",
+        "location" : "Mumbai → Alibaug(2N) → Murud(2N)",
+        "description" : [
+        "Explore the beautiful beaches of Kokan, including Alibaug and Murud",
+        "Enjoy water sports activities like banana boat ride, jet ski, and parasailing",
+        "Visit the historic Janjira Fort and the Phansad Wildlife Sanctuary"
+        ],
+        "image" : [
+        "https://www.tourmyindia.com/images/alibaug-beach.jpg",
+        "https://www.tourmyindia.com/images/murud-beach.jpg",
+        "https://www.tourmyindia.com/images/janjira-fort-murud.jpg",
+        "https://www.tourmyindia.com/images/phansad-wildlife-sanctuary.jpg",
+        "https://www.tourmyindia.com/images/water-sports-alibaug.jpg"
+        ],
+        "tour" : [
+        {
+        "title" : "Day 1: Arrival in Mumbai",
+        "description" : "On arrival at Mumbai airport/railway station, transfer to Alibaug. Check in to the hotel and enjoy the rest of the day at leisure. Overnight stay in Alibaug."
+        },
+        {
+        "title" : "Day 2: Alibaug Beach",
+        "description" : "After breakfast, visit the Alibaug Beach and enjoy water sports activities like banana boat ride, jet ski, and parasailing. In the evening, return to the hotel. Overnight stay in Alibaug."
+        },
+        {
+        "title" : "Day 3: Janjira Fort and Murud Beach",
+        "description" : "After breakfast, check out from the hotel and drive to Murud. On the way, visit the historic Janjira Fort. In the afternoon, visit the Murud Beach. Overnight stay in Murud."
+        },
+        {
+        "title" : "Day 4: Phansad Wildlife Sanctuary",
+        "description" : "After breakfast, visit the Phansad Wildlife Sanctuary and enjoy a jungle safari. In the evening, return to the hotel. Overnight stay in Murud."
+        },
+        {
+        "title" : "Day 5: Departure",
+        "description" : "After breakfast, check out from the hotel and transfer to Mumbai railway station for your onward journey back home."
+        }
+        ],
+        "price" : 9999,
+        "destination" : "Maharashtra"
+        },
+        
+
+
+        {
+        "id" : 14,
+        "title" : "Tadoba-Andhari Tiger Reserve Safari",
+        "duration" : "3 Nights / 4 Days",
+        "location" : "Nagpur → Tadoba-Andhari Tiger Reserve(3N)",
+        "description" : [
+        "Explore the Tadoba-Andhari Tiger Reserve and spot tigers in their natural habitat",
+        "Enjoy a jungle safari and bird watching in the reserve",
+        "Visit the nearby attractions like Moharli, Kolara, and Khutwanda Gate"
+        ],
+        "image" : [
+        "https://www.tourmyindia.com/images/tadoba-andhari-tiger-reserve.jpg",
+        "https://www.tourmyindia.com/images/tadoba-jungle-safari.jpg",
+        "https://www.tourmyindia.com/images/tadoba-bird-watching.jpg",
+        "https://www.tourmyindia.com/images/tadoba-moharli-gate.jpg",
+        "https://www.tourmyindia.com/images/tadoba-kolara-gate.jpg"
+        ],
+        "tour" : [
+        {
+        "title" : "Day 1: Arrival in Nagpur",
+        "description" : "On arrival at Nagpur airport/railway station, drive to Tadoba-Andhari Tiger Reserve. Check in to the resort and enjoy the rest of the day at leisure. Overnight stay in Tadoba."
+        },
+        {
+        "title" : "Day 2: Tadoba Jungle Safari",
+        "description" : "After breakfast, enjoy a jungle safari in the Tadoba-Andhari Tiger Reserve and spot tigers, leopards, and other wildlife species in their natural habitat. In the afternoon, visit the nearby attractions like Moharli, Kolara, and Khutwanda Gate. Overnight stay in Tadoba."
+        },
+        {
+        "title" : "Day 3: Bird Watching",
+        "description" : "After breakfast, go for bird watching in the reserve and spot a variety of bird species. In the evening, return to the resort. Overnight stay in Tadoba."
+        },
+        {
+        "title" : "Day 4: Departure",
+        "description" : "After breakfast, check out from the resort and transfer to Nagpur railway station for your onward journey back home."
+        }
+        ],
+        "price" : 14999,
+        "destination" : "Maharashtra"
+        },
+        
+
+
+        {
+        "id" : 15,
+        "title" : "Alibaug Beach Camping",
+        "duration" : "1 Night / 2 Days",
+        "location" : "Mumbai → Alibaug(1N)",
+        "description" : [
+        "Enjoy camping on the beautiful Alibaug Beach",
+        "Experience a bonfire and BBQ on the beach",
+        "Enjoy water sports activities like banana boat ride, jet ski, and parasailing"
+        ],
+        "image" : [
+        "https://www.tourmyindia.com/images/alibaug-beach-camping.jpg",
+        "https://www.tourmyindia.com/images/bonfire-alibaug-beach.jpg",
+        "https://www.tourmyindia.com/images/bbq-alibaug-beach.jpg",
+        "https://www.tourmyindia.com/images/banana-boat-ride-alibaug-beach.jpg",
+        "https://www.tourmyindia.com/images/jet-ski-alibaug-beach.jpg",
+        "https://www.tourmyindia.com/images/parasailing-alibaug-beach.jpg"
+        ],
+        "tour" : [
+        {
+        "title" : "Day 1: Arrival in Alibaug",
+        "description" : "On arrival at Mumbai, drive to Alibaug and check in to the beach camp. Enjoy water sports activities like banana boat ride, jet ski, and parasailing. In the evening, experience a bonfire and BBQ on the beach. Overnight stay at the camp."
+        },
+        {
+        "title" : "Day 2: Departure",
+        "description" : "After breakfast, check out from the camp and transfer to Mumbai railway station for your onward journey back home."
+        }
+        ],
+        "price" : 3999,
+        "destination" : "Maharashtra"
+        }
+        
+       
     ],
     "users" : [
 
