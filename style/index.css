@@ -85,6 +85,7 @@ header {
     font-size: 3em;
     color: #fff;
     margin-bottom: 10px;
+    text-align: center;
     
 }
 
@@ -92,4 +93,5 @@ header {
     font-size: 1em;
     color: #fff;
     font-weight: 300;
+    text-align: center;
 }
