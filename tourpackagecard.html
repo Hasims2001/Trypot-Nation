@@ -1,0 +1,281 @@
+<style>
+    .botmmain{
+     width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#botomh1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+#imgbtm {
+    height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* .btncard_btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+.btncard_btn:hover {
+  background-color: rgba(248, 0, 0, 0.12);
+} */
+
+.cardsbtm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #359381 40%, #FFC39E 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+
+</style>
+<body>
+    <div class="botmmain">
+        <h1 id="botomh1">Packages</h1>
+        <ul class="cardsbtm">
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image" id="imgbtm"><img src="https://picsum.photos/500/300/?image=10"></div>
+              <div class="card_content">
+                <h2 class="card_title">Card Grid Layout</h2>
+                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                <!-- <button class="btncard_btn">Read More</button> -->
+                <!-- new edt -->
+                <button class="cta">
+                    <span class="hover-underline-animation"> Read More</span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                        <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                    </svg>
+                </button>
+
+
+
+                <!-- newtt -->
+
+
+
+
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image" id="imgbtm"><img src="https://picsum.photos/500/300/?image=5"></div>
+              <div class="card_content">
+                <h2 class="card_title">Card Grid Layout</h2>
+                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                  <!-- new edt -->
+                  <button class="cta">
+                    <span class="hover-underline-animation"> Read More</span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                        <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                    </svg>
+                </button>
+
+
+
+                <!-- newtt -->
+
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image" id="imgbtm" ><img src="https://picsum.photos/500/300/?image=11"></div>
+              <div class="card_content">
+                <h2 class="card_title">Card Grid Layout</h2>
+                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                  <!-- new edt -->
+                  <button class="cta">
+                    <span class="hover-underline-animation"> Read More</span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                        <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                    </svg>
+                </button>
+
+
+
+                <!-- newtt -->
+
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image" id="imgbtm"><img src="https://picsum.photos/500/300/?image=14"></div>
+              <div class="card_content">
+                <h2 class="card_title">Card Grid Layout</h2>
+                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                   <!-- new edt -->
+                   <button class="cta">
+                    <span class="hover-underline-animation"> Read More</span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                        <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                    </svg>
+                </button>
+
+
+
+                <!-- newtt -->
+
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image" id="imgbtm"><img src="https://picsum.photos/500/300/?image=17"></div>
+              <div class="card_content">
+                <h2 class="card_title">Card Grid Layout</h2>
+                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                   <!-- new edt -->
+                   <button class="cta">
+                    <span class="hover-underline-animation"> Read More</span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                        <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                    </svg>
+                </button>
+
+
+
+                <!-- newtt -->
+
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image" id="imgbtm"><img src="https://picsum.photos/500/300/?image=2"></div>
+              <div class="card_content">
+                <h2 class="card_title">Card Grid Layout</h2>
+                <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+               <!-- new edt -->
+               <button class="cta">
+                <span class="hover-underline-animation"> Read More</span>
+                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                    <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                </svg>
+            </button>
+
+
+
+            <!-- newtt -->
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    
+</body>
