@@ -279,14 +279,14 @@
             "Sabarmati Ashram, situated directly beside the Sabarmati river, is a quaint and peaceful ashram built by Mahatma Gandhi after he returned from South Africa. To this date, Gandhiji's living quarters are preserved here and is now used as a museum where visitors can learn all about his life and his teachings. The infamous Dandi Salt March, which was a crucial point in India's independence struggle, originated from this ashram."
             ],
             "image" : [
-                "https://www.holidify.com/images/cmsuploads/compres…tock_1317845540_20191031110021_20191031110103.png",
-                "https://www.holidify.com/images/cmsuploads/compres…Akshardham_Gandhinagar_Gujarat_20170803175920.jpg",
+                "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1317845540_20191031110021_20191031110103.png",
+                "https://www.holidify.com/images/cmsuploads/compressed/Akshardham_Gandhinagar_Gujarat_20170803175920.jpg",
                 "https://www.holidify.com/images/compressed/dest_wiki_12514.jpg",
-                "https://www.holidify.com/images/cmsuploads/compres…40_cddeeded42_b_20170405165221_20190806170113.jpg",
+                "https://www.holidify.com/images/cmsuploads/compressed/15225738140_cddeeded42_b_20170405165221_20190806170113.jpg",
                 "https://www.holidify.com/images/compressed/attractions/attr_1654.jpg",
                 "https://www.holidify.com/images/cmsuploads/compressed/5129689068_118d671872_b_20170609164516.jpg",
                 "https://www.holidify.com/images/cmsuploads/compressed/1024px-2T1A1747_20190729135522.jpg",
-                "https://www.holidify.com/images/cmsuploads/compres…ple,_Modhera_-_Sabha_Mandap_01_20180804140521.jpg"
+                "https://www.holidify.com/images/cmsuploads/compressed/Sun_Temple,_Modhera_-_Sabha_Mandap_01_20180804140521.jpg"
 
             ],
             "tour" : [
@@ -375,15 +375,15 @@
             
             ],
             "image" : [
-                "https://www.holidify.com/images/cmsuploads/compres…oto-1527073620320-77635188c627_20191011222401.jpg",
+                "https://www.holidify.com/images/cmsuploads/compressed/photo-1527073620320-77635188c627_20191011222401.jpg",
                 "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/08/Crocodile-Breeding-Farm.jpg",
                 "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2015/12/diu.jpg",
-                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/u…he-Portuguese-fort-in-the-Diu-town-in-Gujarat.jpg",
+                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2016/08/Cannon-on-walls-of-the-Portuguese-fort-in-the-Diu-town-in-Gujarat.jpg",
                 "https://www.holidify.com/images/compressed/3488.jpg?v=1.1",
                 "https://www.holidify.com/images/compressed/3495.jpg",
                 "https://holidify.com/images/attr_wiki/compressed/attr_wiki_3281.jpg",
                 "https://www.holidify.com/images/cmsuploads/compressed/10715835233_d1621f3c0c_b_20190701095540.jpg",
-                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/u…2015/02/White-Winter-at-Lake-Tahoe-California.jpg"
+                "https://www.holidify.com/images/compressed/3486.jpg?v=1.1"
             ],
             "tour" : [
                 {
@@ -428,9 +428,7 @@
                 "Primarily a temple town, Somnath is a place where a strong scent of religion and legends lingers around tourism and even daily life. Its spiritual environment is ornamented by the huge number of temples in the area, however, Somnath also offers beaches, museums and other attractions. While the Somnath temple and Somnath beach are the primary places to visit here, Gita Mandir, Balukha Tirtha, Kamnath Mahadev Temple, Somnath Museum are some of the other places that one can visit."
             ],
             "image" : [
-                "https://www.holidify.com/images/cmsuploads/compres…,_Gujarat_-_India_(3417857288)_20190416141443.jpg",
                 "https://www.holidify.com/images/cmsuploads/compressed/1024px-JagMandir_20190729162715.jpg",
-                "https://www.holidify.com/images/cmsuploads/compres…024px-Jama_Masjid_Ahmedabad_01_20190806170311.jpg",
                 "https://www.holidify.com/images/cmsuploads/compressed/1392_0_1377854374_20210615165606.jpg",
                 "https://www.tripcrafters.com/agent/trip_photos/1392_2_1377854374.jpg",
                 "https://www.tripcrafters.com/agent/trip_photos/1392_4_1377854374.jpg"
@@ -481,8 +479,8 @@
                 "https://www.holidify.com/images/compressed/attractions/attr_38.jpg",
                 "https://www.holidify.com/images/cmsuploads/compressed/5129689068_118d671872_b_20170609164516.jpg",
                 "https://www.holidify.com/images/bgImages/SOMNATH.jpg",
-                "https://www.holidify.com/images/cmsuploads/compres…hat_near_Somnath_Temple_Gujrat_20191001132214.jpg",
-                "https://www.holidify.com/images/cmsuploads/compres…oto-1527073620320-77635188c627_20191011222401.jpg"
+                "https://www.holidify.com/images/compressed/2487.jpg?v=1.1",
+                "https://www.holidify.com/images/cmsuploads/compressed/4350_20190906104805.jpg"
             ],
             "tour" : [
                 {
@@ -936,7 +934,7 @@
     "users" : [
 
     ],
-   "admin" : [
+   "login" : [
        {
            "username" : "admin",
            "password" : "admin"

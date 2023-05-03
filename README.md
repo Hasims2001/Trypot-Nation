@@ -22,3 +22,5 @@
 ## Tech Stack 💻
 
 ![229315329-b122a329-bdae-4b4b-a778-93199ccec7c8](https://user-images.githubusercontent.com/118152296/235775025-f089176d-4259-415f-babb-9f0c13ae590b.png)
+
+-> Bootstrap, JQuery
