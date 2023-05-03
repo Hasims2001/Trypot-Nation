@@ -1,4 +1,4 @@
-
+// landing animaton of hills
 let text = document.getElementById('text');
 
 let leaf = document.getElementById('leaf');
@@ -18,5 +18,18 @@ window.addEventListener('scroll', ()=>{
     hill4.style.left = value * -1.5 + 'px';
     hill1.style.top = value * 1 + 'px';
 })
+
+
+
+//Smooth Scrolling When Clicking an Anchor Link to abot section 
+
+$(document).ready(function() {
+    $("a.scrollLink").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top
+          }, 500);
+      });
+  });
 
 
