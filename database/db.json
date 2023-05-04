@@ -928,12 +928,37 @@
        
     ],
     "users" : [
+        {
+            "id" : 1,
+            "name" : "Shivani Patel",
+            "email" : "shivani.patel@tourmy.com",
+            "password" : "shivani@tour",
+            "phone" : "987654321",
+            "address" : "Wardha",
+            "state" : "Maharashtra",
+            "country" : "India"
 
+        },
+        {
+            "id" : 2,
+            "name" : "Shivani Patel",
+            "email" : "shivani.patel@tourmy.com",
+            "password" : "shivani@tour",
+            "phone" : "987654321",
+            "address" : "Wardha",
+            "state" : "Maharashtra",
+            "country" : "India"
+
+        }
     ],
    "login" : [
        {
            "username" : "admin",
            "password" : "admin"
        }
+   ],
+   "sales" : [
+    
    ]
+   
 }
