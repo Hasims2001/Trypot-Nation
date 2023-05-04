@@ -1,0 +1,139 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#activity{
+    width:90%;
+    height:800px;
+    border:1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    gap:20px;
+    /* overflow-x: scroll; */
+}
+
+#activity>div{
+    /* width:400px;
+    height:300px; */
+    border:1px solid green;
+   border-radius: 10px;;
+}
+
+#left>img{
+    width:30px;
+}
+#right>img{
+    width:30px;
+}
+#imagesTreck{
+    width:100%;
+    height:250px;
+    border:1px solid green;
+    display: flex;
+    justify-content: center;
+}
+#treck{
+    width:50%;
+    display: block;
+}
+
+#imagesScuba{
+    width:100%;
+    height:250px;
+    border:1px solid green;
+    display: flex;
+    justify-content: center;
+}
+#imgScuba{
+    width:50%;
+    display: block;
+}
+
+#imagesPara{
+    width:100%;
+    height:250px;
+    border:1px solid green;
+    display: flex;
+    justify-content: center;
+}
+#paraimg{
+    width:50%;
+    display: block;
+}
+
+
+#imagesHistorical{
+    width:100%;
+    height:250px;
+    border:1px solid green;
+    display: flex;
+    justify-content: center;
+}
+#imghistorical{
+    width:50%;
+    display: block;
+}
+
+#imagesHeritage{
+    width:100%;
+    height:250px;
+    border:1px solid green;
+    display: flex;
+    justify-content: center;
+}
+#imgheritage{
+    width:50%;
+    display: block;
+}
+
+
+#imagesCamping{
+    width:100%;
+    height:250px;
+    border:1px solid green;
+    display: flex;
+    justify-content: center;
+}
+#imgcamp{
+    width:50%;
+    display: block;
+}
+
+
+#left-scuba>img{
+    width:30px;
+}
+#right-scuba>img{
+    width:30px;
+}
+
+#left-para>img{
+    width:30px;
+}
+#right-para>img{
+    width:30px;
+}
+
+#left-historical>img{
+    width:30px;
+}
+#right-historical>img{
+    width:30px;
+}
+
+#left-heritage>img{
+    width:30px;
+}
+#right-heritage>img{
+    width:30px;
+}
+
+#left-camping>img{
+    width:30px;
+}
+#right-camping>img{
+    width:30px;
+}

@@ -8,10 +8,11 @@
 * [Abhay V](https://github.com/abii225)
 * [Piyush Sharma](https://github.com/pspiyush130)
 
-
-##
-
+## 
+# logo:
+![logo](https://user-images.githubusercontent.com/118152296/236059691-a316bff2-97fc-4a2d-bbf6-bd6245724592.png)
 # About This Project
+   Welcome to Trypot Nation's GitHub page. Here, we share our commitment to promoting sustainable and responsible tourism through the power of technology. Our open-source projects aim to create innovative tools that make it easier for ecotourism enthusiasts to find sustainable travel experiences and learn about environmental conservation. We believe that collaboration and technology can be powerful tools in promoting sustainable tourism, and we invite you to join us in our mission to protect the planet through responsible travel.
 
 ✦ You can browse items or select an item from the showcase and preview.
 
@@ -19,6 +20,10 @@
 
 ✦ You can search items.
 
-## Tech Stack 💻
 
-![229315329-b122a329-bdae-4b4b-a778-93199ccec7c8](https://user-images.githubusercontent.com/118152296/235775025-f089176d-4259-415f-babb-9f0c13ae590b.png)
+##
+
+
+
+## Tech Stack 💻
+◮ JavaScript  ◮ HTML5 & CSS3 ◮ JQuery  ◮  Bootstrap
