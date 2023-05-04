@@ -5,23 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/index.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-   
+  
+  <script>
+      $(function(){
+      $("#header").load("page_hader.html"); 
+      $("#footer").load("pagefooter.html"); 
+      $("#corosal").load("indexcorosal.html"); 
+      $("#tourpack").load("tourpackagecard.html"); 
+      $("#rev").load("review.html"); 
+
+      
+  });
+  </script>
         <!-- navigation bar starts here -->
-    <header>
-        <h2 class="logo">Ecotourism</h2>
-        <nav class="navigation">
-            <a href="#" class="active">Home</a>
-            <a href="#">Destination</a>
-            <a href="activities.html">Activities</a>
-            <a href="#">Packages</a>
-            <a href="#link2" class="scrollLink">AboutUs</a>
-           
-           </nav>
-    </header>
+
+
+    <header id="header"></header>
+
 
     <!-- navigation bar ends here -->
 
@@ -68,7 +80,53 @@ Whether you're looking for a peaceful retreat, a family-friendly holiday, or an 
 <b>  We invite you to come and experience the beauty and tranquility of rural life and create lasting memories that will stay with you forever.<br> <br>
 </b>
         </p>
+       
     </section>
+
+
+   
+        <div id="viidiofram"><iframe width="580" height="320" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/CW_EJ1UCseQ?autoplay=0&amp;start=0"></iframe></div>
+
+        
+       
+
+
+
+   
+        
+   
+    
+
+
+<!-- corosal starts herer -->
+
+
+<div id ="corosal"></div>
+
+<!-- corosal ends herer -->
+
+<div id="tourpack"></div>
+
+
+
+
+<!-- review starts here -->
+
+
+<section id="rev"></section>
+
+
+<!-- footer section starts here  -->
+
+    <div id="footer"></div>
+
+
+    <!-- footer section ends here  -->
+
+
+   
+    
+ 
     <script src="./script/index.js"></script>
 </body>
 </html>

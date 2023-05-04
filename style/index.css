@@ -13,11 +13,13 @@ body {
     background: #f9f9f9;
     min-height: 100vh;
     overflow-x: hidden;
+    /* display: flex;
+    align-items: flex-end; */
 
 }
 
 
-header {
+/* /* header {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,7 +29,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     z-index: 100;
-}
+} 
 
 .logo {
     font-size: 2em;
@@ -50,6 +52,15 @@ header {
 .navigation a.active {
     background: #359381;
     color: #fff;
+} */
+
+/* login button */
+
+
+
+.navigation a.active1 {
+    background:#fddb5b;
+    color: #664a03;
 }
 .parallax {
     position: relative;
@@ -61,7 +72,7 @@ header {
 
 #text {
     position: absolute;
-    font-size: 5em;
+    font-size: 4em;
     /* color: #333; */
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2) ;
@@ -95,3 +106,24 @@ header {
     font-weight: 300;
     text-align:justify;
 }
+
+#viidiofram {
+
+    margin-top: 10em;
+    
+   
+
+    
+    text-align: center;
+}
+#viidiofram iframe {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+
+/* footer section  */
+
+
