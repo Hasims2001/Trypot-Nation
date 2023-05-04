@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image:url('../IMAGES/activities/carp-2-camp.png');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#activity{
+    width:80%;
+    height:750px;
+    /* border:1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    gap:20px;
+    /* overflow-x: scroll; */
+}
+#activity>div{
+    /* width:400px;
+    height:300px; */
+    /* border:1px solid green; */
+   border-radius: 10px;;
+}
+
+#activity div{
+    /* width:400px;
+    height:300px; */
+    background-color:lightseagreen;
+}
+#activity div>h1{
+    text-align: center;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+#activity div:nth-child(1),:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(5),:nth-child(6){
+   background-color: lightseagreen;
+}
+
+#left{
+    opacity: 50%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#left:hover{
+    opacity: 200%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#right{
+    opacity: 30%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#right:hover{
+    opacity: 200%;
+    border-style: none;
+    background-color: #ffffff;
+}
+#left>img{
+    width:30px;
+    opacity: 100%;
+}
+#right>img{
+    width:30px;
+}
+#imagesTreck{
+    width:100%;
+    height:250px;
+    /* border:1px solid green; */
+    display: flex;
+    justify-content: center;
+}
+#treck{
+    width:50%;
+    display: block;
+}
+
+#imagesScuba{
+    width:100%;
+    height:250px;
+    /* border:1px solid green; */
+    display: flex;
+    justify-content: center;
+}
+#imgScuba{
+    width:50%;
+    display: block;
+}
+
+#imagesPara{
+    width:100%;
+    height:250px;
+    /* border:1px solid green; */
+    display: flex;
+    justify-content: center;
+}
+#paraimg{
+    width:50%;
+    display: block;
+}
+
+
+#imagesHistorical{
+    width:100%;
+    height:250px;
+    /* border:1px solid green; */
+    display: flex;
+    justify-content: center;
+}
+#imghistorical{
+    width:50%;
+    display: block;
+}
+
+#imagesHeritage{
+    width:100%;
+    height:250px;
+    /* border:1px solid green; */
+    display: flex;
+    justify-content: center;
+}
+#imgheritage{
+    width:50%;
+    display: block;
+}
+
+
+#imagesCamping{
+    width:100%;
+    height:250px;
+    /* border:1px solid green; */
+    display: flex;
+    justify-content: center;
+}
+#imgcamp{
+    width:50%;
+    display: block;
+}
+
+
+#left-scuba>img{
+    width:30px;
+}
+#right-scuba>img{
+    width:30px;
+}
+
+#left-scuba{
+    opacity: 50%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#left-scuba:hover{
+    opacity: 200%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#right-scuba{
+    opacity: 30%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#right-scuba:hover{
+    opacity: 200%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#left-para>img{
+    width:30px;
+}
+#right-para>img{
+    width:30px;
+}
+
+#left-para{
+    opacity: 50%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#left-para:hover{
+    opacity: 200%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#right-para{
+    opacity: 30%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#right-para:hover{
+    opacity: 200%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+
+
+
+#left-historical>img{
+    width:30px;
+}
+#right-historical>img{
+    width:30px;
+}
+
+#left-historical{
+    opacity: 50%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#left-historical:hover{
+    opacity: 200%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#right-historical{
+    opacity: 30%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#right-historical:hover{
+    opacity: 200%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+
+
+
+
+#left-heritage>img{
+    width:30px;
+}
+#right-heritage>img{
+    width:30px;
+}
+
+#left-heritage{
+    opacity: 50%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#left-heritage:hover{
+    opacity: 200%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#right-heritage{
+    opacity: 30%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#right-heritage:hover{
+    opacity: 200%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+
+
+
+#left-camping>img{
+    width:30px;
+}
+#right-camping>img{
+    width:30px;
+}
+
+#left-camping{
+    opacity: 50%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#left-camping:hover{
+    opacity: 200%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#right-camping{
+    opacity: 30%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+#right-camping:hover{
+    opacity: 200%;
+    border-style: none;
+    background-color: #ffffff;
+}
+
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 2rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    display:flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  .button:hover::before {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+        -ms-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    -webkit-transition: all 0.475s;
+    transition: all 0.475s;
+  }
+
+ 
