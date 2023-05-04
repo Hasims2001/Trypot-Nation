@@ -102,7 +102,7 @@
         </div>
         <div id="contain">
             <h1>Log In</h1>
-            <form action="">
+            <form>
                 <i class="fa-solid fa-user"></i>
                 <input type="text" id="username" placeholder="Username" name="username">
                 <br>
@@ -120,38 +120,53 @@
 </body>
 <script>
     let form = document.querySelector('form');
-    const API = "http://localhost:3000/login";
+    const API = "https://trypot-nation.onrender.com/login";
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         let username = document.querySelector('#username');
         let password = document.querySelector('#password');
-
+        console.log()
         if(username.value === "" || password.value === ""){
             alert("Please fill out all fields");
         }else{
-            fetchData();
-            async function fetchData(){
+            Checkdata();
+            async function Checkdata(){
               try {
-                let res = await fetch(API, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        "username" : username.value,
-                        "password" : password.value
-                        })
-                });
-
-              let data = await res.json();
-              console.log(data);
+                let res =  await fetch(`${API}?username=${username.value}`);
+                let data = await res.json();
+                if(data.length === 0){
+                    alert("username is invalid");
+                }else {
+                    let flag = false;
+                    data.forEach(element => {
+                        if(element.password === password.value){
+                            flag = true;
+                            // pending : encrypt data;
+                            localStorage.setItem('AdminData', JSON.stringify({
+                                username : username.value,
+                                password : password.value
+                            }))
+                            window.location.href = "admin_dashboard.html";
+                        }
+                    });
+                    if(!flag) {
+                        alert(`Password is invalid`);
+                    } 
+                }
               } catch (error) {
                 console.log(error);
               }
             }
         }
     });
-
+function encrypt(key, value) {
+  var result="";
+  for(i=0;i<value.length;++i)
+  {
+    result+=String.fromCharCode(key[i % key.length]^value.charCodeAt(i));
+  }
+  return result;
+}
 
 </script>
 <script src="https://kit.fontawesome.com/4f987be9b3.js" crossorigin="anonymous"></script>
