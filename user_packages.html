@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("page_hader.html");
+            $("#footer").load("pagefooter.html");
+
+        });
+    </script>
+    <link rel="stylesheet" href="style/user_packages.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header id="header"></header>
+    <section id="searchbar">
+        <input class="input" id="search" name="text" placeholder="Search..." type="search">
+    </section>
+    <section id="first">
+        <div id="side"></div>
+        <div id="content">
+            <!-- <div class="cardiv">
+                <div class="img_slide">
+                   <img src="img/logo.png" alt="" width="100vw">
+                </div>
+                <div class="details">
+                    <p>Days</p>
+                    <h2>Title</h2>
+                    <p>Descr</p>
+                    <div class="btndiv">
+                        <button class="btn">Add to Cart</button>
+                        <button class="btn">View Details</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+
+    <!-- <footer id="footer"></footer> -->
+</body>
+<script>
+    const API = "https://trypot-nation.onrender.com/packages";
+    let content = document.querySelector('#content');
+    let img_slide = document.querySelector(".img_slide");
+    let searchbar = document.querySelector("#search");
+    fetchData(API);
+    searchbar.addEventListener('input', ()=>{
+        if(searchbar.value !== ""){
+            let temp = `${API}?title_like=${searchbar.value}`;
+            fetchData(temp);
+            console.log(temp);
+        }else{
+            fetchData(API);
+        }
+    })
+   
+    async function fetchData(APIlink) {
+        try {
+            let res = await fetch(APIlink);
+            let data = await res.json();
+            console.log(data);
+            content.innerHTML = "";
+            data.forEach(ele => {
+                content.append(CreateCard(ele));
+            });
+        } catch (error) {
+            console.log(error);
+
+        }
+    }
+
+
+function CreateCard(ele){
+    let card = document.createElement('div');
+    card.className = "cardiv";
+    card.innerHTML = `
+                <div class="img_slide">
+                   <img src="${ele.image[0]}" alt="img"  class="mainimg">
+                </div>
+                <div class="details">
+                    <p id="duration">${ele.duration}</p>
+                    <h3>${ele.title}</h3>
+                    <p id="location">${ele.location}</p>
+                    <p id="destination">${ele.destination}</p>
+                    <div class="btndiv">
+                        <button class="btn">Add to Cart</button>
+                        <button class="btn">View Details</button>
+                    </div>
+                </div>`;
+
+    return card;
+}
+  
+</script>
+
+</html>
