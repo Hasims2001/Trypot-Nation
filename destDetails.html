@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+    
+        #destDetail {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 8%;
+        }
+    
+        .destcard {
+            max-width: 600px;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+    
+        .destcard .dest-card-title {
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #f5f5f5;
+            color: black;
+            text-align: center;
+        }
+    
+        .destcard img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .destcard .dest-card-price {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    
+        .destcard .dest-card-tour-list {
+            margin-top: 10px;
+        }
+    
+        .destcard .dest-card-tour-list li {
+            margin-bottom: 5px;
+        }
+    
+        /* #header {
+            position: static;
+            background-color: whitesmoke;
+        } */
+    
+    </style>
+
+
+</head>
+
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script>
+        $(function () {
+            $("#header").load("page_hader.html");
+            $("#footer").load("pagefooter.html");
+
+        });
+    </script>
+
+    <!-- navigation bar starts here -->
+        <div id="header"></div>
+    <!-- navigation bar ends here -->
+
+    <!-- main section starts here -->
+    <section id="destDetail">
+        <!-- data will be appended here -->
+    </section>
+    <!-- main section ends here -->
+
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    const destURL = "https://trypot-nation.onrender.com/packages";
+
+    // Append div to main section
+    let mainSection = document.getElementById("destDetail");
+
+    //Destination Data
+    let destData = [];
+
+    fetchData();
+
+    function fetchData(){
+        let urlParams = new URLSearchParams(window.location.search); // retrieve the query parameters from the URL
+        let selectedState = urlParams.get('state'); // get the value of the 'state' parameter
+        fetch(destURL)
+        .then(function(res){
+            return res.json();
+        })
+        .then(function(data){
+            let filteredData = data.filter(item => item.destination === selectedState); // filter out the packages for the selected state
+            appendData(filteredData); // append the filtered data to the DOM
+            destData = filteredData;
+        })
+        .catch(function(error){
+            console.log(error);
+        })
+    }
+
+    function appendData(data){
+        mainSection.innerHTML = "";
+        for(let i = 0; i < data.length; i++) {
+            let card = createDestCard(data[i]);
+            mainSection.append(card);
+        }
+    }
+
+    function createDestCard(data) {
+        let card = document.createElement("div");
+        card.className = "destcard";
+
+        let h3 = document.createElement("h3");
+        h3.className = "dest-card-title";
+        h3.textContent = data.title;
+        card.append(h3);
+
+        let img = document.createElement("img");
+        img.src = data.image[0];
+        img.alt = data.title;
+        card.append(img);
+
+        let duration = document.createElement("p");
+        duration.textContent = "Duration: " + data.duration;
+        card.append(duration);
+
+        let p = document.createElement("p");
+        p.textContent = data.description[0];
+        card.append(p);
+
+        let price = document.createElement("span");
+        price.className = "dest-card-price";
+        price.textContent = "Price: " + data.price;
+        card.append(price);
+
+        let tourList = document.createElement("ul");
+        tourList.className = "dest-card-tour-list";
+        for(let i = 0; i < data.tour.length; i++) {
+            let tourItem = document.createElement("li");
+            tourItem.textContent = data.tour[i].title + ": " + data.tour[i].description;
+            tourList.append(tourItem);
+        }
+        card.append(tourList);
+        return card;
+    }
+
+
+        
+</script>
+
+
+</html>
