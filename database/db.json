@@ -955,6 +955,369 @@
 
         }
     ],
+    "activities":[
+        {
+            "id" :1,
+            "category":"trecking",
+            "title" : "Matheran, Maharashtra - Cutest little hill-station of India",
+            "rating" : "4.3/5",
+            "duration":"1 or 2 days",
+            "destination":"Matheran",
+            "location" : "Maharastra , India",
+            "speciality":"Louisa point  Charlotte lake  Monkey Point Matheran",
+            "description" :"Nestled amidst the Sahyadri range on the Western Ghats, Matheran is a cosy little hill station that stands at an elevation of 2600 feet above sea level, and is just 100 kilometres away from Mumbai, making it the perfect weekend getaway. With its name literally translating to “overhead forest”, Matheran is the smallest hill station in all of India, but it is extremely popular in terms of tourists looking for a short trip amid spectacular vistas and serenity.",
+            "time":"Throughout the year",
+            "image" : [
+              "https://www.holidify.com/images/bgImages/MATHERAN.jpg",
+              "https://www.holidify.com/images/compressed/877.jpg?v=1.1",
+              "https://www.holidify.com/images/compressed/878.jpg?v=1.1",
+              "https://www.holidify.com/images/compressed/879.jpg?v=1.1",
+              "https://www.holidify.com/images/compressed/880.jpg?v=1.1"
+            ]
+        },
+        {
+            "id" :2,
+            "category":"trecking",
+            "title" : "Plan Your Trip To Rajmachi",
+            "rating" : "4.2/5",
+            "duration":"1 day",
+            "destination":"Rajmachi",
+            "location" : "Maharastra , India",
+            "speciality":"Trekking in Rajmachi",
+            "description" :"Rajmachi is a small village situated in the Sahyadri mountain range of the Konkan region of Maharashtra. Rajmachi has two fortified peaks - Shrivardhan and Manaranjan forts, located near two famous hills of Lonavala and Khandala.",
+            "time":" June to September",
+            "image" : [
+              "https://www.holidify.com/images/bgImages/RAJMACHI.jpg",
+              "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1607038228_20200320105605.jpg",
+              "https://www.holidify.com/images/compressed/dest_wiki_13489.jpg",
+              "https://www.holidify.com/images/compressed/2604.jpg"
+            ]
+        },
+        {
+            "id" :3,
+            "category":"trecking",
+            "title" : "Plan Your Trip To Suryamal",
+            "rating" : "3.5/5",
+            "duration":"1 day",
+            "destination":"Suryamal",
+            "location" : "Maharastra , India",
+            "speciality":" Trekking in Suryamal,Suryamal Peak",
+            "description" :"Suryamal is the highest peak of the region, located in Thane district of Maharashtra. The small but beautiful hill is a popular place among people for the sheer breathtaking views that it can be seen from the hilltop.",
+            "time":"Sep-May",
+            "image" : [
+            "https://www.holidify.com/images/bgImages/SURYAMAL.jpg",
+            "https://www.holidify.com/images/compressed/dest_wiki_15417.jpg",
+            "https://www.holidify.com/images/compressed/dest_wiki_15413.jpg",
+            "https://www.holidify.com/images/compressed/dest_wiki_15407.jpg"
+            ]
+        },
+        {
+            "id" :4,
+            "category":"trecking",
+            "title" : "Plan Your Trip To Ratanwadi",
+            "rating" : "5.0/5",
+            "duration":"1 day",
+            "destination":"Ratanwadi",
+            "location" : "Maharastra , India",
+            "speciality":"Trekking in Ratanwadi , Ratangad Fort Trek , Amruteshwar Temple",
+            "description" :"Ratanwadi is a village near Bhandardara of the Kalsubai peak in Maharashtra. It houses the famous Ratangad fort and the popular Shiva temple called Amruteshwar. It is a famous trekking spot as it is far from the main town and has a rustic charm to it.",
+            "time":"September to May",
+            "image" : [
+             "https://www.holidify.com/images/bgImages/RATANWADI.jpg",
+             "https://www.holidify.com/images/compressed/2526.jpg?v=1.1",
+             "https://www.holidify.com/images/compressed/323.jpg"
+            ]
+        },
+        {
+            "id" :5,
+            "category":"scubadiving",
+            "title" : "Andaman: The Deep Blue Side",
+            "rating" : "4.0/5",
+            "duration":"60",
+            "destination":"Andaman",
+            "location" : "The Wall, Havelock and Dixon's Pinnacle",
+            "speciality":"The Scuba Diving Organisers offer certified training courses for beginners, advance level, professionals and rescue divers. The professional and rescue divers are trained after sunset.",
+            "description" :"The vibrant under water life of the Bay of Bengal offers an ideal backdrop for scuba diving in Andaman. The amazing corals and pristine coral reefs make an ideal scenario for this fun activity and Andaman is said to be the best place for scuba diving in India. You may meet Turtles, moray eels, manta rays, trevally and batfish on your way.",
+            "time":"November to mid April. The fun diving trips are mostly during morning hours.",
+            "image" : [
+             "https://assets.traveltriangle.com/blog/wp-content/uploads/2015/09/Scuba-Diving-in-Andaman.jpg"
+            ],
+            "price":"10000"
+        },
+        {
+            "id" :6,
+            "category":"scubadiving",
+            "title" : " Lakshadweep: Underwater Delight",
+            "rating" : "4.3/5",
+            "duration":"25",
+            "destination":"Lakshadeep",
+            "location" : "Princess Royal, Lost Paradise, Dolphin Reef, ClassRoom, Fish Soup and Manta Point",
+            "speciality":" A war ship sank during a battle between France and England, 200 years ago near the diving spot of Princess Royal in Bangaram. Which means while enjoying Scuba, you may find traces of cannons, potteries and shipwrecks. How exciting!",
+            "description" :"For best scuba diving in India places include Lakshadweep. Scuba diving in Lakshadweep is both thrilling and daring. It is a lifetime experience to spend time in the blue transparent lagoons and coves with manta rays, turtle, vibrant fishes and shark and whale occasionally.",
+            "time":"November to mid April. The fun diving trips are mostly during morning hours.",
+            "image" : [
+             "https://assets.traveltriangle.com/blog/wp-content/uploads/2015/09/Scuba-Diving-in-Lakshadweep.jpg"
+            ],
+            "price":"5000"
+        },
+        {
+            "id" :7,
+            "category":"scubadiving",
+            "title" : "Pondicherry: Underwater Break At Pristine Island",
+            "rating" : "4.2/5",
+            "duration":"45",
+            "destination":"Pondicherry",
+            "location" : "Cool Shark Reef, Aravind's Wall, Temple Reef, 4 Corners, Ravines and The Hole",
+            "speciality":" Swimming is not a prerequisite for induction sessions of scuba but if someone can swim up to 200m, he/she can become a licensed diver.", 
+            "description" :"The only diving spot in India's eastern coast is in Pondicherry. The place is characterised by natural coral reefs, rocky pop-ups, man-made ridges and large plethora of marine organisms like jack fish, sea snake, manta rays and fan corals. It is a perfect scuba destination for beginners and professionals and is said to be one of the best scuba diving in India places.",
+            "time":"February to April and September to November. We are afraid that's the peak season too!",
+            "image" : [
+                "https://assets.traveltriangle.com/blog/wp-content/uploads/2015/09/Scuba-Diving-in-Pondicherry.jpg"
+            ],
+            "price":"6500"
+        },
+        {
+            "id" :8,
+            "category":"scubadiving",
+            "title" : " Kovalam In Kerala: A Unique Experience In God’s Own Country",
+            "rating" : "4.6/5",
+            "duration":"45",
+            "destination":"Kerala",
+            "location" : " Lighthouse Beach, Hawah Beach",
+            "speciality":" Kovalam is emerging as the top places for scuba diving in India",
+            "description" :"Kovalam in Kerala is rapidly becoming famous amongst tourists for scuba diving. A company called Bond Safari that uses an underwater scooter has brought this treat to the beaches in Kovalam. The water is clean and offers a glimpse into a rich sea-life with lots of sea and creatures. Kovalam is one of the most unique scuba diving destinations in India. ",
+            "time":" September to February is a good time to indulge in water activities like Scuba diving in Kovalam",
+            "image" : [
+                "https://assets.traveltriangle.com/blog/wp-content/uploads/2015/09/scuba-diving-in-kovalam-e1563366560863.jpg"
+            ],
+            "price":"6500"
+        },
+        {
+            "id" :9,
+            "category":"paragliding",
+            "title" : "Bir Billing: Best Paragliding In India",
+            "rating" : "4.0/5",
+            "duration":"45",
+            "destination":"Himachal Pradesh",
+            "location" : "The nearest airport to Bir is in Dharamshala. You can also reach Bir from Delhi through Volvo and other buses",
+            "description" :"Bir Billing offers best paragliding in India. This is a small village in Himachal Pradesh, famed for hosting the first ever world cup for paragliding. Himachal, actually, is ‘the’ home to paragliding places in India. With a total of 11 best paragliding spots, this hilly state offers multiple options. Other places famous for paragliding in Himachal are Devidhar, Parvati Valley, Rohtang, and Bakhli.",
+            "image" : [
+                "https://assets.traveltriangle.com/blog/wp-content/uploads/2019/03/Paragliding-In-Bir-Billing_22nd-oct.jpg"
+            ],
+            "price":"2500"
+        },
+        {
+            "id" :10,
+            "category":"paragliding",
+            "title" : "Manali: Paragliding In Himachal",
+            "rating" : "4.2/5",
+            "duration":"45",
+            "destination":"Himachal Pradesh ,Manali",
+            "location" : "The nearest airport to Manali is in Bhuntar located at a distance of 50 Km. You can also reach Manali via train",
+            "description" :"The other famous destination for paragliding in Himachal is Manali. Except for the monsoons season, you can try paragliding here anytime. Solang Valley and Marhi are two of the most popular spots for paragliding in Manali. Among the reasons which make Manali one of the most preferred paragliding places in India is the availability of the sport through the year except monsoon. This is one of the famous paragliding places in India.",
+            "image" : [
+                   "https://assets.traveltriangle.com/blog/wp-content/uploads/2015/09/Manali-Solang-Valley.jpg"
+            ],
+            "price":"1500"
+        },
+        {
+            "id" :11,
+            "category":"paragliding",
+            "title" : " Bangalore: Glide Over Silicon Valley",
+            "rating" : "4.0/5",
+            "duration":"45",
+            "destination":"Bangalore",
+            "location" : "The Bangalore International airport connects the city to other parts of India. Bangalore is also well connected to other Indian cities via road and rail",
+            "description" :"Besides streets full of gaming cafes, Silicon Valley has lately gained up on this adventure sport. Hoskote Lake, 20 km away from the main city, houses some operators who offer training for paragliding in Bangalore. At 65 km from the town, Nandi hills is another hub of paragliding which is at a height of 1478 m above sea level. A lot of people prefer going for paragliding in Nandi Hills, India. The adventurers can also go for para-jumping and hang-gliding.",
+            "image" : [
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2019/12/Paragliding.jpeg"
+            ],
+            "price":"1800"
+        },
+        {
+            "id" :12,
+            "category":"paragliding",
+            "title" : "Panchgani: Majestic Sunsets",
+            "rating" : "4.8/5",
+            "duration":"45",
+            "destination":"Panchgani",
+            "location" : "Panchgani can be reached via rail, road and airways. But the best way is railways with the nearest station being in Pune, 96 Km away. The remaining distance can be covered by road in a taxi",
+            "description" :"Panchgani, a town near the famous pilgrimage of Mahabaleshwar,is commonly frequented by honeymooners. Paragliding from the Horizon point gives you a bird’s eye view of the temple town as well as the serene scenes of the quaint hills. Planning a trip already? Head to Panchgani soon and enjoy a flight in the sky.",
+            "image" : [
+                 "https://assets.traveltriangle.com/blog/wp-content/uploads/2015/09/Paragliding-in-Panchgani.jpg"
+            ],
+            "price":"2800"
+        },
+        {
+            "id" :13,
+            "category":"historical",
+            "title" : " Taj Mahal, Agra",
+            "rating" : "4.8/5",
+            "duration":" 30 Minutes before sunrise and closes 30 Minutes before sunset",
+            "destination":"Agra",
+            "description" :"Discover Red Fort in Delhi which is one of the famous places in India. Meet the boss of Indian historical places. If you consider the top 10 historical places in India, Taj Mahal will always be ranking high in the list. Explore the ultimate epitome of love, the Taj Mahal, whose grandeur remains unmatched in history and today this is one of the weekend getaways from Delhi. This opulent white marble structure was commissioned to be built in 1632 by Shah Jahan for his late wife Mumtaz Mahal. It took around 22 years to complete this magnificent structure that is considered one of the most famous historical places in India.",
+            "image" : [
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2017/07/Agra1.jpg"
+            ],
+            "price":"40"
+        },
+        {
+            "id" :14,
+            "category":"historical",
+            "title" : "Agra Fort, Uttar Pradesh",
+            "rating" : "4.2/5",
+            "duration":" 6 am to 6 pm",
+            "destination":"Uttar Pradesh",
+            "description" :"To get a sense of the rich history of the Mughal era, visit the walled palatial Agra Fort, one of the famous historical places in India that is built entirely of red sandstone. Built in 1565 by Akbar, this historical tourist place in India has two ornately designed gates: the Amar Singh Gate and the Delhi Gate. You can only enter through the Amar Singh Gate to uncover an ancient city filled with gateways, courts, passages, palaces and mosques. It is one of the most beautiful places to visit in Agra.",
+            "image" : [
+                 "https://assets.traveltriangle.com/blog/wp-content/uploads/2019/02/Agra-Fort-Uttar-Pradesh.jpg"
+            ],
+            "price":"40"
+        },
+        {
+            "id" :15,
+            "category":"historical",
+            "title" : " Red Fort, Delhi",
+            "rating" : "4.3/5",
+            "duration":" 9:30 am to 4:30 pm daily (Closed on Mondays)",
+            "destination":"Delhi",
+            "description" :"One of the historical tourist places in India, the Red Fort was constructed over ten years from 1638 to 1648. This fort was constructed when Shah Jahan shifted the capital from Agra to Delhi and it was then known as the Qila-e-Mubarak. This octagonal fort is one of the most famous historical places in north India and is also the site where the President gives his speech on Independence Day. The Red fort is truly remarkable and one of the best historical places in India.",
+            "image" : [
+                "https://assets.traveltriangle.com/blog/wp-content/uploads/2019/02/Red-Fort-Delhi.jpg"
+            ],
+            "price":"10"
+        },
+        {
+            "id" :16,
+            "category":"historical",
+            "title" : "Khajuraho Temples, Madhya Pradesh",
+            "rating" : "4.3/5",
+            "duration":" 9:30 am to 4:30 pm daily (Closed on Mondays)",
+            "destination":"Madhya Pradesh",
+            "description" :"Khajuraho has always been thought of as the place that exemplifies sensuality and eroticism at its best. However this is a misrepresentation as only about 10 percent of the sculptures are sensual and the rest are common depictions. Countless sculptures depicting love, eternal grace, beauty, delicacy and the creative arts can be seen in one of the most historical places in India. A perfect amalgamation of Hinduism and Jainism, Khajuraho temples have carvings of cult icons, demi gods and Apsaras",
+            "image" : [
+               "https://assets.traveltriangle.com/blog/wp-content/uploads/2019/02/Khajuraho-Temples-Madhya-Pradesh.jpg"
+            ],
+            "price":"10"
+        },
+        {
+            "id" :17,
+            "category":"heritage",
+            "title" : "Gitanjali Homestay  Your Lavish Holiday Abode",
+            "rating" : "4.3/5",
+            "duration":" 1 day",
+            "destination":"Mysore",
+            "location":"Lalitadripura Road, opposite to Brigade Splendour, Mysuru",
+            "description" :"There are only few homestays in Mysore that offers mesmerising views of Chamundi hills and Gitanjali Homestay Mysore is one such property. This rustic themed property is rightly placed amid lush green gardens that make it an ideal retreat in Mysore. Good home-cooked local food, chirping birds, and artistic décor make the stay in Gitanjali Homestay a significant one",
+            "image" : [
+                  "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/04/gitanjlai766239eb.jpg"
+            ],
+            "price":"4500"
+        },
+        {
+            "id" :18,
+            "category":"heritage",
+            "title" : " Tulip's Homestay  Your Budget Friendly Abode",
+            "rating" : "4.0/5",
+            "duration":" 1 day",
+            "destination":"Mysore",
+            "location":"No. 922, 6th Main, 10th Cross Road, Manchegowdana koppalu, Vijayanagar 1st Stage, Mysore",
+            "description" :"A stay in Tulip Homestay Mysore, is an ideal way to spend a relaxed and peaceful vacation with family. The place has 3 AC studio rooms and 2 non-AC studio rooms and offers a huge range of facilities. The rooms have attached kitchenettes are well-equipped with utensils and an induction stove, whereas the lounge area has a microwave oven and refrigerator for all guests. With all other necessary amenities like power backup, room service, travel desk and laundry facilities; Tulip Homestay is a good choice in budget category.",
+            "image" : [
+               "https://img.traveltriangle.com/blog/wp-content/uploads/2018/04/Tulip%E2%80%99s-Homestay-kb6592.jpg"
+            ],
+            "price":"2500"
+        },
+        {
+            "id" :19,
+            "category":"heritage",
+            "title" : "Seetha Homestay  Everything for a Blissful Holiday",
+            "rating" : "4.2/5",
+            "duration":" 1 day",
+            "destination":"Mysore",
+            "location":"Parmahamsa road, 8/1, Yadavagiri Extension, Mysuru",
+            "description" :"The neat and clean rooms, artistic décor and en-suite kitchen welcome you at Seetha Homestay Mysore. But not only top-class facilities, the impeccable hospitality and cordial behaviour of the staff fascinate every guest here.",
+            "image" : [
+              "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/04/Seetha-Homestay-kb6592.jpg"
+            ],
+            "price":"1300"
+        },
+        {
+            "id" :20,
+            "category":"heritage",
+            "title" : "Green Lotus House  Pampered by Amazing Hosts",
+            "rating" : "4.3/5",
+            "duration":" 1 day",
+            "destination":"Mysore",
+            "location":"Gokulam, Mysore",
+            "description" :"Green Lotus House is one of the most popular homestays in Mysore, you can't afford to miss. The place is located strategically and market places, ATM, bus stand and tourist places like Mysore Palace is at stone throw distance. This renowned homestay in Mysore Gokulam is a two bedroom, fully-serviced apartment, endowed with sober décor, antique furniture and clean and tidy rooms. They have a huge lounge area where people can enjoy leisure time, read and meditate whereas the spacious terrace offers refreshing views of lush green garden. On the top of this, host Hari and Ananya offer personal attention and make sure you are well attended and well-pampered",
+            "image" : [
+             "https://img.traveltriangle.com/blog/wp-content/uploads/2018/04/Gitanjali-Homestay-mysore-kb6592.jpg"
+            ],
+            "price":"2300"
+        },
+        {
+            "id" :21,
+            "category":"camping",
+            "title" : "Pangong Retreat Camp",
+            "rating" : "4.3/5",
+            "duration":" 1 day",
+            "destination":"Leh Ladakh",
+            "location":"Near Pangong Lake, Spangmik, Pin - 194101",
+            "description" :"Pangong Retreat Camp is the highest rated camp by travelers on Google and TripAdvisor and the camps truly stand by trust incorporated in it. Lush greenery and lake facing camps make for the most scenic vista for camping in Leh Ladakh. While looking for the best places to visit to Leh Ladakh, consider this camp and head to this, if your priority is unmatched views along with unparalleled comfort with a sole motive of camping at Leh.",
+            "image" : [
+            "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/04/acj-2404-camping-in-leh-5.jpg"
+            ],
+            "price":"5300"
+        },
+        {
+            "id" :22,
+            "category":"camping",
+            "title" : "Camp Redstart ",
+            "rating" : "4.3/5",
+            "duration":" 1 day",
+            "destination":"Leh Ladakh",
+            "location":" Spangmik Village, Leh, Jammu & Kashmir, Pin - 194101",
+            "description" :"Just a few minutes of walk from the lake would take you to Camp Redstart - another idyllic campsite in the great gorgeous Himalayan land. From impeccable stay to wonderful dining option, this place has everything to tickle your wanderlust. The daunting altitude of Camp Redstart gives it the vital edge over the competitors who provide camping in Leh Ladakh. It is from here that you get to marvel at the magical nature views with stunning Pangong Tso in the backdrop.",
+            "image" : [
+               "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/04/acj-2404-camping-in-leh-4.jpg"
+            ],
+            "price":"3300"
+        },
+        {
+            "id" :23,
+            "category":"camping",
+            "title" : "Tsomoriri Camp And Resort ",
+            "rating" : "4.2/5",
+            "duration":" 1 day",
+            "destination":"Leh Ladakh",
+            "location":" Tsomoriri Lake, Korzok Village, Pin -194101",
+            "description" :"Leh Ladakh camps are so popular and the Tsomoriri Camps are the perfect stay options for every nature seeker. A camping session here at 15,000 feet in the Changthang territory would enable you to bask in the glory of the vast nature basking in the awesomeness of the Himalayas. Altogether there are 5 rooms and 15 connected tents with all the facilities at your disposal. The views of wonderful Lake in front would fill your heart with plenty of awesomeness on your Leh Ladakh camping trip.",
+            "image" : [
+               "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/04/acj-2404-camping-in-leh-7.jpg"
+            ],
+            "price":"6300"
+        },
+        {
+            "id" :24,
+            "category":"camping",
+            "title" : "Tsermang Eco Camp",
+            "rating" : "4.6/5",
+            "duration":" 1 day",
+            "destination":"Leh Ladakh",
+            "location":"On the banks of Indus River, Leh, Jammu & Kashmir, Pin - 194101",
+            "description" :"A mere 10-minute ride from Leh town will get you to the Tsermang Eco Camp. The camps are located at a scenic spot offering terrific nature views around. The camps are located in the close proximity of Indus river and the views of shimmering water around are a treat for every nature lover. 8 luxurious camps are up for grabs that allow you a weatherproof, well-ventilated stay. You can also avail the facility of roll-up windows while in the tent. It is one of the amazing camping sites in Leh.",
+            "image" : [
+              "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/04/acj-2404-camping-in-leh-11.jpeg"
+            ],
+            "price":"6300"
+        }
+
+       
+
+
+
+    ],
    "login" : [
        {
            "username" : "admin",

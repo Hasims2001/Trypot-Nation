@@ -9,98 +9,106 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script>
         $(function(){
-        $("#header").load("admin_header.html"); 
-        $("#footer").load("admin_footer.html"); 
+        $("#header").load("page_hader.html"); 
+        $("#footer").load("pagefooter.html"); 
     });
     </script>
 </head>
+
 <body>
+  <header id="header"></header>
+  
     <section id="activity">
         <div id="trecking">
             <div id="imagesTreck">
-                <button id="left"><img src="IMAGES/activities/left-arrow.png" alt="Error"></button>
-                <img id="treck" src="" alt="Error">
-                <button id="right"><img src="IMAGES/activities/right.png" alt="Error"></button>
+                <img id="treck" src="https://i.pinimg.com/564x/e6/54/a3/e654a3975e8196c57d360993db2ac68a.jpg" alt="Error">
             </div>
            <div>
-            <h1>Best Trecking areas -India</h1>
-            <button id="treckbtn" class="button">
-                <span class="button-content"><a href="activityHTML/trecking.html">Explore</a></span>
-              
-            </button>
+            <div>
+                <button id="left-treck" class="left">Prev</button>
+                <button id="right-treck" class="right">Next</button>
+            </div>
+              <h1>Best Trecking areas -India</h1>
+              <button class="btn"><a href="activityHTML/trecking.html"><h3>Explore</h3></a> </button>
            </div> 
         </div>
         <div id="scuba">
             <div id="imagesScuba">
-                <button id="left-scuba"><img src="IMAGES/activities/left-arrow.png" alt="Error"></button>
-                <img id="imgScuba" src="IMAGES/activities/scuba4.jfif" alt="Error">
-                <button id="right-scuba"><img src="IMAGES/activities/right.png" alt="Error"></button>
+                
+                <img id="imgScuba" src="" alt="Error">
+
             </div>
            <div>
+                <div>
+                    <button id="left-scuba" class="left"> Prev</button>
+                    <button id="right-scuba" class="right">Next</button>
+                </div>
             <h1>Scuba Diving-India</h1>
-            <button id="scubabtn" class="button">
-                <span class="button-content"><a href="activityHTML/scubadiving.html">Explore</a></span>
-            </button>
+            <button class="btn"><a href="activityHTML/scubadiving.html"><h3>Explore</h3></a> </button>
            </div>
         </div>
         <div id="para">
             <div id="imagesPara">
-                <button id="left-para"><img src="IMAGES/activities/left-arrow.png" alt="Error"></button>
                 <img id="paraimg" src="" alt="Error">
-                <button id="right-para"><img src="IMAGES/activities/right.png" alt="Error"></button>
             </div>
          <div>
+            <div>
+                <button id="left-para" class="left"> Prev</button>
+                <button id="right-para" class="right">Next</button>
+            </div>
             <h1>Paragliding-india</h1>
-            <button id="parabtn" class="button">
-                <span class="button-content"><a href="activityHTML/paragliding.html">Explore</a></span>
-            </button>
+            <button class="btn"><a href="activityHTML/paragliding.html"><h3>Explore</h3></a> </button>
          </div>
           
         </div>
         <div id="historical">
             <div id="imagesHistorical">
-                <button id="left-historical"><img src="IMAGES/activities/left-arrow.png" alt="Error"></button>
-                <img id="imghistorical" src="IMAGES/activities/hist1.jfif" alt="Error">
-                <button id="right-historical"><img src="IMAGES/activities/right.png" alt="Error"></button>
+             
+                <img id="imghistorical" src="" alt="Error">
+              
             </div>
           <div>
+            <div>
+                <button id="left-historical" class="left"> Prev</button>
+                <button id="right-historical" class="right">Next</button>
+            </div>
             <h1>Historical Places-India</h1>
-            <button id="historybtn" class="button">
-                <span class="button-content"><a href="activityHTML/historical.html">Explore</a></span>
-            </button>
+            <button class="btn"><a href="activityHTML/historical.html"><h3>Explore</h3></a> </button>
         </div>
         </div>
         <div id="heritage">
             <div id="imagesHeritage">
-                <button id="left-heritage"><img src="IMAGES/activities/left-arrow.png" alt="Error"></button>
-                <img id="imgheritage" src="IMAGES/activities/her1.jfif" alt="">
-                <button id="right-heritage"><img src="IMAGES/activities/right.png" alt="Error"></button>
+             <img id="imgheritage" src="" alt="Error">
             </div>
            <div>
+            <div>
+                <button id="left-heritage" class="left"> Prev</button>
+                <button id="right-heritage" class="right">Next</button>
+            </div>
             <h1> Heritage Homes Stays-India</h1>
-            <button id="heritagebtn" class="button">
-                <span class="button-content"><a href="activityHTML/heritage.html">Explore</a></span>
-            </button>
+            <button class="btn"><a href="activityHTML/heritage.html"><h3>Explore</h3></a> </button>
            </div>
            
         </div>
         <div id="camping">
          
             <div id="imagesCamping">
-                <button id="left-camping"><img src="IMAGES/activities/left-arrow.png" alt="Error"></button>
-                <img id="imgcamp" src="IMAGES/activities/camp1.jfif" alt="">
-                <button id="right-camping"><img src="IMAGES/activities/right.png" alt="Error"></button>
+             
+                <img id="img-Camp" src="https://c1.wallpaperflare.com/preview/162/5/88/camping-tent-forest-tree.jpg" alt="Error">
+               
             </div>
           <div>
+            <div>
+                <button id="left-campbtn" class="left"> Prev</button>
+                <button id="right-campbtn" class="right">Next</button>
+            </div>
             <h1>Best camping places- India</h1>
-            <button id="btncamp" class="button">
-                <span class="button-content"><a href="activityHTML/camping.html">Explore</a></span>
-            </button>
+            <button class="btn"><a href="activityHTML/camping.html"><h3>Explore</h3></a> </button>
           </div>
           
         </div>
-        
     </section>
+    <div id="footer"></div>
 </body>
-<script src="script/activities.js">activitiesfile</script>
+<script src="script/activities.js"></script>
 </html>
