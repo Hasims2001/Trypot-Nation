@@ -15,7 +15,7 @@
     /* first */
     #first {
         display: flex;
-        margin: 4em 2em 0;
+        margin: 4em 2em ;
     }
 
     /* side */
@@ -25,10 +25,10 @@
     #sortingdata, #filteringdata{
         margin:1em;
     }
-    #sortingdata > h4, #filteringdata > h4{
+    #sortingdata > p, #filteringdata > p{
+        font-size: larger;
         margin-left:.4em;
     }
-    
 
 
     /* cardiv */
@@ -39,6 +39,7 @@
         display: flex;
         padding: 10px;
         margin: 10px;
+        cursor: pointer;
 
     }
 
@@ -48,7 +49,7 @@
 
     }
     .mainimg{
-        max-width:300px;
+        width:300px;
         height: max-content;
         max-height: 100%;
         object-fit: cover;
@@ -217,7 +218,9 @@
             line-height: 1.15;
             box-shadow: 0px 10px 20px -18px;
         }
-
+        #sortingdata select{
+            width: 12vw;
+        }
         #searchbar input::placeholder, #sortingdata select::placeholder{
             color: #000;
         }
@@ -237,3 +240,22 @@
             padding: .15rem .5rem;
         }
 
+
+
+        /* checkbox */
+        #pricefilter, #destinationfilter, #durationfilter{
+            margin:1em .4em;
+            line-height: 1.8em;
+        }
+        #pricefilter > p, #destinationfilter> p, #durationfilter> p{
+            color: #2c7467;
+            font-weight: bold;
+        }
+       #pricefilter input, #destinationfilter input, #durationfilter input{
+        width: auto;
+       }
+
+       .btn{
+        
+        width: fit-content;
+       }
