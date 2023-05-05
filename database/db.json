@@ -724,7 +724,47 @@
             "price" : 9000,
             "destination" : "Chhattisgarh"
 
-        } 
+        },
+        
+        {
+            "id" : 21,
+            "title" : "Ratanpur The Old Capital Of Dakshin Kaushal",
+            "duration" : "1 Nights / 2 Days",
+            "location" :"Raipur(1N) → Bilaspur(1N) → Ratanpur(1N)",
+            "description" : [
+                "Bilaspur – 25 km on Korba main road The ancient and glorious history of the holy mythological city of Ratanpur is the Adishakti Mahamaya Devi situated on the banks of the river.",
+                " Kalchurio of Tripuri made Ratanpur its capital and extended it for a long time. I ruled. It is also called Chaturugi Nagri.",
+                " Which means that its existence has existed in four eras. Raja Ratnadeva I settled in the name of Ratanpur."
+                
+            ],
+            "image" : [
+                "https://www.cgpsc.info/wp-content/uploads/2022/11/satrenga.png",
+                "https://1.bp.blogspot.com/-Het7SwgwLlY/X7dB-fpkeYI/AAAAAAAAD6E/NBXlV6leffAEWTOmOo1AzcCQ5LvJLONoACNcBGAsYHQ/s1024/Mahamaya-Temple-Ratanpur-2.png",
+                "https://img.naidunia.com/naidunia/ndnimg/18092021/18_09_2021-17rsk1.jpg",
+                "https://www.holidify.com/images/bgImages/SOMNATH.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/0010722_11th_century_Ratanpur_Mahamaya_Temple_Chhattisgarh_051.jpg/640px-0010722_11th_century_Ratanpur_Mahamaya_Temple_Chhattisgarh_051.jpg"
+               
+            ],
+            "tour" : [
+                {
+                    
+                    "title" : "Day 1: Arrival in Raipur / Bilaspur",
+                    "description" : "On arrival at Raipur airport/railway station, 225 KM drive to Ratanpur . In the evening, enjoy some sightseeing and shopping. Visit the OLd Mahal. Overnight stay at Ratanpur."
+
+                },
+                {
+                    "title" : "Day 2: Departure",
+                    "description" : "After breakfast, check out from the hotel and drive to Raipur. On the way, visit the famous Mahamaya Temple Temple. On arrival at Raipur, transfer to the airport/railway station for your onward journey back home."
+
+                }
+             
+            ],
+            "price" : 9000,
+            "destination" : "Chhattisgarh"
+
+        }
+
+
               
  
          
