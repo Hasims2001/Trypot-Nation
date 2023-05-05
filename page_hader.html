@@ -41,7 +41,7 @@ header {
 
 #logoimg{
     display: flex;
-  
+  align-items: center;
     flex-direction: row;
 
 }
@@ -49,10 +49,13 @@ header {
     width: 20%;
 }
 #logoimg h2{
-   margin-top: 50px;
+   /* margin-top: 50px; */
+   vertical-align: middle;
 }
 
-
+.navigation{
+    display: flex;
+}
 
 .navigation a {
     text-decoration: none;
@@ -71,7 +74,8 @@ header {
 }
 </style>
 <body>
-    <div id="logoimg"><img src="./IMAGES/logo.png" alt="">
+    <div id="logoimg">
+        <img src="./IMAGES/logo.png" alt="">
            <h2 class="logo">Trypot Nation</h2>
       </div>
     
