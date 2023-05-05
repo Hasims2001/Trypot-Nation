@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package View</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("page_hader.html");
+            $("#footer").load("pagefooter.html");
+
+        });
+    </script>
+    <link rel="stylesheet" href="style/user_package_view.css">
+</head>
+
+<body>
+    <header id="header"></header>
+    <section id="imgslider">
+        <div class="w3-content w3-display-container">
+
+            <!-- <div class="w3-display-container mySlides">
+                <img src="img_snowtops.jpg" style="width:100%">
+            </div> -->
+
+            <!-- <div class="w3-display-container mySlides">
+                <img src="img_lights.jpg" style="width:100%">
+            </div>
+
+            <div class="w3-display-container mySlides">
+                <img src="img_mountains.jpg" style="width:100%">
+
+            </div>
+
+            <div class="w3-display-container mySlides">
+                <img src="img_forest.jpg" style="width:100%">
+            </div>
+
+            <div class="w3-display-container mySlides">
+                <img src="img_mountains.jpg" style="width:100%">
+            </div> -->
+
+            <!-- <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button> -->
+    </section>
+</body>
+<script>
+    let package_id = JSON.parse(localStorage.getItem("package_id")) || null;
+    if (package_id == null) {
+        alert(`Please choose package`);
+        window.location.href = "user_packages.html";
+    } else {
+        const API = "https://trypot-nation.onrender.com/packages";
+
+        let slider_div = document.querySelector('.w3-content');
+        fetchData();
+        async function fetchData() {
+        try {
+            let res = await fetch(`${API}?id=${package_id}`);
+            let data = await res.json();
+          
+            // imgdata
+            let imgarray = data[0].image;
+            slider_div.innerHTML = "";
+            imgarray.forEach(element => {
+                slider_div.append(CreateImageSlider(element));
+            });
+            slider_div.innerHTML = slider_div.innerHTML + `<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>`;
+            
+
+        } catch (error) {
+            console.log(error);
+
+        }
+    }
+function CreateImageSlider(element){
+    let div = document.createElement('div');
+    div.className = "w3-display-container mySlides";
+    div.innerHTML = `<img src="${element}" class="slider_img" >`;
+    return div;
+}
+
+        // slider
+        var slideIndex = 1;
+        setTimeout(()=>{
+            showDivs(slideIndex);
+        }, 2000);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+    }
+</script>
+
+</html>
