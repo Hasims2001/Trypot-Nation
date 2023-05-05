@@ -2,9 +2,9 @@
 <html lang="en">
 
 
-  
 
-  
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -109,122 +109,122 @@
 
         /* buttons */
         #cancelling {
-   width: 150px;
-   height: 50px;
-   cursor: pointer;
-   display: flex;
-   align-items: center;
-   background: red;
-   border: none;
-   border-radius: 16px;
-   box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
-   background: #e62222;
-  }
-  
-   #cancelling,  #cancelling span {
-   transition: 200ms;
-  }
-  
-   #cancelling .text {
-   transform: translateX(35px);
-   color: white;
-   font-weight: bold;
-  }
-  
-   #cancelling .icon {
-   position: absolute;
-   border-left: 1px solid #c41b1b;
-   transform: translateX(110px);
-   font-family: 'Poppins', sans-serif;
-   height: 40px;
-   width: 40px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-  }
-  
-   #cancelling svg {
-   width: 15px;
-   fill: #eee;
-  }
-  
-   #cancelling:hover {
-   background: #ff3636;
-  }
-  
-   #cancelling:hover .text {
-   color: transparent;
-  }
-  
-   #cancelling:hover .icon {
-   width: 150px;
-   border-left: none;
-   transform: translateX(0);
-  }
-  
-   #cancelling:focus {
-   outline: none;
-  }
-  
-   #cancelling:active .icon svg {
-   transform: scale(0.8);
-  }
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background: red;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+            background: #e62222;
+        }
 
-  #adding {
-    font-family: inherit;
-    background: rgb(48, 158, 48);
-    color: white;
-    padding: 0.7em 1em;
-    cursor: pointer;
-    padding-left: 0.9em;
-    display: flex;
-    font-size: large;
-    font-family: 'Poppins', sans-serif;
-    align-items: center;
-    border: none;
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.2s;
-  }
-  
-  #adding span {
-    display: block;
-    margin-left: 0.3em;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  #adding svg {
-    display: block;
-    transform-origin: center center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  #adding:hover .svg-wrapper {
-    animation: fly-1 0.6s ease-in-out infinite alternate;
-  }
-  
-  #adding:hover svg {
-    transform: translateX(1.2em) rotate(45deg) scale(1.1);
-  }
-  
-  #adding:hover span {
-    transform: translateX(5em);
-  }
-  
-  button:active {
-    transform: scale(0.95);
-  }
-  
-  @keyframes fly-1 {
-    from {
-      transform: translateY(0.1em);
-    }
-  
-    to {
-      transform: translateY(-0.1em);
-    }
-  }
-  
+        #cancelling,
+        #cancelling span {
+            transition: 200ms;
+        }
+
+        #cancelling .text {
+            transform: translateX(35px);
+            color: white;
+            font-weight: bold;
+        }
+
+        #cancelling .icon {
+            position: absolute;
+            border-left: 1px solid #c41b1b;
+            transform: translateX(110px);
+            font-family: 'Poppins', sans-serif;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #cancelling svg {
+            width: 15px;
+            fill: #eee;
+        }
+
+        #cancelling:hover {
+            background: #ff3636;
+        }
+
+        #cancelling:hover .text {
+            color: transparent;
+        }
+
+        #cancelling:hover .icon {
+            width: 150px;
+            border-left: none;
+            transform: translateX(0);
+        }
+
+        #cancelling:focus {
+            outline: none;
+        }
+
+        #cancelling:active .icon svg {
+            transform: scale(0.8);
+        }
+
+        #adding {
+            font-family: inherit;
+            background: rgb(48, 158, 48);
+            color: white;
+            padding: 0.7em 1em;
+            cursor: pointer;
+            padding-left: 0.9em;
+            display: flex;
+            font-size: large;
+            font-family: 'Poppins', sans-serif;
+            align-items: center;
+            border: none;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        #adding span {
+            display: block;
+            margin-left: 0.3em;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #adding svg {
+            display: block;
+            transform-origin: center center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #adding:hover .svg-wrapper {
+            animation: fly-1 0.6s ease-in-out infinite alternate;
+        }
+
+        #adding:hover svg {
+            transform: translateX(1.2em) rotate(45deg) scale(1.1);
+        }
+
+        #adding:hover span {
+            transform: translateX(5em);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes fly-1 {
+            from {
+                transform: translateY(0.1em);
+            }
+
+            to {
+                transform: translateY(-0.1em);
+            }
+        }
     </style>
 </head>
 
@@ -233,49 +233,49 @@
     <div id="container">
         <h1>Edit</h1>
         <!-- <form action=""> -->
-            <table>
-                <tr>
-                    <td>ID:</td>
-                    <td><input type="number" id="id" disabled></td>
-                </tr>
-                <tr>
-                    <td>Name: </td>
-                    <td><input type="text" id="title"></td>
-                </tr>
-                <tr>
-                    <td>Destination: </td>
-                    <td><input type="text" id="destination"></td>
-                </tr>
-                <tr>
-                    <td>Duration: </td>
-                    <td><input type="text" id="duration"></td>
-                </tr>
-                <tr>
-                    <td>Location: </td>
-                    <td><input type="text" id="location"></td>
-                </tr>
-                <tr>
-                    <td>Price: </td>
-                    <td><input type="text" id="price"></td>
-                </tr>
-                <tr>
-                    <td>Image:</td>
-                    <td><textarea name="img" id="img" cols="30" rows="10"></textarea></td>
-                </tr>
-                <tr>
-                    <td>Description: </td>
-                    <td><textarea name="description" id="description" cols="30" rows="10"></textarea></td>
-                </tr>
-                <tr style="text-align: center;">
-                    <th id="add">
-                        
-                    </th>
-                    <th id="cancel">
+        <table>
+            <tr>
+                <td>ID:</td>
+                <td><input type="number" id="id" placeholder="Automatically Add" disabled></td>
+            </tr>
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" id="title"></td>
+            </tr>
+            <tr>
+                <td>Destination: </td>
+                <td><input type="text" id="destination"></td>
+            </tr>
+            <tr>
+                <td>Duration: </td>
+                <td><input type="text" id="duration"></td>
+            </tr>
+            <tr>
+                <td>Location: </td>
+                <td><input type="text" id="location"></td>
+            </tr>
+            <tr>
+                <td>Price: </td>
+                <td><input type="text" id="price"></td>
+            </tr>
+            <tr>
+                <td>Image:</td>
+                <td><textarea name="img" id="img" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td>Description: </td>
+                <td><textarea name="description" id="description" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr style="text-align: center;">
+                <th id="add">
 
-                    </th>
-                </tr>
+                </th>
+                <th id="cancel">
 
-            </table>
+                </th>
+            </tr>
+
+        </table>
         <!-- </form> -->
     </div>
 </body>
@@ -287,40 +287,37 @@
     let canceled = document.querySelector('#cancel');
     let data = JSON.parse(localStorage.getItem('edit')) || [];
     let addnew = JSON.parse(localStorage.getItem('addnew')) || [];
+    const API = "https://trypot-nation.onrender.com/packages";
 
-    if(addnew.length === 0){
+    if (addnew.length === 0) {
         if (data.length !== 0) {
             h1.textContent = "Edit Package";
-        let id = document.querySelector('#id');
-        let title = document.querySelector('#title');
-        let destination = document.querySelector('#destination');
-        let duration = document.querySelector('#duration');
-        let location = document.querySelector('#location');
-        let price = document.querySelector('#price');
-        let img =  document.querySelector('#img');
-        let description = document.querySelector('#description');
-        let submit = document.querySelector('#submit');
+            let title = document.querySelector('#title');
+            let destination = document.querySelector('#destination');
+            let duration = document.querySelector('#duration');
+            let location = document.querySelector('#location');
+            let price = document.querySelector('#price');
+            let img = document.querySelector('#img');
+            let description = document.querySelector('#description');
 
-        id.value = data.id;
-        title.value = data.title;
-        destination.value = data.destination;
-        duration.value = data.duration;
-        location.value = data.location;
-        price.value = data.price;
-        data.image.forEach(element => {
-            img.value = img.value + element +"\n";
-        });
-        
-        description.value = data.description;
+
+            title.value = data.title;
+            destination.value = data.destination;
+            duration.value = data.duration;
+            location.value = data.location;
+            price.value = data.price;
+            data.image.forEach(element => {
+                img.value = img.value + element + "\n";
+            });
+
+            description.value = data.description;
+        } else {
+            h1.textContent = "No Data Found!";
+            form.innerHTML = null;
+        }
     } else {
-        h1.textContent = "No Data Found!";
-        form.innerHTML = null;
-    }
-    }else{
-        console.log("YES");
         h1.textContent = "Add New Package";
-        id.value = addnew.id;
-        
+
     }
 
     add.innerHTML = `<button id="adding">
@@ -334,13 +331,12 @@
   </div>
   <span>Submit</span>
 </button>`;
-let adding = document.querySelector('#adding');
-adding.addEventListener('click', ()=>{
-    if(id.value == "" || title.value== "" || destination.value== "" || duration.value== "" || location.value== "" || price.value== "" || description.value== ""){
+    let adding = document.querySelector('#adding');
+    adding.addEventListener('click', () => {
+        if (title.value == "" || destination.value == "" || duration.value == "" || location.value == "" || price.value == "" || description.value == "") {
             alert('All the fields are required');
-        }else{
+        } else {
             let temp = {
-                id: id.value,
                 title: title.value,
                 destination: destination.value,
                 duration: duration.value,
@@ -348,23 +344,56 @@ adding.addEventListener('click', ()=>{
                 price: price.value,
                 description: description.value,
                 image: img.value
-                };
+            };
 
-            
 
+            if (h1.textContent === "Add New Package") {
+                postdata();
+                async function postdata() {
+                    try {
+                        let res = await fetch(API, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(temp)
+                        });
+                        let data = await res.json();
+                        console.log(data);
+
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            }else if(h1.textContent === "Edit Package"){
+                patchdata();
+                async function patchdata() {
+                    try {
+                        let res = await fetch(API, {
+                            method: 'PATCH',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(temp)
+                        });
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            }
         }
-})
+    })
 
-canceled.innerHTML = `
+    canceled.innerHTML = `
 <button id="cancelling" class="noselect"><span class="text">Cancel</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg></span></button>`;
 
-let cancelling = document.querySelector('#cancelling');
-cancelling.addEventListener('click', ()=>{
-    window.location.href = "admin_dashboard.html";
-    localStorage.removeItem("addnew");
-})
+    let cancelling = document.querySelector('#cancelling');
+    cancelling.addEventListener('click', () => {
+        window.location.href = "admin_dashboard.html";
+        localStorage.removeItem("addnew");
+    })
 
-   
+
 </script>
 
 </html>
