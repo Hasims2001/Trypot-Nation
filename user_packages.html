@@ -30,7 +30,19 @@
         <input class="input" id="search" name="text" placeholder="Search..." type="search">
     </section>
     <section id="first">
-        <div id="side"></div>
+        <div id="side">
+            <div id="sortingdata">
+                <h4>Sort By Price</h4>
+                <select name="sorting" id="sorting">
+                    <option value="">Select</option>
+                    <option value="asc">Low To High</option>
+                    <option value="desc">High To Low</option>
+                </select>
+            </div>
+            <div id="filteringdata">
+                <h4>Filter By</h4>
+            </div>
+        </div>
         <div id="content">
             <!-- <div class="cardiv">
                 <div class="img_slide">
@@ -50,17 +62,27 @@
 
     </section>
 
-    <!-- <footer id="footer"></footer> -->
+    <footer id="footer"></footer>
 </body>
 <script>
     const API = "https://trypot-nation.onrender.com/packages";
     let content = document.querySelector('#content');
     let img_slide = document.querySelector(".img_slide");
     let searchbar = document.querySelector("#search");
+    let sorting = document.querySelector("#sorting");
     fetchData(API);
     searchbar.addEventListener('input', ()=>{
         if(searchbar.value !== ""){
             let temp = `${API}?title_like=${searchbar.value}`;
+            fetchData(temp);
+            console.log(temp);
+        }else{
+            fetchData(API);
+        }
+    })
+    sorting.addEventListener('change', ()=>{
+        if(sorting.value !== ""){
+            let temp = `${API}?_sort=price&_order=${sorting.value}`;
             fetchData(temp);
             console.log(temp);
         }else{
@@ -75,14 +97,31 @@
             console.log(data);
             content.innerHTML = "";
             data.forEach(ele => {
+                content.append(CreateBlackCard());
+                });
+            setTimeout(()=>{
+                content.innerHTML = "";
+                data.forEach(ele => {
                 content.append(CreateCard(ele));
-            });
+                });
+            }, 2000);
+            
         } catch (error) {
             console.log(error);
 
         }
     }
 
+    function CreateBlackCard(){
+        let blackcard = document.createElement("div");
+        blackcard.className = "card";
+        blackcard.innerHTML = `
+    <div class="card_load"></div>
+    <div class="card_load_extreme_title"></div>
+    <div class="card_load_extreme_descripion"></div>
+`;
+return blackcard;
+    }
 
 function CreateCard(ele){
     let card = document.createElement('div');
@@ -92,8 +131,11 @@ function CreateCard(ele){
                    <img src="${ele.image[0]}" alt="img"  class="mainimg">
                 </div>
                 <div class="details">
+                    <div style="display:flex; justify-content:space-between;"> 
                     <p id="duration">${ele.duration}</p>
-                    <h3>${ele.title}</h3>
+                    <p id="price">${ele.price}</p>
+                    </div>
+                    <h3 id="title">${ele.title}</h3>
                     <p id="location">${ele.location}</p>
                     <p id="destination">${ele.destination}</p>
                     <div class="btndiv">
