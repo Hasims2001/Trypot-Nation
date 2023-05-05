@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 
@@ -31,13 +31,28 @@ header {
     align-items: center;
     z-index: 100;
 }
-
 .logo {
+    
     font-size: 2em;
     color: #359381;
     pointer-events: none;
-    margin-right: 270px ;
+    margin-right: 80px ;
 }
+
+#logoimg{
+    display: flex;
+  
+    flex-direction: row;
+
+}
+#logoimg img{
+    width: 20%;
+}
+#logoimg h2{
+   margin-top: 50px;
+}
+
+
 
 .navigation a {
     text-decoration: none;
@@ -56,7 +71,11 @@ header {
 }
 </style>
 <body>
-    <h2 class="logo">Ecotourism</h2>
+    <div id="logoimg"><img src="./IMAGES/logo.png" alt="">
+           <h2 class="logo">Trypot Nation</h2>
+      </div>
+    
+       
     <nav class="navigation">
         <a href="#" class="active">Home</a>
         <a href="#">Destination</a>
