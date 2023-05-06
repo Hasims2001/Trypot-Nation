@@ -1,0 +1,93 @@
+<style>
+    #main {
+        color: #359381;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #main {
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #logodiv>#imglogo {
+        width: 30px;
+        position: absolute;
+        top: 43px;
+        left: 76px;
+    }
+
+    #navdiv>#headernav>a {
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 .5em;
+        padding: 0.5em;
+        border-radius: 1em;
+
+    }
+
+    #navdiv>#headernav>a:hover {
+        background-color: #359381;
+        color: #fff;
+    }
+
+    @media only screen  and (max-width: 1024px) and (min-width:768px)  {
+        #main {
+            flex-direction: column ;
+            font-size: larger;
+        }
+
+        #logodiv>#imglogo {
+            top: 45px;
+            left: 45.5vw;
+        }
+    }
+
+    @media only screen and (max-width:768px)  and (min-width: 425px) {
+        #main {
+            flex-direction: column ;
+            font-size: larger;
+        }
+
+        #logodiv>#imglogo {
+            top: 45px;
+            left: 44vw;
+        }
+    }
+
+    @media only screen and (max-width:425px)  and (min-width: 375px) {
+        #main {
+            flex-direction: column ;
+            font-size: larger;
+        }
+
+        #logodiv>#imglogo {
+            top: 45px;
+            left: 38.5vw;
+        }
+    }
+
+
+   
+</style>
+<header id="main">
+    <div id="logodiv">
+        <h1>Tryp&nbsp;&nbsp;t Nation</h1>
+        <img src="images/logo.png" alt="logo" id="imglogo">
+    </div>
+    <div id="navdiv">
+        <nav id="headernav">
+            <a href="#">Home</a>
+            <a href="#">Destination</a>
+            <a href="#">Activities</a>
+            <a href="user_packages.html">Packages</a>
+            <a href="#">AboutUs</a>
+            <a href="#">Login</a>
+
+        </nav>
+    </div>
+</header>
+<script>
+
+</script>

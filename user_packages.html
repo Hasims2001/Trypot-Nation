@@ -212,12 +212,12 @@
 
 
     function DisplayData(data) {
-        // content.innerHTML = "";
-        // data.forEach(ele => {
-        //     content.append(CreateBlackCard());
-        // });
+        content.innerHTML = "";
+        data.forEach(ele => {
+            content.append(CreateBlackCard());
+        });
         setTimeout(() => {
-            // content.innerHTML = "";
+            content.innerHTML = "";
             data.forEach(ele => {
                 content.append(CreateCard(ele));
             });
