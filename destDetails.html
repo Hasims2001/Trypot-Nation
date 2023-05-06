@@ -13,12 +13,23 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
+
+        #header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 5px 100px;
+            display: flex;
+            align-items: center;
+        }
     
         #destDetail {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             padding: 8%;
+            margin-top: 20px;
+            padding-bottom: 20px;
         }
     
         .destcard {
@@ -26,6 +37,7 @@
             margin-bottom: 30px;
             border: 1px solid #ddd;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            padding: 20px;
         }
     
         .destcard .dest-card-title {
@@ -36,6 +48,12 @@
             background-color: #f5f5f5;
             color: black;
             text-align: center;
+        }
+
+        .destcard .dest-duration {
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
         }
     
         .destcard img {
@@ -57,16 +75,14 @@
         .destcard .dest-card-tour-list li {
             margin-bottom: 5px;
         }
-    
-        /* #header {
-            position: static;
-            background-color: whitesmoke;
-        } */
-    
+
+
+
     </style>
 
 
 </head>
+
 
 
 <body>
@@ -145,6 +161,7 @@
         card.append(img);
 
         let duration = document.createElement("p");
+        duration.className = "dest-duration"
         duration.textContent = "Duration: " + data.duration;
         card.append(duration);
 
