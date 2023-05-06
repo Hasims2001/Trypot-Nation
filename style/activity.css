@@ -15,7 +15,7 @@ body{
 
 #activity{
     width:90%;
-    height:850px;
+    /* height:1000px; */
     /* border:1px solid red; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -31,7 +31,6 @@ body{
 }
 #trecking{
     width:100%;
-    height:370px;
     /* border:1px solid red; */
     border-radius: 3px;;
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
@@ -50,7 +49,7 @@ body{
 }
 #trecking>div:nth-child(2){
     width:100%;
-    height:100px;
+  
     text-align: center;
    /* background-color: aqua; */
 }
@@ -108,17 +107,18 @@ body{
 
 #scuba{
     width:100%;
-    height:370px;
     /* border:1px solid red; */
 }
 #imagesScuba{
     width:100%;
     height:250px;
+    
     /* border:1px solid black; */
 }
 #imagesScuba>img{
   width:100%;
   height:100%;
+  object-fit:cover;
     /* border:1px solid black; */
 }
 #scuba>div:nth-child(2){
@@ -142,7 +142,6 @@ body{
 
 #para{
     width:100%;
-    height:370px;
     /* border:1px solid red; */
 }
 #imagesPara{
@@ -153,6 +152,7 @@ body{
 #imagesPara>img{
   width:100%;
   height:100%;
+  object-fit:cover;
     /* border:1px solid black; */
 }
 #para>div:nth-child(2){
@@ -175,7 +175,6 @@ body{
 
 #historical{
     width:100%;
-    height:370px;
     /* border:1px solid red; */
 }
 #imagesHistorical{
@@ -186,6 +185,7 @@ body{
 #imagesHistorical>img{
   width:100%;
   height:100%;
+  object-fit:cover;
     /* border:1px solid black; */
 }
 #historical>div:nth-child(2){
@@ -211,7 +211,6 @@ body{
 
 #heritage{
     width:100%;
-    height:370px;
     /* border:1px solid red; */
 }
 #imagesHeritage{
@@ -222,6 +221,7 @@ body{
 #imagesHeritage>img{
   width:100%;
   height:100%;
+  object-fit:cover;
     /* border:1px solid black; */
 }
 #heritage>div:nth-child(2){
@@ -244,17 +244,18 @@ body{
 
 #camping{
     width:100%;
-    height:370px;
     /* border:1px solid red; */
 }
 #imagesCamping{
     width:100%;
     height:250px;
+   
     /* border:1px solid black; */
 }
 #imagesCamping>img{
   width:100%;
   height:100%;
+  object-fit:cover;
   /* border-radius: 50%; */
     /* border:1px solid black; */
 }
@@ -321,7 +322,6 @@ body{
     text-decoration: none;
    }
 
-
    @media (min-width: 768px) and (max-width: 920px){
 
     #activity{
@@ -335,7 +335,14 @@ body{
         /* overflow-x: scroll; */
     }
    } 
-
+#morelessbutton{
+    text-decoration: none;
+}
+.des-act{
+    text-align: justify;
+    margin:10px;
+    margin-top:15px;
+}
    
    @media (min-width: 100px) and (max-width: 767px){
 
