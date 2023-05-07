@@ -3,30 +3,25 @@
 //     console.log("BBBBB");
 // })
 
+
+
+
 let apiUrl=`https://trypot-nation.onrender.com/activities`;
 
 async function fetchData(apiUrl){
     try{
          let res=await fetch(apiUrl);
          let data=await res.json();
-<<<<<<< HEAD
-         displayTreckData(data);
-=======
          data=data.filter((e)=>{
-            return e.category==="trecking"
+            return e.category==="camping"
          });
          addlocation(data);
-         displayTreckData(data.slice(0,3));//bydefault only one set of indexes 0,1,2 will be
-         buttonappendTreck(data);
->>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
+         displaycampData(data.slice(0,3));//bydefault only one set of indexes 0,1,2 will be
+         buttonappendcamp(data);
     }catch(err){
         console.log(err);
     }
 };
-<<<<<<< HEAD
-fetchData(apiUrl);
-
-=======
 
 // ---> add destination on page  <<--------------
 
@@ -42,7 +37,7 @@ function addlocation(data){
         // console.log(ele);
     }
     // console.log(tempObj);
-    let location=document.getElementById("treck-filterDestinations");
+    let location=document.getElementById("camp-filterDestinations");
     for(let key in tempObj){
         console.log(key);
         let li=document.createElement("li");
@@ -55,13 +50,13 @@ function addlocation(data){
             // console.log(newData);
             if(newData.length<3){
                   console.log(newData);
-                  buttonappendTreck(newData);
-                  displayTreckData(newData);
+                  buttonappendcamp(newData);
+                  displaycampData(newData);
             }
             if(newData.length>=3){
-                buttonappendTreck(newData);
-                displayTreckData(newData.slice(0,3));
-                // this displaytreckData again calling for to show by default 
+                buttonappendcamp(newData);
+                displaycampData(newData.slice(0,3));
+                // this displaycampData again calling for to show by default 
                 // page of new array from 0 to <3 index
             }
            
@@ -77,63 +72,51 @@ window.addEventListener("load",()=>{
 })
 
 // ------------------------------>>>>>>>>>>paginating buttons<<<<<<<<<<----------------
-let treckbuttons=document.getElementById("treck-buttons");
+let campbuttons=document.getElementById("camp-buttons");
 
-function buttonappendTreck(arrtreck){
-// console.log(arrtreck);
-treckbuttons.innerHTML="";
-let buttonsCount=Math.ceil(arrtreck.length/3);
+function buttonappendcamp(arrcamp){
+// console.log(arrcamp);
+campbuttons.innerHTML="";
+let buttonsCount=Math.ceil(arrcamp.length/3);
   for(let i=0;i<buttonsCount;i++){
-    let treckbtn=document.createElement("button");
-    treckbtn.className=`treckbutton`;
-    treckbtn.setAttribute("id",i);
-    treckbtn.textContent=i+1;
-   treckbtn.addEventListener("click",()=>{
-    // console.log(treckbtn.getAttribute("id"));
-    paginationbtnData(arrtreck,treckbtn.getAttribute("id"))
+    let campbtn=document.createElement("button");
+    campbtn.className=`campbutton`;
+    campbtn.setAttribute("id",i);
+    campbtn.textContent=i+1;
+   campbtn.addEventListener("click",()=>{
+    // console.log(campbtn.getAttribute("id"));
+    paginationbtnData(arrcamp,campbtn.getAttribute("id"))
    })
-    treckbuttons.append(treckbtn);
+    campbuttons.append(campbtn);
   }
 }
 function paginationbtnData(arr,id){
 console.log(arr);
-    let customTreckAr=undefined;
+    let customcampAr=undefined;
    
-        // customTreckAr=arr;
-        console.log(customTreckAr);
+        // customcampAr=arr;
+        console.log(customcampAr);
    
-        customTreckAr=arr.slice(id*3,(id*3)+3);
-        console.log(customTreckAr);
+        customcampAr=arr.slice(id*3,(id*3)+3);
+        console.log(customcampAr);
        
-        displayTreckData(customTreckAr);
+        displaycampData(customcampAr);
     
    
 }
+// //////////////////////////////////////////////////////////
+let campData=document.getElementById("camp-data");
 
-// ///////////////////////////////////////////////////////
->>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
-
-let treckData=document.getElementById("treck-data");
-
-function displayTreckData(data){
-   treckData.innerHTML="";
+function displaycampData(data){
+   campData.innerHTML="";
 
    data.forEach((e)=>{
-    let treckactivity=document.createElement("div");
-    treckactivity.className=`treck-activity`;
-    treckactivity.innerHTML=`
-    <div class="treck-child-image"> 
+    let campactivity=document.createElement("div");
+    campactivity.className=`camp-activity`;
+    campactivity.innerHTML=`
+    <div class="camp-child-image"> 
     <div><img src="${e.image[0]}" alt=""></div> 
     <div>         
-<<<<<<< HEAD
-    <ul class="treck-list">  
-     <li>Rating  <span>:${e.rating}</span></li>
-     <li>Destination<span>:${e.destination}</span> </li>
-     <li>Location<span>:${e.location}</span>  </li>
-     <li>Duration<span>:${e.duration}</span>   </li>
-     <li>Price<span>:${e.price||"You can visit free of cost"}</span>    </li>
-    </ul>
-=======
     <table>
    <tr><td>Rating </td><td>${e.rating}</td></tr>
    <tr><td>Destination </td><td>${e.destination}</td></tr>
@@ -141,35 +124,22 @@ function displayTreckData(data){
    <tr><td>Duration </td><td>${e.duration}</td></tr>
    <tr><td>Price </td><td>${e.price||"Feel free to visit anytime"}</td></tr>
    </table>
->>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
     </div>
      </div>
     <div class="child-description">
  
-<<<<<<< HEAD
-    <h3>Description :${e.title}</h3>
-   <p>${e.description}</p>
-    </div>
- </div>`
-
-=======
-    <h2 class="treck-Description">${e.title}</h2>
+    <h2 class="camp-Description">${e.title}</h2>
     <p>${e.description}</p>
     </div>
  </div>`
 // console.log(e.description);
->>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
   
-treckData.append(treckactivity);
+campData.append(campactivity);
    })
 }
 
-<<<<<<< HEAD
-let treckDestination=document.getElementById("sortDestinations");
-let boxTreck1=document.createElement("input");
-boxTreck1.setAttribute("type","checkbox");
-treckDestination.append(boxTreck1);
-=======
+
+
 // -------->>>>>>>>>>More and less toggling <<--------
 
 
@@ -189,4 +159,4 @@ morebtn.addEventListener("click",()=>{
         morebtn.textContent="Read more";
     }
 });
->>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
+

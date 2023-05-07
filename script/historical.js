@@ -9,24 +9,16 @@ async function fetchData(apiUrl){
     try{
          let res=await fetch(apiUrl);
          let data=await res.json();
-<<<<<<< HEAD
-         displayTreckData(data);
-=======
          data=data.filter((e)=>{
-            return e.category==="trecking"
+            return e.category==="historical"
          });
          addlocation(data);
-         displayTreckData(data.slice(0,3));//bydefault only one set of indexes 0,1,2 will be
-         buttonappendTreck(data);
->>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
+         displayhistoricalData(data.slice(0,3));//bydefault only one set of indexes 0,1,2 will be
+         buttonappendhistorical(data);
     }catch(err){
         console.log(err);
     }
 };
-<<<<<<< HEAD
-fetchData(apiUrl);
-
-=======
 
 // ---> add destination on page  <<--------------
 
@@ -42,7 +34,7 @@ function addlocation(data){
         // console.log(ele);
     }
     // console.log(tempObj);
-    let location=document.getElementById("treck-filterDestinations");
+    let location=document.getElementById("historical-filterDestinations");
     for(let key in tempObj){
         console.log(key);
         let li=document.createElement("li");
@@ -55,13 +47,13 @@ function addlocation(data){
             // console.log(newData);
             if(newData.length<3){
                   console.log(newData);
-                  buttonappendTreck(newData);
-                  displayTreckData(newData);
+                  buttonappendhistorical(newData);
+                  displayhistoricalData(newData);
             }
             if(newData.length>=3){
-                buttonappendTreck(newData);
-                displayTreckData(newData.slice(0,3));
-                // this displaytreckData again calling for to show by default 
+                buttonappendhistorical(newData);
+                displayhistoricalData(newData.slice(0,3));
+                // this displayhistoricalData again calling for to show by default 
                 // page of new array from 0 to <3 index
             }
            
@@ -77,63 +69,53 @@ window.addEventListener("load",()=>{
 })
 
 // ------------------------------>>>>>>>>>>paginating buttons<<<<<<<<<<----------------
-let treckbuttons=document.getElementById("treck-buttons");
+let historicalbuttons=document.getElementById("historical-buttons");
 
-function buttonappendTreck(arrtreck){
-// console.log(arrtreck);
-treckbuttons.innerHTML="";
-let buttonsCount=Math.ceil(arrtreck.length/3);
+function buttonappendhistorical(arrhistorical){
+// console.log(arrhistorical);
+historicalbuttons.innerHTML="";
+let buttonsCount=Math.ceil(arrhistorical.length/3);
   for(let i=0;i<buttonsCount;i++){
-    let treckbtn=document.createElement("button");
-    treckbtn.className=`treckbutton`;
-    treckbtn.setAttribute("id",i);
-    treckbtn.textContent=i+1;
-   treckbtn.addEventListener("click",()=>{
-    // console.log(treckbtn.getAttribute("id"));
-    paginationbtnData(arrtreck,treckbtn.getAttribute("id"))
+    let historicalbtn=document.createElement("button");
+    historicalbtn.className=`historicalbutton`;
+    historicalbtn.setAttribute("id",i);
+    historicalbtn.textContent=i+1;
+   historicalbtn.addEventListener("click",()=>{
+    // console.log(historicalbtn.getAttribute("id"));
+    paginationbtnData(arrhistorical,historicalbtn.getAttribute("id"))
    })
-    treckbuttons.append(treckbtn);
+    historicalbuttons.append(historicalbtn);
   }
 }
 function paginationbtnData(arr,id){
 console.log(arr);
-    let customTreckAr=undefined;
+    let customhistoricalAr=undefined;
    
-        // customTreckAr=arr;
-        console.log(customTreckAr);
+        // customhistoricalAr=arr;
+        console.log(customhistoricalAr);
    
-        customTreckAr=arr.slice(id*3,(id*3)+3);
-        console.log(customTreckAr);
+        customhistoricalAr=arr.slice(id*3,(id*3)+3);
+        console.log(customhistoricalAr);
        
-        displayTreckData(customTreckAr);
+        displayhistoricalData(customhistoricalAr);
     
    
 }
 
-// ///////////////////////////////////////////////////////
->>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
+// //////////////////////////////////////////////
 
-let treckData=document.getElementById("treck-data");
+let historicalData=document.getElementById("historical-data");
 
-function displayTreckData(data){
-   treckData.innerHTML="";
+function displayhistoricalData(data){
+   historicalData.innerHTML="";
 
    data.forEach((e)=>{
-    let treckactivity=document.createElement("div");
-    treckactivity.className=`treck-activity`;
-    treckactivity.innerHTML=`
-    <div class="treck-child-image"> 
+    let historicalactivity=document.createElement("div");
+    historicalactivity.className=`historical-activity`;
+    historicalactivity.innerHTML=`
+    <div class="historical-child-image"> 
     <div><img src="${e.image[0]}" alt=""></div> 
     <div>         
-<<<<<<< HEAD
-    <ul class="treck-list">  
-     <li>Rating  <span>:${e.rating}</span></li>
-     <li>Destination<span>:${e.destination}</span> </li>
-     <li>Location<span>:${e.location}</span>  </li>
-     <li>Duration<span>:${e.duration}</span>   </li>
-     <li>Price<span>:${e.price||"You can visit free of cost"}</span>    </li>
-    </ul>
-=======
     <table>
    <tr><td>Rating </td><td>${e.rating}</td></tr>
    <tr><td>Destination </td><td>${e.destination}</td></tr>
@@ -141,35 +123,21 @@ function displayTreckData(data){
    <tr><td>Duration </td><td>${e.duration}</td></tr>
    <tr><td>Price </td><td>${e.price||"Feel free to visit anytime"}</td></tr>
    </table>
->>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
     </div>
      </div>
     <div class="child-description">
  
-<<<<<<< HEAD
-    <h3>Description :${e.title}</h3>
-   <p>${e.description}</p>
-    </div>
- </div>`
-
-=======
-    <h2 class="treck-Description">${e.title}</h2>
+    <h2 class="historical-Description">${e.title}</h2>
     <p>${e.description}</p>
     </div>
  </div>`
 // console.log(e.description);
->>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
   
-treckData.append(treckactivity);
+historicalData.append(historicalactivity);
    })
 }
 
-<<<<<<< HEAD
-let treckDestination=document.getElementById("sortDestinations");
-let boxTreck1=document.createElement("input");
-boxTreck1.setAttribute("type","checkbox");
-treckDestination.append(boxTreck1);
-=======
+
 // -------->>>>>>>>>>More and less toggling <<--------
 
 
@@ -189,4 +157,3 @@ morebtn.addEventListener("click",()=>{
         morebtn.textContent="Read more";
     }
 });
->>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
