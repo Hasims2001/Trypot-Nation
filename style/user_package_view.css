@@ -4,12 +4,15 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-#header {
-    position: static;
-    background-color: whitesmoke;
+body{
+  line-height: none !important;
 }
-
+#logodiv>#imglogo {
+  width: 30px;
+  position: absolute;
+  top: 32px;
+  left: 76px;
+}
 
 /* slider */
 #imgslider{

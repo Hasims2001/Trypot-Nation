@@ -9,16 +9,24 @@ async function fetchData(apiUrl){
     try{
          let res=await fetch(apiUrl);
          let data=await res.json();
+<<<<<<< HEAD
+         displayTreckData(data);
+=======
          data=data.filter((e)=>{
             return e.category==="trecking"
          });
          addlocation(data);
          displayTreckData(data.slice(0,3));//bydefault only one set of indexes 0,1,2 will be
          buttonappendTreck(data);
+>>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
     }catch(err){
         console.log(err);
     }
 };
+<<<<<<< HEAD
+fetchData(apiUrl);
+
+=======
 
 // ---> add destination on page  <<--------------
 
@@ -103,6 +111,7 @@ console.log(arr);
 }
 
 // ///////////////////////////////////////////////////////
+>>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
 
 let treckData=document.getElementById("treck-data");
 
@@ -116,6 +125,15 @@ function displayTreckData(data){
     <div class="treck-child-image"> 
     <div><img src="${e.image[0]}" alt=""></div> 
     <div>         
+<<<<<<< HEAD
+    <ul class="treck-list">  
+     <li>Rating  <span>:${e.rating}</span></li>
+     <li>Destination<span>:${e.destination}</span> </li>
+     <li>Location<span>:${e.location}</span>  </li>
+     <li>Duration<span>:${e.duration}</span>   </li>
+     <li>Price<span>:${e.price||"You can visit free of cost"}</span>    </li>
+    </ul>
+=======
     <table>
    <tr><td>Rating </td><td>${e.rating}</td></tr>
    <tr><td>Destination </td><td>${e.destination}</td></tr>
@@ -123,20 +141,35 @@ function displayTreckData(data){
    <tr><td>Duration </td><td>${e.duration}</td></tr>
    <tr><td>Price </td><td>${e.price||"Feel free to visit anytime"}</td></tr>
    </table>
+>>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
     </div>
      </div>
     <div class="child-description">
  
+<<<<<<< HEAD
+    <h3>Description :${e.title}</h3>
+   <p>${e.description}</p>
+    </div>
+ </div>`
+
+=======
     <h2 class="treck-Description">${e.title}</h2>
     <p>${e.description}</p>
     </div>
  </div>`
 // console.log(e.description);
+>>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87
   
 treckData.append(treckactivity);
    })
 }
 
+<<<<<<< HEAD
+let treckDestination=document.getElementById("sortDestinations");
+let boxTreck1=document.createElement("input");
+boxTreck1.setAttribute("type","checkbox");
+treckDestination.append(boxTreck1);
+=======
 // -------->>>>>>>>>>More and less toggling <<--------
 
 
@@ -156,3 +189,4 @@ morebtn.addEventListener("click",()=>{
         morebtn.textContent="Read more";
     }
 });
+>>>>>>> be846da6e2838c4ec101f4b8433a3934a7e03f87

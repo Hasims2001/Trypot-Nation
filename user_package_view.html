@@ -276,7 +276,15 @@
 
 
         document.querySelector('#booknow').addEventListener('click', () => {
-            alert(`231 line code is pending`);
+            let user = JSON.parse(localStorage.getItem('user')) || [];
+
+            if(user.length === 0){
+                alert('Please login first');
+                window.location.href = "login.html";
+            }else{
+                window.location.href = "user_checkout.html";
+            }
+
         })
     }
 
