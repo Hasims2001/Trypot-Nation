@@ -18,11 +18,13 @@ body{
     gap:25px;
     border-radius: 15px;;
     box-shadow: 0 4px 15px 0 rgba(160, 251, 248, 0.75);
+    background-image: linear-gradient(to right, #75ccf2, #88f5c0, #b8f9d9, #a1e7c5);
+    box-shadow: 0 4px 15px 0 rgba(160, 251, 248, 0.75);
 }
 #treck-sortby{
     width:30%;
     height:500px;
-    border:1px solid red;
+    /* border:1px solid red; */
     border-radius: 15px;
 }
 #treck-sortby>h1{
@@ -247,8 +249,25 @@ td:nth-child(1){
     margin:20px;
     background-color: #2bb673;
     cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
 }
-
+.locationName:hover{
+    moz-transition: all .14s ease-in-out;
+    -o-transition: all .14s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .14s ease-in-out;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.sortbyDest{
+    color:#303a5f;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    cursor: not-allowed;
+    text-align: center;
+}
 
 
 
