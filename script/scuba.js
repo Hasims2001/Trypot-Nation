@@ -4,24 +4,24 @@
 // })
 
 let apiUrl=`https://trypot-nation.onrender.com/activities`;
+let paginationscuba=document.getElementById("scubapage-button");
 
 async function fetchData(apiUrl){
     try{
          let res=await fetch(apiUrl);
          let data=await res.json();
          data=data.filter((e)=>{
-            return e.category==="trecking"
+            return e.category==="scubadiving"
          });
          addlocation(data);
-         displayTreckData(data.slice(0,3));//bydefault only one set of indexes 0,1,2 will be
-         buttonappendTreck(data);
+         displayscubaData(data.slice(0,3));//bydefault only one set of indexes 0,1,2 will be append;
+         buttonappendscuba(data);
     }catch(err){
         console.log(err);
     }
 };
 
-// ---> add destination on page  <<--------------
-
+// ---> add destination on page  <<-------------------------
 function addlocation(data){
     let tempObj={};
     for(let i=0;i<data.length;i++){
@@ -34,7 +34,7 @@ function addlocation(data){
         // console.log(ele);
     }
     // console.log(tempObj);
-    let location=document.getElementById("treck-filterDestinations");
+    let location=document.getElementById("scuba-filterDestinations");
     for(let key in tempObj){
         console.log(key);
         let li=document.createElement("li");
@@ -47,13 +47,13 @@ function addlocation(data){
             // console.log(newData);
             if(newData.length<3){
                   console.log(newData);
-                  buttonappendTreck(newData);
-                  displayTreckData(newData);
+                  buttonappendscuba(newData);
+                  displayscubaData(newData);
             }
             if(newData.length>=3){
-                buttonappendTreck(newData);
-                displayTreckData(newData.slice(0,3));
-                // this displaytreckData again calling for to show by default 
+                buttonappendscuba(newData);
+                displayscubaData(newData.slice(0,3));
+                // this displayscubaData again calling for to show by default 
                 // page of new array from 0 to <3 index
             }
            
@@ -63,57 +63,56 @@ function addlocation(data){
     }
 
 }
+// /////////////////////////////////////////////////////////////
 window.addEventListener("load",()=>{
     fetchData(apiUrl);
     
 })
 
 // ------------------------------>>>>>>>>>>paginating buttons<<<<<<<<<<----------------
-let treckbuttons=document.getElementById("treck-buttons");
+let scubabuttons=document.getElementById("scuba-buttons");
 
-function buttonappendTreck(arrtreck){
-// console.log(arrtreck);
-treckbuttons.innerHTML="";
-let buttonsCount=Math.ceil(arrtreck.length/3);
+function buttonappendscuba(arrscuba){
+// console.log(arrscuba);
+scubabuttons.innerHTML="";
+let buttonsCount=Math.ceil(arrscuba.length/3);
   for(let i=0;i<buttonsCount;i++){
-    let treckbtn=document.createElement("button");
-    treckbtn.className=`treckbutton`;
-    treckbtn.setAttribute("id",i);
-    treckbtn.textContent=i+1;
-   treckbtn.addEventListener("click",()=>{
-    // console.log(treckbtn.getAttribute("id"));
-    paginationbtnData(arrtreck,treckbtn.getAttribute("id"))
+    let scubabtn=document.createElement("button");
+    scubabtn.className=`scubabutton`;
+    scubabtn.setAttribute("id",i);
+    scubabtn.textContent=i+1;
+   scubabtn.addEventListener("click",()=>{
+    // console.log(scubabtn.getAttribute("id"));
+    paginationbtnData(arrscuba,scubabtn.getAttribute("id"))
    })
-    treckbuttons.append(treckbtn);
+    scubabuttons.append(scubabtn);
   }
 }
 function paginationbtnData(arr,id){
 console.log(arr);
-    let customTreckAr=undefined;
+    let customscubaAr=undefined;
    
-        // customTreckAr=arr;
-        console.log(customTreckAr);
+        // customscubaAr=arr;
+        console.log(customscubaAr);
    
-        customTreckAr=arr.slice(id*3,(id*3)+3);
-        console.log(customTreckAr);
+        customscubaAr=arr.slice(id*3,(id*3)+3);
+        console.log(customscubaAr);
        
-        displayTreckData(customTreckAr);
+        displayscubaData(customscubaAr);
     
    
 }
+// ////////////////////////////////////////////
+let scubaData=document.getElementById("scuba-data");
 
-// ///////////////////////////////////////////////////////
-
-let treckData=document.getElementById("treck-data");
-
-function displayTreckData(data){
-   treckData.innerHTML="";
+function displayscubaData(data){
+   scubaData.innerHTML="";
 
    data.forEach((e)=>{
-    let treckactivity=document.createElement("div");
-    treckactivity.className=`treck-activity`;
-    treckactivity.innerHTML=`
-    <div class="treck-child-image"> 
+    let scubaactivity=document.createElement("div");
+    scubaactivity.className=`scuba-activity`;
+    scubaactivity.innerHTML=`
+    <div class="scuba-child-image"> 
     <div><img src="${e.image[0]}" alt=""></div> 
     <div>         
     <table>
@@ -127,15 +126,16 @@ function displayTreckData(data){
      </div>
     <div class="child-description">
  
-    <h2 class="treck-Description">${e.title}</h2>
+    <h2 class="scuba-Description">${e.title}</h2>
     <p>${e.description}</p>
     </div>
  </div>`
 // console.log(e.description);
   
-treckData.append(treckactivity);
+scubaData.append(scubaactivity);
    })
 }
+
 
 // -------->>>>>>>>>>More and less toggling <<--------
 
