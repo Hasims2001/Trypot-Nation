@@ -6,101 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        #header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 5px 100px;
-            display: flex;
-            align-items: center;
-        }
-    
-        #destDetail {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 8%;
-            margin-top: 20px;
-            padding-bottom: 20px;
-        }
-    
-        .destcard {
-            max-width: 600px;
-            margin-bottom: 30px;
-            border: 1px solid #ddd;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            padding: 20px;
-        }
-    
-        .destcard .dest-card-title {
-            margin-top: 0;
-            font-size: 20px;
-            font-weight: bold;
-            padding: 10px;
-            background-color: #f5f5f5;
-            color: black;
-            text-align: center;
-        }
-
-        .destcard .dest-duration {
-            text-align: center;
-            font-weight: bold;
-            padding: 10px;
-        }
-    
-        .destcard img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-    
-        .destcard .dest-card-price {
-            display: block;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-    
-        .destcard .dest-card-tour-list {
-            margin-top: 10px;
-        }
-    
-        .destcard .dest-card-tour-list li {
-            margin-bottom: 5px;
-        }
-
-
-
-    </style>
-
-
-</head>
-
-
-
-<body>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
         <script>
         $(function () {
-            $("#header").load("page_hader.html");
+            $("#header").load("user_header.html");
             $("#footer").load("pagefooter.html");
 
         });
     </script>
 
+    <link rel="stylesheet" href="style/destDetails.css">
+
+</head>
+
+<body>
     <!-- navigation bar starts here -->
         <div id="header"></div>
     <!-- navigation bar ends here -->
 
     <!-- main section starts here -->
+    <h1 id="destHeading">Discover Your Dream Destination with Us</h1>
     <section id="destDetail">
         <!-- data will be appended here -->
     </section>
@@ -122,15 +48,15 @@
     fetchData();
 
     function fetchData(){
-        let urlParams = new URLSearchParams(window.location.search); // retrieve the query parameters from the URL
-        let selectedState = urlParams.get('state'); // get the value of the 'state' parameter
+        let urlParams = new URLSearchParams(window.location.search);
+        let selectedState = urlParams.get('state');
         fetch(destURL)
         .then(function(res){
             return res.json();
         })
         .then(function(data){
-            let filteredData = data.filter(item => item.destination === selectedState); // filter out the packages for the selected state
-            appendData(filteredData); // append the filtered data to the DOM
+            let filteredData = data.filter(item => item.destination === selectedState);
+            appendData(filteredData);
             destData = filteredData;
         })
         .catch(function(error){
@@ -182,11 +108,21 @@
             tourList.append(tourItem);
         }
         card.append(tourList);
+
+
+        let viewDetailsBtn = document.createElement("button");
+        viewDetailsBtn.textContent = "View Details";
+
+        viewDetailsBtn.addEventListener("click", function() {
+            localStorage.setItem("package_id", data.id);
+            window.location.href = "user_package_view.html";
+        });
+        card.append(viewDetailsBtn);
+
+
         return card;
     }
-
-
-        
+      
 </script>
 
 
