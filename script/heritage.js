@@ -10,11 +10,11 @@ async function fetchData(apiUrl){
          let res=await fetch(apiUrl);
          let data=await res.json();
          data=data.filter((e)=>{
-            return e.category==="trecking"
+            return e.category==="heritage"
          });
          addlocation(data);
-         displayTreckData(data.slice(0,3));//bydefault only one set of indexes 0,1,2 will be
-         buttonappendTreck(data);
+         displayheritageData(data.slice(0,3));//bydefault only one set of indexes 0,1,2 will be
+         buttonappendheritage(data);
     }catch(err){
         console.log(err);
     }
@@ -34,7 +34,7 @@ function addlocation(data){
         // console.log(ele);
     }
     // console.log(tempObj);
-    let location=document.getElementById("treck-filterDestinations");
+    let location=document.getElementById("heritage-filterDestinations");
     for(let key in tempObj){
         console.log(key);
         let li=document.createElement("li");
@@ -47,13 +47,13 @@ function addlocation(data){
             // console.log(newData);
             if(newData.length<3){
                   console.log(newData);
-                  buttonappendTreck(newData);
-                  displayTreckData(newData);
+                  buttonappendheritage(newData);
+                  displayheritageData(newData);
             }
             if(newData.length>=3){
-                buttonappendTreck(newData);
-                displayTreckData(newData.slice(0,3));
-                // this displaytreckData again calling for to show by default 
+                buttonappendheritage(newData);
+                displayheritageData(newData.slice(0,3));
+                // this displayheritageData again calling for to show by default 
                 // page of new array from 0 to <3 index
             }
            
@@ -69,51 +69,50 @@ window.addEventListener("load",()=>{
 })
 
 // ------------------------------>>>>>>>>>>paginating buttons<<<<<<<<<<----------------
-let treckbuttons=document.getElementById("treck-buttons");
+let heritagebuttons=document.getElementById("heritage-buttons");
 
-function buttonappendTreck(arrtreck){
-// console.log(arrtreck);
-treckbuttons.innerHTML="";
-let buttonsCount=Math.ceil(arrtreck.length/3);
+function buttonappendheritage(arrheritage){
+// console.log(arrheritage);
+heritagebuttons.innerHTML="";
+let buttonsCount=Math.ceil(arrheritage.length/3);
   for(let i=0;i<buttonsCount;i++){
-    let treckbtn=document.createElement("button");
-    treckbtn.className=`treckbutton`;
-    treckbtn.setAttribute("id",i);
-    treckbtn.textContent=i+1;
-   treckbtn.addEventListener("click",()=>{
-    // console.log(treckbtn.getAttribute("id"));
-    paginationbtnData(arrtreck,treckbtn.getAttribute("id"))
+    let heritagebtn=document.createElement("button");
+    heritagebtn.className=`heritagebutton`;
+    heritagebtn.setAttribute("id",i);
+    heritagebtn.textContent=i+1;
+   heritagebtn.addEventListener("click",()=>{
+    // console.log(heritagebtn.getAttribute("id"));
+    paginationbtnData(arrheritage,heritagebtn.getAttribute("id"))
    })
-    treckbuttons.append(treckbtn);
+    heritagebuttons.append(heritagebtn);
   }
 }
 function paginationbtnData(arr,id){
 console.log(arr);
-    let customTreckAr=undefined;
+    let customheritageAr=undefined;
    
-        // customTreckAr=arr;
-        console.log(customTreckAr);
+        // customheritageAr=arr;
+        console.log(customheritageAr);
    
-        customTreckAr=arr.slice(id*3,(id*3)+3);
-        console.log(customTreckAr);
+        customheritageAr=arr.slice(id*3,(id*3)+3);
+        console.log(customheritageAr);
        
-        displayTreckData(customTreckAr);
+        displayheritageData(customheritageAr);
     
    
 }
 
-// ///////////////////////////////////////////////////////
+// //////////////////////////////////////////////////
+let heritageData=document.getElementById("heritage-data");
 
-let treckData=document.getElementById("treck-data");
-
-function displayTreckData(data){
-   treckData.innerHTML="";
+function displayheritageData(data){
+   heritageData.innerHTML="";
 
    data.forEach((e)=>{
-    let treckactivity=document.createElement("div");
-    treckactivity.className=`treck-activity`;
-    treckactivity.innerHTML=`
-    <div class="treck-child-image"> 
+    let heritageactivity=document.createElement("div");
+    heritageactivity.className=`heritage-activity`;
+    heritageactivity.innerHTML=`
+    <div class="heritage-child-image"> 
     <div><img src="${e.image[0]}" alt=""></div> 
     <div>         
     <table>
@@ -127,15 +126,16 @@ function displayTreckData(data){
      </div>
     <div class="child-description">
  
-    <h2 class="treck-Description">${e.title}</h2>
+    <h2 class="heritage-Description">${e.title}</h2>
     <p>${e.description}</p>
     </div>
  </div>`
 // console.log(e.description);
   
-treckData.append(treckactivity);
+heritageData.append(heritageactivity);
    })
 }
+
 
 // -------->>>>>>>>>>More and less toggling <<--------
 
