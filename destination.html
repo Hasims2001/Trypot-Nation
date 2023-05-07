@@ -26,27 +26,43 @@
         font-family: 'Poppins', sans-serif;
     }
 
+    body {
+        background-color: #f4f4f4;
+    }
+
+    #header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px 100px;
+        display: flex;
+        align-items: center;
+    }
+
     #destinations {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         padding: 8%;
+        margin-top: 20px;
+        padding-bottom: 20px;
     }
 
     .destcard {
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         max-width: 600px;
         margin-bottom: 30px;
         border: 1px solid #ddd;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
     }
 
     .destcard .dest-card-title {
-        margin-top: 0;
-        font-size: 20px;
+        padding: 20px;
+        font-size: 25px;
         font-weight: bold;
-        padding: 10px;
-        background-color: #f5f5f5;
-        color: black;
+        background-color: #417c71;
+        color: #fff;
         text-align: center;
     }
 
@@ -70,28 +86,33 @@
         display: none;
     }
 
-    .read-more-btn {
-        width: 30%;
+
+
+    .read-more-btn { 
+        
         display: block;
-        margin: 0 auto;
-        margin-top: 20px;
+        margin: 20px auto;
         padding: 10px 20px;
         background-color: #359381;
         border: none;
+        border-radius: 5px;
         color: #fff;
-        font-size: 1.2rem;
+        font-size: 20px;
         cursor: pointer;
+        width: 30%;
     }
 
     .read-more-btn:hover {
         background-color: lightseagreen;
     }
 
-    #header {
-        position: static;
-        background-color: whitesmoke;              
-    }
 
+    @media only screen and (max-width: 400px) {
+        #destinations {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    
     </style>
 
 </head>
@@ -170,9 +191,9 @@
         h3.textContent = state;
         card.append(h3);
 
-        let p = document.createElement("p");
-        p.textContent = description;
-        card.append(p);
+        // let p = document.createElement("p");
+        // p.textContent = items[0].description[0];
+        // card.append(p);
 
         let carouselDiv = document.createElement("div");
         carouselDiv.className = "dest-carousel";
@@ -202,9 +223,8 @@
         readMoreBtn.textContent = "Read More";
 
         readMoreBtn.addEventListener("click", function(){
-            // window.location.href = "./destDetails.html";
-            let state = h3.textContent; // get the state name from the card
-            window.location.href = "./destDetails.html?state=" + state; // pass state as a query parameter in the URL
+            let state = h3.textContent;
+            window.location.href = "./destDetails.html?state=" + state;
         });
         card.append(readMoreBtn);
 

@@ -50,7 +50,7 @@
     }
     .mainimg{
         width:300px;
-        height: max-content;
+        height: 100%;
         max-height: 100%;
         object-fit: cover;
         border-radius: 10px;
@@ -202,6 +202,7 @@
             width: 100%;
             margin: auto;
             text-align: center;
+            margin-top:2em;
         }
 
         #searchbar input,#sortingdata select {

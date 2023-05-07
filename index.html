@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home - Trypot Nation</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/index.css">
-    
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
-<link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-
+    <script>
+        $(function(){
+        $("#header").load("inde_header.html"); 
+        $("#footer").load("inde_footer.html"); 
+        $("#corosal").load("indexcorosal.html"); 
+        $("#tourpack").load("tourpackagecard.html"); 
+        $("#rev").load("review.html"); 
+  
+        
+    });
+    </script>
 </head>
 
 <body>
   
-  <script>
-      $(function(){
-      $("#header").load("inde_header.html"); 
-      $("#footer").load("inde_footer.html"); 
-      $("#corosal").load("indexcorosal.html"); 
-      $("#tourpack").load("tourpackagecard.html"); 
-      $("#rev").load("review.html"); 
-
-      
-  });
-  </script>
+ 
   
         <!-- navigation bar starts here -->
 
@@ -51,8 +50,9 @@
         <img src="./IMAGES/tree.png" alt="tree">
         <img src="./IMAGES/leaf.png" alt="leaf" id="leaf">
         
-        <h2 id="text"> the Best of Nature ,<br> and Culture in the ,<br> Heart of the Countryside </h2>
-        
+        <h5 id="text">Experience the Best of Nature and Culture in the Heart of the Countryside 
+        </h5>
+        <!-- <p id="desc">Join us on aioumoy through the roling hills. rich farmlands. and charming rural villages. Discover a worid where the beauty of nature meets the richness of culture. </p> -->
       
       
        
@@ -64,11 +64,18 @@
     </section>
      <!-- images of bagroud ends here  -->
 
-     <!-- about section starts here  -->
+
     <section class="sec">
         
 
-            <div id="viidiofram"><iframe width="580" height="320" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/CW_EJ1UCseQ?autoplay=0&amp;start=0"></iframe></div>
+            <div id="viidiofram">
+                <!-- <iframe width="580" height="320" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/CW_EJ1UCseQ?autoplay=0&amp;start=0"></iframe> -->
+                <video width="100%" height="100%" autoplay loop controls>
+                    <source src="./img/HomeVideo.mp4" type="video/mp4">
+                    <source src="./img/HomeVideo.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
 
 
       
@@ -101,13 +108,22 @@
 <div id="tourpack"></div>
 
 
+
+
+
+<!-- review starts here -->
+
+
+<section id="rev"></section>
+
+
 <!-- about section starts here  -->
-    <section class="sec">
-        <h2 id="link2">AboutUs</h2>
-        <p>
-                Welcome to our eco-tourism website, where we offer unforgettable experiences that connect travelers to the natural world while promoting sustainability and conservation efforts.Our mission is to provide responsible and ethical travel options that benefit local communities and the environment.Our tours are designed to immerse you in the beauty of nature 
-             while also educating you on the importance of preserving it. From exploring pristine rainforests to witnessing rare wildlife sightings, our itineraries are carefully crafted to showcase the natural wonders of each destination.We work closely with local communities to create responsible tourism initiatives that benefit both visitors and residents.
-              By supporting local businesses and investing in conservation efforts, we aim to create a positive impact on the environment and the people who call these places home. Our experienced guides are knowledgeable about the ecosystems we explore and are dedicated to ensuring a safe and enjoyable experience for all travelers. Whether you're an avid adventurer or simply looking to disconnect and recharge in nature, we have a tour that will suit your interests and preferences.
+<section class="sec" id="aboutsec">
+    <h2 id="link2">AboutUs</h2>
+    <p>
+            Welcome to our eco-tourism website, where we offer unforgettable experiences that connect travelers to the natural world while promoting sustainability and conservation efforts.Our mission is to provide responsible and ethical travel options that benefit local communities and the environment.Our tours are designed to immerse you in the beauty of nature 
+         while also educating you on the importance of preserving it. From exploring pristine rainforests to witnessing rare wildlife sightings, our itineraries are carefully crafted to showcase the natural wonders of each destination.We work closely with local communities to create responsible tourism initiatives that benefit both visitors and residents.
+          By supporting local businesses and investing in conservation efforts, we aim to create a positive impact on the environment and the people who call these places home. Our experienced guides are knowledgeable about the ecosystems we explore and are dedicated to ensuring a safe and enjoyable experience for all travelers. Whether you're an avid adventurer or simply looking to disconnect and recharge in nature, we have a tour that will suit your interests and preferences.
 Join us on an eco-tourism adventure and discover the beauty and diversity of the natural world while supporting sustainable travel practices. Let us help you create lasting memories while making a positive impact on the environment and the communities you visit.
 ,<br><br><br>
 Welcome to our countryside village website, where we invite you to experience the charm and tranquility of rural life. Nestled among rolling hills and picturesque landscapes,our village is a hidden gem that offers a unique and authentic glimpse into local culture and traditions.As you wander through the village, you'll be captivated by the stunning 
@@ -117,18 +133,9 @@ have shaped our community over the centuries.We take pride in our village's sust
 Whether you're looking for a peaceful retreat, a family-friendly holiday, or an adventure-filled getaway, our countryside village has something for everyone. 
 <b>  We invite you to come and experience the beauty and tranquility of rural life and create lasting memories that will stay with you forever.<br> <br>
 </b>
-        </p>
-       
-    </section>
-
-
-
-
-<!-- review starts here -->
-
-
-<section id="rev"></section>
-
+    </p>
+   
+</section>
 
 
 
@@ -143,6 +150,11 @@ Whether you're looking for a peaceful retreat, a family-friendly holiday, or an 
    
     
  
-    <script src="./script/index.js"></script>
 </body>
+<script src="./script/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+   
 </html>

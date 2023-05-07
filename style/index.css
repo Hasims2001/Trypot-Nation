@@ -72,13 +72,19 @@ body {
 
 #text {
     position: absolute;
-    font-size: 4em;
+    font-size: 2em;
+    word-wrap: break-word;
+    width: 50%;
+    font-weight: bolder;
     /* color: #333; */
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2) ;
     text-align: center;
 }
 
+#botomh1{
+    font-size: larger;
+}
 .parallax img {
     position: absolute;
     top: 0;
@@ -90,6 +96,9 @@ body {
 .sec {
     position: relative;
     background:rgba(2,33,53,255);
+    padding: 100px 0;
+}
+#aboutsec{
     padding: 100px;
 }
 .sec h2 {

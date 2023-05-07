@@ -139,4 +139,119 @@ rightcampbtn.addEventListener("click",()=>{
     if(n>campimg.length-1){
         n=0;
     }
+});
+
+let more=document.getElementById("moretext");
+more.style.display="none";
+
+let morebtn=document.getElementById("morelessbutton");
+
+function toggletext(){
+
+    
+}
+morebtn.addEventListener("click",()=>{
+   
+    console.log(more.style.display);
+    if(more.style.display==="none"){
+        more.style.display="block";
+        morebtn.textContent="Read less";
+             console.log(more.style.display);
+    }else{
+        more.style.display="none";
+        morebtn.textContent="Read more";
+    }
+})
+
+
+
+let more2=document.getElementById("moretextscuba");
+more2.style.display="none";
+
+let morebtn2=document.getElementById("morelessbutton-scuba");
+
+morebtn2.addEventListener("click",()=>{
+   
+    console.log(more2.style.display);
+    if(more2.style.display==="none"){
+        more2.style.display="block";
+        morebtn2.textContent="Read less";
+    }else{
+        more2.style.display="none";
+        morebtn2.textContent="Read more";
+    }
+});
+
+
+
+let more3=document.getElementById("moretextpara");
+more3.style.display="none";
+
+let morebtn3=document.getElementById("morelessbutton-para");
+
+morebtn3.addEventListener("click",()=>{
+   
+    console.log(more3.style.display);
+    if(more3.style.display==="none"){
+        more3.style.display="block";
+        morebtn3.textContent="Read less";
+    }else{
+        more3.style.display="none";
+        morebtn3.textContent="Read more";
+    }
+})
+
+
+let more4=document.getElementById("moretexthistory");
+more4.style.display="none";
+
+let morebtn4=document.getElementById("morelessbutton-history");
+
+morebtn4.addEventListener("click",()=>{
+   
+    console.log(more4.style.display);
+    if(more4.style.display==="none"){
+        more4.style.display="block";
+        morebtn4.textContent="Read less";
+    }else{
+        more4.style.display="none";
+        morebtn4.textContent="Read more";
+    }
+});
+
+
+let more5=document.getElementById("moretextheritage");
+more5.style.display="none";
+
+let morebtn5=document.getElementById("morelessbutton-heritage");
+
+morebtn5.addEventListener("click",()=>{
+   
+    console.log(more5.style.display);
+    if(more5.style.display==="none"){
+        more5.style.display="block";
+        morebtn5.textContent="Read less";
+    }else{
+        more5.style.display="none";
+        morebtn5.textContent="Read more";
+    }
+});
+
+
+
+let more6=document.getElementById("moretextcamping");
+more6.style.display="none";
+
+let morebtn6=document.getElementById("morelessbutton-camping");
+
+morebtn6.addEventListener("click",()=>{
+   
+    console.log(more6.style.display);
+    if(more6.style.display==="none"){
+        more6.style.display="block";
+        morebtn6.textContent="Read less";
+    }else{
+        more6.style.display="none";
+        morebtn6.textContent="Read more";
+    }
 })

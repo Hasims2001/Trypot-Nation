@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("user_header.html");
+            $("#footer").load("pagefooter.html");
+
+        });
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #header {
+            background-color: whitesmoke;
+        }
+
+        .maincontainer {
+            display: flex;
+        }
+
+        /* first_section */
+        #first_section {
+            margin: 1em;
+        }
+
+        .packagecard {
+            margin: 1.5em 0;
+            display: flex;
+            width: 60vw;
+            padding: 1.5em 1em;
+            border-radius: 1em;
+            background-color: whitesmoke;
+        }
+
+        .packagedata {
+            margin-left: 1em;
+        }
+
+        .titleprice {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .inputmember {
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+        }
+
+        button,
+        input {
+            margin: 0 1em;
+            padding: 1em;
+            border-radius: 1em;
+            border: none;
+
+        }
+
+        button {
+            cursor: pointer;
+            color: white;
+            background-color: #359381;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .packagedata>p,
+        .packagedata>div {
+            margin: .5em 0;
+        }
+
+        .price {
+            padding: 15px;
+            margin: auto;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        .member {
+            text-align: center;
+            width: 5vw;
+            text-decoration: none;
+            border: none;
+            outline: none;
+        }
+
+        .packageimg {
+            border-radius: 1em;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        /* cartdetails */
+        .cartdetails {
+            width: 30vw;
+            background-color: whitesmoke;
+            border-radius: 1em;
+            margin: 1.5em;
+        }
+
+        .cartfirst {
+            padding: 1em;
+        }
+
+        #finaldiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cartfirst>p,
+        h3 {
+            margin: 1em 0;
+        }
+
+        #selectpay {
+            display: flex;
+        }
+        .cartfirst > #payusing{
+            margin: 1em 0;
+        }
+        .cartfirst > #btndiv {
+            margin: 1em 0;
+            text-align: center;
+        }
+
+        #finalprice{
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header"></header>
+    <section id="first_section">
+        <h2>Order Summary</h2>
+        <div class="maincontainer">
+            <div class="package">
+                <div class="packagecard">
+                    <div class="imgdiv">
+                        <img src="images/logo.png" width="100vw" alt="">
+                    </div>
+                    <div class="packagedata">
+                        <p>Duration</p>
+                        <div class="titleprice">
+                            <h4>Title</h4>
+                            <h4>Price</h4>
+                        </div>
+                        <div class="inputmember">
+                            <p>Total Member : </p>
+                            <button class="incre">+</button>
+                            <input type="number" value="1" id="member" min="1">
+                            <button class="decre">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cartdetails">
+                <div class="cartfirst">
+                    <h3>Your Details</h3>
+                    <div id="userdetails">
+
+                    </div>
+                    <h3>Book Now</h3>
+                    <div id="finaldiv">
+                        <p>Total Order Value</p>
+                        <p id="finalprice">price</p>
+                    </div>
+                    <h3>Payment Mode</h3>
+                    <div id="selectpay">
+                        <label for="cash">
+                            <input type="radio" name="payment" onclick="checkedpay(this.value)" id="cash"
+                                value="cash">Cash</label>
+                        <label for="Creditcard">
+                            <input type="radio" name="payment" onclick="checkedpay(this.value)" value="credit">Credit
+                            Card</label>
+                        <label for="debitcard">
+                            <input type="radio" name="payment" onclick="checkedpay(this.value)" value="debit">Debit
+                            Card</label>
+                    </div>
+                    <div id="payusing"></div>
+                    <div id="btndiv">
+                    <button onclick="booknow()">Book Now</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+<script>
+    let package = document.querySelector('.package');
+    let h2 = document.querySelector('#first_section > h2');
+    let finalprice = document.querySelector('#finalprice');
+    let payusing = document.querySelector('#payusing');
+    let userdetails = document.querySelector('#userdetails');
+    
+    const API = "https://trypot-nation.onrender.com/packages";
+    let package_id = localStorage.getItem("package_id") || [];
+    let userdata = JSON.parse(localStorage.getItem('user')) || [];
+
+    if (package_id.length === 0) {
+        h2.textContent = "No Package Selected";
+        package.innerHTML = null;
+    } else {
+
+        userdetails.innerHTML = null;
+        userdetails.innerHTML = `<p>Name : ${userdata.name}</p> <p>Email  : ${userdata.email}</p>`;
+        
+
+        fetchData();
+        function booknow (){
+            if(payusing.textContent == ""){
+                alert("Please select a payment method");
+            }else{
+                window.location.href = "user_loading.html";
+            }
+        }
+        function checkedpay(value) {
+            if (value == "cash") {
+                payusing.textContent = "Note: You have to do payment on Arrival";
+            }else {
+                payusing.textContent = "Please use cash option to pay";
+            } 
+        }
+
+
+        async function fetchData() {
+            try {
+                let res = await fetch(`${API}?id=${package_id}`);
+                let data = await res.json();
+                console.log(data);
+                package.innerHTML = null;
+                data.forEach(element => {
+                    package.append(CreateCard(element));
+                });
+
+            } catch (error) {
+                console.log(error);
+            }
+
+        }
+
+        function CreateCard(element) {
+            let div = document.createElement('div');
+            div.className = "packagecard";
+            div.style.wordWrap = "break-word";
+            div.innerHTML = `<div class="imgdiv">
+                        <img src="${element.image[0]}" width="100vw" class="packageimg" alt="">
+                    </div>
+                    <div class="packagedata">
+                        <p>${element.duration}</p>
+                            <h3>${element.title}</h3>
+                            <p>${element.destination}</p>
+                        <div class="inputmember">
+                            <p>Total Member : </p>
+                            <button class="incre">+</button>
+                            <input type="number" value="1" class="member" min="1">
+                            <button class="decre">-</button>
+                        </div>
+                    </div>
+                    <div class="price">${element.price}</div>`;
+            finalprice.textContent = element.price;
+            let price = div.querySelector('.price');
+            let member = div.querySelector('.member');
+            let incre = div.querySelector('.incre');
+            incre.addEventListener('click', () => {
+                member.value++;
+                price.textContent = Number(price.textContent) + element.price;
+                finalprice.textContent = price.textContent;
+            })
+            let decre = div.querySelector('.decre');
+            decre.addEventListener('click', () => {
+                member.value--;
+                price.textContent = Number(price.textContent) - element.price;
+                finalprice.textContent = price.textContent;
+            })
+            return div;
+        }
+    }
+</script>
+
+</html>
+<!-- <div class="titleprice">
+    <h4>${element.title}</h4>
+    <h4 class="price">${element.price}</h4>
+</div> -->
