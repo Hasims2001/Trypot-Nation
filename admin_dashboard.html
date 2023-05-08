@@ -31,7 +31,7 @@
             font-family: 'Poppins', sans-serif;
         }
 
-
+       
 
         #container {
             margin: 0 1.5em;
@@ -435,7 +435,7 @@
             <div id="box1">
                 <div class="contain">
                     <h4>Sales Made Today</h4>
-                    <p>₹ 10,500.00</p>
+                    <p id="todaySales">₹ 10,500.00</p>
                 </div>
                 <div class="img_div">
                     <img src="./img/upsales.png" alt="sales">
@@ -444,7 +444,7 @@
             <div id="box2">
                 <div class="contain">
                     <h4>Sales Made Weekly</h4>
-                    <p>₹ 90,000.00</p>
+                    <p id="weeklySales">₹ 90,000.00</p>
                 </div>
                 <div class="img_div">
                     <img src="./img/weeksales.png" alt="sales">
@@ -453,7 +453,7 @@
             <div id="box3">
                 <div class="contain">
                     <h4>Sales Made Monthly</h4>
-                    <p>₹ 5,50,000.00</p>
+                    <p id="monthlySales">₹ 5,50,000.00</p>
                 </div>
                 <div class="img_div">
                     <img src="./img/sales.png" alt="sales">
@@ -649,6 +649,7 @@
                 <tr>
                     <th>Id</th>
                     <th>User Name</th>
+                    <th>Email</th>
                     <th>Password</th>
                     <th>Edit</th>
                     <th>Delete</th>
@@ -677,6 +678,7 @@
     let heading = document.querySelector('#container > h2');
     let cta = document.querySelector('.cta');
 
+    let datediff = [];
 
     let admindata = JSON.parse(localStorage.getItem('AdminData')) || [];
 
@@ -705,6 +707,36 @@
 
     // admin
     let admin_tbody = document.querySelector("#admin_tbody");
+    let typeofadmin = document.querySelector("#typeofadmin");
+    let sortingbyname = document.querySelector("#sortingbyname");
+    let searchinadmin = document.querySelector("#searchinadmin");
+    let admin_add = document.querySelector("#admin_add");
+   // admin search
+   searchinadmin.addEventListener('input', () => {
+        if (searchinadmin.value === "") {
+            fetchAdminData(AdminAPI);
+        } else {
+            fetchAdminData(`${AdminAPI}?${typeofadmin.value}_like=${searchinadmin.value}`);
+
+        }
+    })
+
+    // admin sorting
+    sortingbyname.addEventListener('change', () => {
+        if (sortingbyname.value === "") {
+            fetchAdminData(AdminAPI);
+        } else {
+            fetchAdminData(`${AdminAPI}?_sort=username&_order=${sortingbyname.value}`);
+        }
+    });
+
+    admin_add.addEventListener('click', () => {
+        localStorage.setItem('addnew', JSON.stringify({
+            addnew: true
+        }));
+        window.location.href = "admin_edit_admin.html";
+    });
+
     async function fetchAdminData(AdminAPI) {
         let res = await fetch(AdminAPI);
         let data = await res.json();
@@ -717,18 +749,48 @@
         let tr = document.createElement('tr');
         let td1 = document.createElement('td');
         let td2 = document.createElement('td');
+        let td6 = document.createElement('td');
         let td3 = document.createElement('td');
         let td4 = document.createElement('td');
         let td5 = document.createElement('td');
 
         td1.innerHTML = element.id;
         td2.innerHTML = element.username;
+        td6.innerHTML = element.email;
         td3.innerHTML = element.password;
         td4.className = "edit_button";
         td4.innerHTML = edit_btn();
+        td4.addEventListener('click', () => {
+            localStorage.setItem('edit_admin', JSON.stringify(element));
+            window.location.href = 'admin_edit_admin.html';
+        });
         td5.innerHTML = delete_btn();
         td5.className = "delete_button";
-        tr.append(td1, td2, td3, td4, td5);
+        
+        td5.addEventListener("click", () => {
+            let ans = confirm(`ID ${element.id} will delete, are you sure?`);
+
+            if (ans === true) {
+                deleting();
+                async function deleting() {
+                    try {
+                        let res = await fetch(`${AdminAPI}/${element.id}`, {
+                            method: "DELETE",
+                        });
+                        if (res.ok) {
+                            alert(`Deleted`);
+                            location.reload();
+                        }
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            }
+
+        })
+
+
+        tr.append(td1, td2, td6, td3, td4, td5);
         return tr;
     }
 
@@ -820,6 +882,10 @@
         })
 
 
+        // let current = new Date();
+        // let difference = current.getTime() - element.timestamp.getTime();
+        // let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+        // datediff.push(TotalDays);
 
         td1.innerHTML = element.id;
         td2.innerHTML = element.package_name;
@@ -899,6 +965,7 @@
         });
         let td8 = document.createElement('td');
         td8.className = "delete_button";
+
         td8.addEventListener("click", () => {
             let ans = confirm(`ID ${element.id} will delete, are you sure?`);
 
@@ -1083,6 +1150,8 @@
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
     }
+
+    console.log(datediff);
 </script>
 
 </html>

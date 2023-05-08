@@ -252,7 +252,7 @@
             </tr>
             <tr>
                 <td>TimeStamp: </td>
-                <td><input type="date" id="timestamp"></td>
+                <td><input type="text" id="timestamp"></td>
             </tr>
             <tr style="text-align: center;">
                 <th id="add">
@@ -277,7 +277,7 @@
     let addnew = JSON.parse(localStorage.getItem('addnew')) || [];
     const API = "https://trypot-nation.onrender.com/sales";
 
-    let package_name = document.querySelector('#package_name');
+            let package_name = document.querySelector('#package_name');
             let user_name = document.querySelector('#user_name');
             let user_email = document.querySelector('#user_email');
             let user_bill = document.querySelector('#user_bill');
