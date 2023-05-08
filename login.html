@@ -736,8 +736,9 @@ button:hover .icon-5 {
             flag = true;
             localStorage.setItem('user', JSON.stringify({
               name : element.name,
-              email : e,
-              password : p
+              email : element.email,
+              password :element.password,
+              userid : element.id
             }));
             window.location.href = "index.html";
             return;

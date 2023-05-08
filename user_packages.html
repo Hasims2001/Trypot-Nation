@@ -226,6 +226,7 @@
     function CreateBlackCard() {
         let blackcard = document.createElement("div");
         blackcard.className = "card";
+        blackcard.style.width = "60vw";
         blackcard.innerHTML = `
     <div class="card_load"></div>
     <div class="card_load_extreme_title"></div>
@@ -244,7 +245,7 @@
                    <img src="${ele.image[0]}" alt="img"  class="mainimg">
                 </div>
                 <div class="details">
-                    <div style="display:flex; justify-content:space-between;"> 
+                    <div style="display:flex; justify-content:space-between; align-item:center"> 
                     <p id="duration">${ele.duration}</p>
                     <p id="price">${ele.price}</p>
                     </div>
