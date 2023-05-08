@@ -851,6 +851,7 @@
         let td5 = document.createElement('td');
         let td8 = document.createElement('td');
         let td6 = document.createElement('td');
+        
         td6.className = "edit_button";
         td6.addEventListener('click', () => {
             localStorage.setItem('edit_sales', JSON.stringify(element));
@@ -893,7 +894,6 @@
         td4.innerHTML = element.email;
         td5.innerHTML = element.bill;
         td8.innerHTML = element.timestamp;
-
         td6.innerHTML = edit_btn();
         td7.innerHTML = delete_btn();
 
