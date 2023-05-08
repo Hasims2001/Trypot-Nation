@@ -128,11 +128,41 @@ body {
 #viidiofram iframe {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
-
-
-
-
 /* footer section  */
 
-
+/* destinations */
+#Destination-head{
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  cursor:not-allowed;
+  text-decoration: underline;
+  margin-top:50px;
+  color:rgb(53, 44, 110);
+}
+#destination-container{
+    width:85%;
+    height:auto;
+    border:1px solid black;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;;
+   margin: auto;
+}
+#destination-container>div{
+    /* width:25%; */
+    height:300px;
+    border:1px solid green;
+}
+#destination-container div>img{
+ width:100%;
+ height:80%;
+ object-fit: cover;
+ /* border:1px solid red; */
+}
+#destination-container div>h3{
+    font-size: 20px;
+    color:rgb(53, 44, 110);
+    text-align: center;
+    margin: 5px;;
+}

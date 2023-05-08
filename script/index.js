@@ -23,9 +23,6 @@ window.addEventListener('scroll', ()=>{
 
 
 
-
-
-
 //Smooth Scrolling When Clicking an Anchor Link to abot section 
 
 $(document).ready(function() {
@@ -52,6 +49,61 @@ $(document).ready(function() {
 
         
      
+
+let apiUrl=`https://trypot-nation.onrender.com/packages`;
+
+async function Fetchdata(){
+         try{
+       let res=await fetch(apiUrl);
+       let data=await res.json();
+      
+       destination(data);
+         }catch(err){
+            console.log(err);
+         }
+}
+
+function destination(data){
+    // console.log(data);
+    let obj={};
+    for(let i=0;i<data.length;i++){
+        if(obj[data[i].destination]===undefined){
+            let arr=[];
+            obj[data[i].destination]=arr;
+            arr.push(data[i].image[0]);
+            arr.push(data[i].id);
+
+        }
+    }
+    displaydestination(obj,data);
+}
+let destinationContainer=document.getElementById("destination-container");
+function displaydestination(obj){
+    console.log(obj);
+    // destinationContainer.innerHTML="";
+    let objArr=Object.keys(obj);
+    console.log(objArr);
+    
+    for(let key in obj){
+        let div=document.createElement("div");
+        div.setAttribute("id",obj[key][1]);
+        let image=document.createElement("img");
+        image.src=obj[key][0];
+        let name=document.createElement("h3");
+        name.textContent=key;
+        div.append(image,name);
+        console.log(div);
+        div.addEventListener('click', () => {
+            localStorage.setItem('package_id',obj[key][1]);
+            window.location.href = "user_package_view.html";
+        });
+        destinationContainer.append(div);
+    }
+   
+
+}
+
+window.addEventListener("load",Fetchdata(apiUrl));
 
 
 
