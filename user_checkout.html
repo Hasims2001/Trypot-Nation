@@ -39,10 +39,12 @@
             margin: 1em;
         }
 
+        .package{
+            width: 60vw;
+        }
         .packagecard {
             margin: 1.5em 0;
             display: flex;
-            width: 60vw;
             padding: 1.5em 1em;
             border-radius: 1em;
             background-color: whitesmoke;
@@ -114,6 +116,7 @@
 
         /* cartdetails */
         .cartdetails {
+            float :right;
             width: 30vw;
             background-color: whitesmoke;
             border-radius: 1em;
@@ -150,6 +153,24 @@
             font-size: large;
             font-weight: bold;
         }
+
+        #clearcart{
+            position: absolute;
+            top:0;
+            right:10px;
+        }
+
+        @media screen and (max-width:768px) and (min-width:300px){
+            .maincontainer{
+                flex-direction: column;
+            }
+            .package{
+                width: auto;
+            }
+            .cartdetails{
+                width: auto;
+            }
+        }
     </style>
 </head>
 
@@ -159,24 +180,7 @@
         <h2>Order Summary</h2>
         <div class="maincontainer">
             <div class="package">
-                <div class="packagecard">
-                    <div class="imgdiv">
-                        <img src="images/logo.png" width="100vw" alt="">
-                    </div>
-                    <div class="packagedata">
-                        <p>Duration</p>
-                        <div class="titleprice">
-                            <h4>Title</h4>
-                            <h4>Price</h4>
-                        </div>
-                        <div class="inputmember">
-                            <p>Total Member : </p>
-                            <button class="incre">+</button>
-                            <input type="number" value="1" id="member" min="1">
-                            <button class="decre">-</button>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
             <div class="cartdetails">
                 <div class="cartfirst">
@@ -194,12 +198,12 @@
                         <label for="cash">
                             <input type="radio" name="payment" onclick="checkedpay(this.value)" id="cash"
                                 value="cash">Cash</label>
-                        <label for="Creditcard">
+                        <!-- <label for="Creditcard">
                             <input type="radio" name="payment" onclick="checkedpay(this.value)" value="credit">Credit
                             Card</label>
                         <label for="debitcard">
                             <input type="radio" name="payment" onclick="checkedpay(this.value)" value="debit">Debit
-                            Card</label>
+                            Card</label> -->
                     </div>
                     <div id="payusing"></div>
                     <div id="btndiv">
@@ -217,7 +221,8 @@
     let finalprice = document.querySelector('#finalprice');
     let payusing = document.querySelector('#payusing');
     let userdetails = document.querySelector('#userdetails');
-    var newDate =new Date().toISOString().split('T')[0];
+    let newDate =new Date();
+    console.log(newDate);
 
     const API = "https://trypot-nation.onrender.com/packages";
     const SalesAPI = "https://trypot-nation.onrender.com/sales";
@@ -252,7 +257,7 @@
                                 packagename : package_name.textContent,
                                 username : userdata.name,
                                 email : userdata.email,
-                                timestamp : newDate,
+                                timestamp : String(newDate),
                                 bill : Number(finalprice.textContent)
                             })
                         })
@@ -278,7 +283,6 @@
             try {
                 let res = await fetch(`${API}?id=${package_id}`);
                 let data = await res.json();
-                console.log(data);
                 package.innerHTML = null;
                 data.forEach(element => {
                     
@@ -322,10 +326,20 @@
             let decre = div.querySelector('.decre');
             decre.addEventListener('click', () => {
                 member.value--;
+                if(Number(member.value) == 0){
+                   removeCart();
+                }
                 price.textContent = Number(price.textContent) - element.price;
                 finalprice.textContent = price.textContent;
             })
             return div;
+        }
+
+        function removeCart(){
+            let packagecard = document.querySelector('.packagecard');
+                    localStorage.removeItem('package_id');
+                    packagecard.innerHTML = "";
+                    window.location.reload();
         }
     }
 </script>

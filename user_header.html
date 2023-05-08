@@ -16,13 +16,13 @@
       margin-top: 0px;
     }
 
-    /* logo edit */
-    #logodiv>#imglogo {
-        width: 30px;
-        position: absolute;
-        top: 31px;
-        left: 76px;
-    }
+  #cname{
+    cursor: pointer;
+  }
+  #cname > a{
+    text-decoration: none;
+    color: #359381;
+  }
 
    
     #navdiv>#headernav>a {
@@ -50,35 +50,32 @@
             font-size: larger;
         }
 
-        #logodiv>#imglogo {
-            top: 45px;
-            left: 45.5vw;
+        #headernav{
+            margin:10px auto;
+            text-align: center;
         }
+
+       
     }
 
     @media only screen and (max-width:768px)  and (min-width: 425px) {
         #main {
             flex-direction: column ;
-            font-size: larger;
         }
-
-        #logodiv>#imglogo {
-            top: 45px;
-            left: 44vw;
+        #headernav{
+            margin:10px auto;
+            text-align: center;
         }
+       
     }
 
-    @media only screen and (max-width:425px)  and (min-width: 375px) {
+    @media only screen and (max-width:425px)  and (min-width: 300px) {
         #main {
             flex-direction: column;
-            font-size: larger;
         }
-
-        
-        
-        #logodiv>#imglogo {
-            top: 45px;
-            left: 38.5vw;
+        #headernav{
+            margin:10px auto;
+            text-align: center;
         }
     }
 
@@ -87,8 +84,8 @@
 </style>
 <header id="main">
     <div id="logodiv">
-        <h1>Tryp&nbsp;&nbsp;t Nation</h1>
-        <img src="img/logo.png" alt="logo" id="imglogo">
+        <h1 id="cname"><a href="index.html"> Trypot Nation</a></h1>
+        <!-- <img src="img/logo.png" alt="logo" id="imglogo"> -->
     </div>
     <div id="navdiv">
       
@@ -105,6 +102,33 @@
   
 </header>
 <script>
+    let div = document.getElementById("#headernav");
+    let user = JSON.parse(localStorage.getItem('user')) || [];
+
+    
+//     if(user.length !== 0){
+//         div.innerHTML = ` <a href="index.html">Home</a>
+//             <a href="destination.html">Destination</a>
+//             <a href="activities.html">Activities</a>
+//             <a href="user_packages.html">Packages</a>
+//             <a href="index.html#aboutsec">AboutUs</a>
+//             <a href="index.html" id="removelog">Logout</a>`;
+//  
+//     }else{
+//         div.innerHTML = ` <a href="index.html">Home</a>
+//             <a href="destination.html">Destination</a>
+//             <a href="activities.html">Activities</a>
+//             <a href="user_packages.html">Packages</a>
+//             <a href="index.html#aboutsec">AboutUs</a>
+//             <a href="login.html">Login</a>`;
+//     }
+// 
+//     let removelog = document.getElementById("#removelog");
+//     removelog.addEventListener("click", ()=>{
+//         localStorage.removeItem('user');
+//         location.reload();
+//     })
+
 function myFunction(x) {
   x.classList.toggle("change");
   $("#mobile-menu").toggleClass("menu-hidden", 800, "easeOutQuint");
