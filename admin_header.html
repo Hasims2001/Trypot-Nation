@@ -107,17 +107,21 @@
                 <i class="fa-solid fa-bars"></i>
             </span> <span onclick="Home()">Trypot Nation</span></h1>
         <div id="nav">
-            <a href="#packages_data">Packages</a>
-            <a href="#sales_data">Sales</a>
-            <a href="#users_data">User</a>
-            <a href="#admin_data">Admin</a>
+            <a href="admin_dashboard.html#packages_data">Packages</a>
+            <a href="admin_dashboard.html#sales_data">Sales</a>
+            <a href="admin_dashboard.html#users_data">User</a>
+            <a href="admin_dashboard.html#admin_data">Admin</a>
 
         </div>
-        <a href="admin.html">Logout</a>
+        <a href="admin.html" onclick="logout()">Logout</a>
     </div>
 </header>
 </body>
 <script>
+    //logout
+    function logout() {
+        localStorage.removeItem('AdminData');
+    }
     // home
     function Home() {
         window.location.href = "admin_dashboard.html";

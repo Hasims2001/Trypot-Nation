@@ -249,3 +249,57 @@ body {
   #activity-container div>h3:hover{
     color:#022135;
   }
+
+
+    /* Medium Screen */
+    @media only screen and (min-width: 500px) and (max-width: 768px) {
+        #viidiofram{
+            display: contents;
+        }
+        .sec{
+            display: contents;
+        }
+
+        #destination-container{
+         
+            grid-template-columns:  repeat(4, 1fr);
+        }
+        #activity-container {
+            grid-template-columns:  repeat(3, 1fr);
+           
+           }
+           .aboutsec{
+            display: contents;
+           }
+            }
+    
+    
+    
+            /* Small Screen */
+          @media only screen and (min-width: 320px) and (max-width: 499px) {
+            .parallax>img{
+               width: fit-content;
+            }
+            .parallax>h5{
+                
+                display: none;
+                margin-top: 0;
+            }
+            #viidiofram{
+                display: none;
+            }
+            .sec{
+                display: none;
+            }
+            #destination-container{
+         
+                grid-template-columns:  repeat(1, 1fr);
+            }
+            #activity-container {
+            grid-template-columns:  repeat(1, 1fr);
+           }
+           .aboutsec{
+            display: none;
+           }
+    
+            }

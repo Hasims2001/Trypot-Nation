@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Packages</title>
+    <title>User Data Management</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -231,7 +227,7 @@
 <body>
     <header id="header"></header>
     <div id="container">
-        <h1>Edit</h1>
+        <h1>Edit Sales</h1>
         <!-- <form action=""> -->
         <table>
             <tr>
@@ -240,31 +236,31 @@
             </tr>
             <tr>
                 <td>Name: </td>
-                <td><input type="text" id="title"></td>
+                <td><input type="text" id="user_name"></td>
             </tr>
             <tr>
-                <td>Destination: </td>
-                <td><input type="text" id="destination"></td>
+                <td>Email: </td>
+                <td><input type="email" id="user_email"></td>
             </tr>
             <tr>
-                <td>Duration: </td>
-                <td><input type="text" id="duration"></td>
+                <td>password: </td>
+                <td><input type="password" id="user_password"></td>
             </tr>
             <tr>
-                <td>Location: </td>
-                <td><input type="text" id="location"></td>
+                <td>Phone: </td>
+                <td><input type="number" id="user_phone"></td>
             </tr>
             <tr>
-                <td>Price: </td>
-                <td><input type="number" id="price"></td>
+                <td>Address: </td>
+                <td><input type="text" id="user_address"></td>
             </tr>
             <tr>
-                <td>Image:</td>
-                <td><textarea name="img" id="img" cols="30" rows="10"></textarea></td>
+                <td>State: </td>
+                <td><input type="text" id="user_state"></td>
             </tr>
             <tr>
-                <td>Description: </td>
-                <td><textarea name="description" id="description" cols="30" rows="10"></textarea></td>
+                <td>Country: </td>
+                <td><input type="text" id="user_country"></td>
             </tr>
             <tr style="text-align: center;">
                 <th id="add">
@@ -282,43 +278,41 @@
 <script src="https://kit.fontawesome.com/4f987be9b3.js" crossorigin="anonymous"></script>
 <script>
     let h1 = document.querySelector('#container > h1');
-    let form = document.querySelector("form");
+    let form = document.querySelector("table");
     let add = document.querySelector('#add');
     let canceled = document.querySelector('#cancel');
-    let data = JSON.parse(localStorage.getItem('edit')) || [];
+    let data = JSON.parse(localStorage.getItem('edit_users')) || [];
     let addnew = JSON.parse(localStorage.getItem('addnew')) || [];
-    const API = "https://trypot-nation.onrender.com/packages";
+    const API = "https://trypot-nation.onrender.com/users";
 
-    let title = document.querySelector('#title');
-    let destination = document.querySelector('#destination');
-    let duration = document.querySelector('#duration');
-    let locationd = document.querySelector('#location');
-    let price = document.querySelector('#price');
-    let img = document.querySelector('#img');
-    let description = document.querySelector('#description');
+    let user_name = document.querySelector('#user_name');
+    let user_email = document.querySelector('#user_email');
+    let user_password = document.querySelector('#user_password');
+    let user_phone = document.querySelector('#user_phone');
+    let user_address = document.querySelector('#user_address');
+    let user_state = document.querySelector('#user_state');
+    let user_country = document.querySelector('#user_country');
+
+
 
     if (addnew.length === 0) {
         if (data.length !== 0) {
-            h1.textContent = "Edit Package";
+            h1.textContent = "Edit User";
 
+            user_name.value = data.name;
+            user_email.value = data.email;
+            user_password.value = data.password;
+            user_phone.value = data.phone;
+            user_address.value = data.address;
+            user_state.value = data.state;
+            user_country.value = data.country;
 
-
-            title.value = data.title;
-            destination.value = data.destination;
-            duration.value = data.duration;
-            locationd.value = data.location;
-            price.value = data.price;
-            data.image.forEach(element => {
-                img.value = img.value + element + "\n";
-            });
-
-            description.value = data.description;
         } else {
             h1.textContent = "No Data Found!";
             form.innerHTML = null;
         }
     } else {
-        h1.textContent = "Add New Package";
+        h1.textContent = "Add New User";
 
     }
 
@@ -335,23 +329,22 @@
 </button>`;
     let adding = document.querySelector('#adding');
     adding.addEventListener('click', () => {
-        if (title.value == "" || destination.value == "" || duration.value == "" || locationd.value == "" || price.value == "" || description.value == "") {
+        if (user_name.value == "" || user_email.value == "" || user_password.value == "" || user_phone.value == "" || user_address.value == "" || user_state.value == "" || user_country.value == "") {
             alert('All the fields are required');
         } else {
-            let arrayofdesc = description.value.split("\n");
-            let arrayofimg = img.value.split("\n");
             let temp = {
-                title: title.value,
-                destination: destination.value,
-                duration: duration.value,
-                location: locationd.value,
-                price: price.value,
-                description: arrayofdesc,
-                image: arrayofimg
+                name: user_name.value,
+                email: user_email.value,
+                password: user_password.value,
+                phone: user_phone.value,
+                address: user_address.value,
+                state: user_state.value,
+                country: user_country.value
+
             };
 
 
-            if (h1.textContent === "Add New Package") {
+            if (h1.textContent === "Add New User") {
                 postdata();
                 async function postdata() {
                     try {
@@ -371,11 +364,11 @@
                         console.log(error);
                     }
                 }
-            } else if (h1.textContent === "Edit Package") {
+            } else if (h1.textContent === "Edit User") {
                 patchdata();
                 async function patchdata() {
                     try {
-                        // console.log(`${API}/${data.id}`);
+
                         let res = await fetch(`${API}/${data.id}`, {
                             method: 'PUT',
                             headers: {
