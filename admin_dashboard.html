@@ -77,20 +77,24 @@
 
 
 
-        /* Packages */
+        /* data */
         #packages_data,
-        #users_data, #sales_data {
+        #users_data,
+        #sales_data,
+        #admin_data {
             margin: 3em 1.5em;
         }
 
         #heading_packages,
-        #heading_user, #heading_sales {
+        #heading_user,
+        #heading_sales,
+        #heading_admin {
             margin: 1.5em 0;
         }
 
         .styled-table {
             border-collapse: collapse;
-            margin: 25px 0;
+            margin: 25px auto;
             text-align: center;
             font-size: large;
 
@@ -130,7 +134,7 @@
     color: #7cbba8;
 } */
 
-/* button style */
+        /* button style */
 
         .edit_button button {
             font-family: inherit;
@@ -365,6 +369,30 @@
         }
 
 
+        /* fix button */
+        .gotop {
+            background-color: #7cbba8;
+            /* padding: 10px 20px; */
+            font-size: 30px;
+            padding-top: 7px;
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+
+        }
+
+        #mybutton {
+            border-radius: 1em;
+
+            position: fixed;
+            bottom: 1.5em;
+            right: 2em;
+
+        }
+
         /* media */
         @media only screen and (max-width: 1044px) and (min-width: 781px) {
             #boxes>div {
@@ -433,7 +461,7 @@
         <h1 id="heading_packages">Packages</h1>
         <div class="optionsdata">
             <div id="newdata">
-                <button class="cta" >
+                <button class="cta">
                     <span>Add New</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                         <path d="M1,5 L11,5"></path>
@@ -630,6 +658,12 @@
         </table>
 
     </section>
+
+    <section id="btn_fx">
+        <div id="mybutton">
+            <button class="gotop" onclick="sendtop()">^</button>
+        </div>
+    </section>
 </body>
 <script src="https://kit.fontawesome.com/4f987be9b3.js" crossorigin="anonymous"></script>
 <script>
@@ -660,6 +694,11 @@
     fetchSalesData(SalesAPI);
     fetchUserData(UserAPI);
 
+    // sendtop
+    function sendtop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
     // sales
     let sales_tbody = document.querySelector("#sales_tbody");
     let sales_add = document.querySelector('#sales_add');
@@ -672,11 +711,11 @@
                 sales_tbody.append(CreateSales(element));
             })
         } catch (error) {
-            console.log(error);        
+            console.log(error);
         }
     }
 
-    function CreateSales(element){
+    function CreateSales(element) {
         let tr = document.createElement('tr');
         let td1 = document.createElement('td');
         let td2 = document.createElement('td');
@@ -687,12 +726,12 @@
         let td6 = document.createElement('td');
         td6.className = "edit_button";
         let td7 = document.createElement('td');
-        td7.className  = "delete_button";
+        td7.className = "delete_button";
 
 
         td1.innerHTML = element.id;
-        td2.innerHTML = element.packagename;
-        td3.innerHTML = element.username;
+        td2.innerHTML = element.package_name;
+        td3.innerHTML = element.name;
         td4.innerHTML = element.email;
         td5.innerHTML = element.bill;
         td8.innerHTML = element.timestamp;
@@ -734,7 +773,7 @@
         let td7 = document.createElement('td');
         td7.className = "edit_button";
         let td8 = document.createElement('td');
-        td8.className  = "delete_button";
+        td8.className = "delete_button";
 
 
         td1.innerHTML = element.id;
@@ -849,12 +888,9 @@
                 deleting();
                 async function deleting() {
                     try {
+                        // console.log(`${BaseAPI}?id=${item.id}`);
                         let res = await fetch(`${BaseAPI}?id=${item.id}`, {
                             method: "DELETE",
-                            headers: {
-                                "Content-type": "application/json"
-                            }
-
                         });
                         if (res.ok) {
                             alert(`Deleted`);
@@ -873,7 +909,7 @@
     }
 
 
-    function edit_btn(){
+    function edit_btn() {
         return `<button>
   <div class="svg-wrapper-1">
     <div class="svg-wrapper">
@@ -887,11 +923,11 @@
 </button>`;
 
     }
-    function delete_btn(){
+    function delete_btn() {
         return `<button class="noselect"><span class="text">Delete</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg></span></button>`;
     }
 
-    
+
     // side bar
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
