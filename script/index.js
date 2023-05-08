@@ -18,8 +18,18 @@ window.addEventListener('scroll', ()=>{
     leaf.style.left = value * 1.5 + 'px';
     hill5.style.left = value * 1.5 + 'px';
     hill4.style.left = value * -1.5 + 'px';
-    // hill1.style.top = value * 0.5 + 'px';
-})
+    
+    // Use media queries to adjust the CSS properties of the elements based on the screen size
+    if (window.matchMedia("(max-width: 600px)").matches) {
+        // For screens smaller than 768px
+        text.innerText=""
+        text.style.textOverflow = value * 0.1 + 'px' ;
+        leaf.style.top = value * -0.1 + 'px';
+        leaf.style.left = value * 0.1 + 'px';
+        hill5.style.left = value * 0.1 + 'px';
+        hill4.style.left = value * -0.1 + 'px';
+    }
+});
 
 
 
