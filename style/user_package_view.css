@@ -212,3 +212,19 @@ body{
 #similardiv{
   display: flex;
 }
+
+@media screen and (max-width:768px) and (min-width:300px){
+  #imgslider{
+    margin:2em;
+  }
+  .slider_img{
+    height: auto;
+  }
+  #description{
+    flex-direction: column;
+    margin:0;
+  }
+  #description > #maindescr{
+    width: auto;
+  }
+}
