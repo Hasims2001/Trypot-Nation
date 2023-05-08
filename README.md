@@ -1,6 +1,6 @@
 # Block 25 - Construct Week Group Project
 ## Project Code : indigo-price-1615
-> Project Name : **Ecotourism**,   
+> Project Name : **Trypot Nation**,   
 > Contributors : 
 * [Achal Gaddamwar](https://github.com/AchalGaddamwar) 
 * [Md. Hasim Shaikh](https://github.com/Hasims2001)
@@ -26,4 +26,8 @@
 
 
 ## Tech Stack 💻
-◮ JavaScript  ◮ HTML5 & CSS3 ◮ JQuery  ◮  Bootstrap
+![cover](https://user-images.githubusercontent.com/118152296/236819635-30b75b4a-c991-4060-a7f8-90a1da8fa728.jpg)
+
+
+
+
