@@ -86,7 +86,7 @@
         }
 
         #heading_packages,
-        #heading_user,
+        #heading_users,
         #heading_sales,
         #heading_admin {
             margin: 1.5em 0;
@@ -97,7 +97,7 @@
             margin: 25px auto;
             text-align: center;
             font-size: large;
-
+            width: 100%;
             font-family: 'Poppins', sans-serif;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
         }
@@ -142,6 +142,7 @@
             color: white;
             padding: 0.7em 1em;
             cursor: pointer;
+            margin: auto;
             padding-left: 0.9em;
             display: flex;
             font-size: large;
@@ -194,6 +195,7 @@
         .delete_button button {
             width: 150px;
             height: 50px;
+            margin: auto;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -381,6 +383,8 @@
             border: none;
             cursor: pointer;
             border-radius: 50%;
+            color: #fff;
+            font-weight: bolder;
 
         }
 
@@ -524,24 +528,18 @@
                 </button>
             </div>
             <div id="searchbar">
-                <select name="type" id="type">
-                    <option value="title">Type</option>
+                <select name="type" id="typeofsales">
+                    <option value="package_name">Type</option>
                     <option value="id">ID</option>
-                    <option value="title">Package Name</option>
-                    <option value="destination">destination</option>
+                    <option value="name">User Name</option>
+                    <option value="package_name">Package Name</option>
+                    <option value="email">Email</option>
                 </select>
-                <input class="input" id="search" name="text" placeholder="Search..." type="search">
+                <input class="input" id="searchinsales" name="text" placeholder="Search..." type="search">
             </div>
-            <!-- <div id="filteringdata">
-                <select name="filtering" id="filtering">
-                    <option value="">Filter By</option>
-                    <option value="asc">Low To High</option>
-                    <option value="desc">High To Low</option>
-                </select>
-            </div> -->
             <div id="sortingdata">
-                <select name="sorting" id="sorting">
-                    <option value="">Sort By Price</option>
+                <select name="sortingbybill" id="sortingbybill">
+                    <option value="">Sort By Bill</option>
                     <option value="asc">Low To High</option>
                     <option value="desc">High To Low</option>
                 </select>
@@ -567,7 +565,7 @@
 
     </section>
     <section id="users_data">
-        <h1 id="heading_user">Users</h1>
+        <h1 id="heading_users">Users</h1>
         <div class="optionsdata">
             <div id="newdata">
                 <button class="cta" id="user_add">
@@ -579,13 +577,23 @@
                 </button>
             </div>
             <div id="searchbar">
-                <select name="type" id="type">
-                    <option value="title">Type</option>
+                <select name="type" id="typeofusers">
+                    <option value="name">Type</option>
                     <option value="id">ID</option>
-                    <option value="title">Package Name</option>
-                    <option value="destination">destination</option>
+                    <option value="name">Name</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+
                 </select>
-                <input class="input" id="search" name="text" placeholder="Search..." type="search">
+                <input class="input" id="searchinusers" name="text" placeholder="Search..." type="search">
+
+            </div>
+            <div id="sortingdata">
+                <select name="sortingbyuser" id="sortingbyuser">
+                    <option value="">Sort By Name</option>
+                    <option value="asc">A to Z</option>
+                    <option value="desc">Z to A</option>
+                </select>
             </div>
         </div>
         <table class="styled-table">
@@ -610,7 +618,7 @@
         <h1 id="heading_admin">Admin</h1>
         <div class="optionsdata">
             <div id="newdata">
-                <button class="cta" id="sales_add">
+                <button class="cta" id="admin_add">
                     <span>Add New</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                         <path d="M1,5 L11,5"></path>
@@ -619,26 +627,20 @@
                 </button>
             </div>
             <div id="searchbar">
-                <select name="type" id="type">
-                    <option value="title">Type</option>
+                <select name="type" id="typeofadmin">
+                    <option value="username">Type</option>
                     <option value="id">ID</option>
-                    <option value="title">Package Name</option>
-                    <option value="destination">destination</option>
+                    <option value="username">UserName</option>
+                    <option value="email">Email</option>
                 </select>
-                <input class="input" id="search" name="text" placeholder="Search..." type="search">
+                <input class="input" id="searchinadmin" name="text" placeholder="Search..." type="search">
             </div>
-            <!-- <div id="filteringdata">
-                <select name="filtering" id="filtering">
-                    <option value="">Filter By</option>
-                    <option value="asc">Low To High</option>
-                    <option value="desc">High To Low</option>
-                </select>
-            </div> -->
+
             <div id="sortingdata">
-                <select name="sorting" id="sorting">
-                    <option value="">Sort By Price</option>
-                    <option value="asc">Low To High</option>
-                    <option value="desc">High To Low</option>
+                <select name="sortingbyname" id="sortingbyname">
+                    <option value="">Sort By Name</option>
+                    <option value="asc">A to Z</option>
+                    <option value="desc">Z to A</option>
                 </select>
             </div>
         </div>
@@ -647,12 +649,12 @@
                 <tr>
                     <th>Id</th>
                     <th>User Name</th>
-                    <th>Email</th>
+                    <th>Password</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
             </thead>
-            <tbody id="sales_tbody">
+            <tbody id="admin_tbody">
 
             </tbody>
         </table>
@@ -675,6 +677,7 @@
     let heading = document.querySelector('#container > h2');
     let cta = document.querySelector('.cta');
 
+
     let admindata = JSON.parse(localStorage.getItem('AdminData')) || [];
 
     if (admindata.length === 0) {
@@ -688,20 +691,82 @@
     const BaseAPI = "https://trypot-nation.onrender.com/packages";
     const UserAPI = "https://trypot-nation.onrender.com/users";
     const SalesAPI = "https://trypot-nation.onrender.com/sales";
+    const AdminAPI = "https://trypot-nation.onrender.com/login";
     let searchAPI = "https://trypot-nation.onrender.com/packages";
-
-    operations(API);
-    fetchSalesData(SalesAPI);
-    fetchUserData(UserAPI);
-
     // sendtop
     function sendtop() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
-    // sales
+    operations(API);
+    fetchSalesData(SalesAPI);
+    fetchUserData(UserAPI);
+    fetchAdminData(AdminAPI);
+
+    // admin
+    let admin_tbody = document.querySelector("#admin_tbody");
+    async function fetchAdminData(AdminAPI) {
+        let res = await fetch(AdminAPI);
+        let data = await res.json();
+        admin_tbody.innerHTML = null;
+        data.forEach(element => {
+            admin_tbody.append(CreateAdmin(element));
+        })
+    }
+    function CreateAdmin(element) {
+        let tr = document.createElement('tr');
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        let td5 = document.createElement('td');
+
+        td1.innerHTML = element.id;
+        td2.innerHTML = element.username;
+        td3.innerHTML = element.password;
+        td4.className = "edit_button";
+        td4.innerHTML = edit_btn();
+        td5.innerHTML = delete_btn();
+        td5.className = "delete_button";
+        tr.append(td1, td2, td3, td4, td5);
+        return tr;
+    }
+
+
+
+
+    // sales completed
+    let typeofsales = document.querySelector('#typeofsales');
+    let searchinsales = document.querySelector('#searchinsales');
+    let sortingbybill = document.querySelector('#sortingbybill');
     let sales_tbody = document.querySelector("#sales_tbody");
     let sales_add = document.querySelector('#sales_add');
+
+    // sales search
+    searchinsales.addEventListener('input', () => {
+        if (searchinsales.value === "") {
+            fetchSalesData(SalesAPI);
+        } else {
+            fetchSalesData(`${SalesAPI}?${typeofsales.value}_like=${searchinsales.value}`);
+
+        }
+    })
+
+    // sales sorting
+    sortingbybill.addEventListener('change', () => {
+        if (sortingbybill.value === "") {
+            fetchSalesData(API);
+        } else {
+            fetchSalesData(`${SalesAPI}?_sort=bill&_order=${sortingbybill.value}`);
+        }
+    });
+
+    sales_add.addEventListener('click', () => {
+        localStorage.setItem('addnew', JSON.stringify({
+            addnew: true
+        }));
+        window.location.href = "admin_edit_sales.html";
+    });
     async function fetchSalesData(SalesAPI) {
         try {
             let res = await fetch(SalesAPI);
@@ -725,8 +790,35 @@
         let td8 = document.createElement('td');
         let td6 = document.createElement('td');
         td6.className = "edit_button";
+        td6.addEventListener('click', () => {
+            localStorage.setItem('edit_sales', JSON.stringify(element));
+            window.location.href = 'admin_edit_sales.html';
+        });
         let td7 = document.createElement('td');
         td7.className = "delete_button";
+
+        td7.addEventListener("click", () => {
+            let ans = confirm(`ID ${element.id} will delete, are you sure?`);
+
+            if (ans === true) {
+                deleting();
+                async function deleting() {
+                    try {
+                        let res = await fetch(`${SalesAPI}/${element.id}`, {
+                            method: "DELETE",
+                        });
+                        if (res.ok) {
+                            alert(`Deleted`);
+                            location.reload();
+                        }
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            }
+
+        })
+
 
 
         td1.innerHTML = element.id;
@@ -742,11 +834,40 @@
         tr.append(td1, td2, td3, td4, td5, td8, td6, td7);
         return tr;
     }
-    // user
+
+
+
+
+    // user completed
     let user_tbody = document.querySelector('#user_tbody');
     let user_add = document.querySelector('#user_add');
+    let searchinusers = document.querySelector('#searchinusers');
+    let typeofusers = document.querySelector('#typeofusers');
+    let sortingbyuser = document.querySelector('#sortingbyuser');
+    // user search
+    searchinusers.addEventListener('input', () => {
+        if (searchinusers.value === "") {
+            fetchUserData(UserAPI);
+        } else {
+            fetchUserData(`${UserAPI}?${typeofusers.value}_like=${searchinusers.value}`);
+
+        }
+    })
+
+    // user sorting
+    sortingbyuser.addEventListener('change', () => {
+        if (sortingbyuser.value === "") {
+            fetchUserData(UserAPI);
+        } else {
+            fetchUserData(`${UserAPI}?_sort=name&_order=${sortingbyuser.value}`);
+        }
+    });
+
     user_add.addEventListener('click', () => {
-        alert(`It is pending.`);
+        localStorage.setItem('addnew', JSON.stringify({
+            addnew: true
+        }));
+        window.location.href = "admin_edit_users.html";
     })
     async function fetchUserData(UserAPI) {
         try {
@@ -772,8 +893,33 @@
         let td6 = document.createElement('td');
         let td7 = document.createElement('td');
         td7.className = "edit_button";
+        td7.addEventListener('click', () => {
+            localStorage.setItem('edit_users', JSON.stringify(element));
+            window.location.href = 'admin_edit_users.html';
+        });
         let td8 = document.createElement('td');
         td8.className = "delete_button";
+        td8.addEventListener("click", () => {
+            let ans = confirm(`ID ${element.id} will delete, are you sure?`);
+
+            if (ans === true) {
+                deleting();
+                async function deleting() {
+                    try {
+                        let res = await fetch(`${UserAPI}/${element.id}`, {
+                            method: "DELETE",
+                        });
+                        if (res.ok) {
+                            alert(`Deleted`);
+                            location.reload();
+                        }
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            }
+
+        })
 
 
         td1.innerHTML = element.id;
@@ -803,10 +949,12 @@
     // searching
 
     search.addEventListener('input', () => {
-        searchAPI = `${searchAPI}?${type.value}_like=${search.value}`;
-        // console.log(searchAPI);
-        operations(searchAPI);
-        searchAPI = "https://trypot-nation.onrender.com/packages";
+        if (search.value == "") {
+            operations(BaseAPI);
+        } else {
+            operations(`${BaseAPI}?${type.value}_like=${search.value}`);
+        }
+
     })
 
 
@@ -882,14 +1030,13 @@
         td7.innerHTML = delete_btn();
 
         td7.addEventListener("click", () => {
-            let ans = confirm(`${item.id} will delete, are you sure?`);
+            let ans = confirm(`ID ${item.id} will delete, are you sure?`);
 
             if (ans === true) {
                 deleting();
                 async function deleting() {
                     try {
-                        // console.log(`${BaseAPI}?id=${item.id}`);
-                        let res = await fetch(`${BaseAPI}?id=${item.id}`, {
+                        let res = await fetch(`${BaseAPI}/${item.id}`, {
                             method: "DELETE",
                         });
                         if (res.ok) {

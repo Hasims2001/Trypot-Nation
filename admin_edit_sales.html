@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Packages</title>
+    <title>Sales Management</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -231,7 +227,7 @@
 <body>
     <header id="header"></header>
     <div id="container">
-        <h1>Edit</h1>
+        <h1>Edit Sales</h1>
         <!-- <form action=""> -->
         <table>
             <tr>
@@ -239,32 +235,24 @@
                 <td><input type="number" id="id" placeholder="Automatically Add" disabled></td>
             </tr>
             <tr>
-                <td>Name: </td>
-                <td><input type="text" id="title"></td>
+                <td>Package Name: </td>
+                <td><input type="text" id="package_name"></td>
             </tr>
             <tr>
-                <td>Destination: </td>
-                <td><input type="text" id="destination"></td>
+                <td>User Name: </td>
+                <td><input type="text" id="user_name"></td>
             </tr>
             <tr>
-                <td>Duration: </td>
-                <td><input type="text" id="duration"></td>
+                <td>User Email: </td>
+                <td><input type="email" id="user_email"></td>
             </tr>
             <tr>
-                <td>Location: </td>
-                <td><input type="text" id="location"></td>
+                <td>Total Bill: </td>
+                <td><input type="number" id="user_bill"></td>
             </tr>
             <tr>
-                <td>Price: </td>
-                <td><input type="text" id="price"></td>
-            </tr>
-            <tr>
-                <td>Image:</td>
-                <td><textarea name="img" id="img" cols="30" rows="10"></textarea></td>
-            </tr>
-            <tr>
-                <td>Description: </td>
-                <td><textarea name="description" id="description" cols="30" rows="10"></textarea></td>
+                <td>TimeStamp: </td>
+                <td><input type="date" id="timestamp"></td>
             </tr>
             <tr style="text-align: center;">
                 <th id="add">
@@ -282,43 +270,35 @@
 <script src="https://kit.fontawesome.com/4f987be9b3.js" crossorigin="anonymous"></script>
 <script>
     let h1 = document.querySelector('#container > h1');
-    let form = document.querySelector("form");
+    let form = document.querySelector("table");
     let add = document.querySelector('#add');
     let canceled = document.querySelector('#cancel');
-    let data = JSON.parse(localStorage.getItem('edit')) || [];
+    let data = JSON.parse(localStorage.getItem('edit_sales')) || [];
     let addnew = JSON.parse(localStorage.getItem('addnew')) || [];
-    const API = "https://trypot-nation.onrender.com/packages";
+    const API = "https://trypot-nation.onrender.com/sales";
 
-    let title = document.querySelector('#title');
-    let destination = document.querySelector('#destination');
-    let duration = document.querySelector('#duration');
-    let locationd = document.querySelector('#location');
-    let price = document.querySelector('#price');
-    let img = document.querySelector('#img');
-    let description = document.querySelector('#description');
+    let package_name = document.querySelector('#package_name');
+            let user_name = document.querySelector('#user_name');
+            let user_email = document.querySelector('#user_email');
+            let user_bill = document.querySelector('#user_bill');
+            let timestamp = document.querySelector('#timestamp');
 
     if (addnew.length === 0) {
         if (data.length !== 0) {
-            h1.textContent = "Edit Package";
-
-
-
-            title.value = data.title;
-            destination.value = data.destination;
-            duration.value = data.duration;
-            locationd.value = data.location;
-            price.value = data.price;
-            data.image.forEach(element => {
-                img.value = img.value + element + "\n";
-            });
-
-            description.value = data.description;
+            h1.textContent = "Edit Sales";
+            
+            package_name.value = data.package_name;
+            user_name.value = data.name;
+            user_email.value = data.email;
+            user_bill.value = data.bill;
+            timestamp.value = data.timestamp;
+           
         } else {
             h1.textContent = "No Data Found!";
             form.innerHTML = null;
         }
     } else {
-        h1.textContent = "Add New Package";
+        h1.textContent = "Add New Sales";
 
     }
 
@@ -335,21 +315,19 @@
 </button>`;
     let adding = document.querySelector('#adding');
     adding.addEventListener('click', () => {
-        if (title.value == "" || destination.value == "" || duration.value == "" || locationd.value == "" || price.value == "" || description.value == "") {
+        if (package_name.value == "" || user_name.value == "" || user_email.value == "" || user_bill.value == "" || timestamp.value == "") {
             alert('All the fields are required');
         } else {
             let temp = {
-                title: title.value,
-                destination: destination.value,
-                duration: duration.value,
-                location: locationd.value,
-                price: price.value,
-                description: description.value,
-                image: img.value
+                package_name: package_name.value,
+                name: user_name.value,
+                email: user_email.value,
+                bill: user_bill.value,
+                timestamp: timestamp.value
             };
 
 
-            if (h1.textContent === "Add New Package") {
+            if (h1.textContent === "Add New Sales") {
                 postdata();
                 async function postdata() {
                     try {
@@ -361,19 +339,19 @@
                             body: JSON.stringify(temp)
                         });
                         let data = await res.json();
-                        if (res.ok) {
+                        if(res.ok){
                             alert(`Added Successfully`);
-                            window.location.href = "admin_dashboard.html";
+                            window.location.href="admin_dashboard.html";
                         }
                     } catch (error) {
                         console.log(error);
                     }
                 }
-            } else if (h1.textContent === "Edit Package") {
+            }else if(h1.textContent === "Edit Sales"){
                 patchdata();
                 async function patchdata() {
                     try {
-                        // console.log(`${API}/${data.id}`);
+                      
                         let res = await fetch(`${API}/${data.id}`, {
                             method: 'PUT',
                             headers: {
@@ -381,9 +359,9 @@
                             },
                             body: JSON.stringify(temp)
                         });
-                        if (res.ok) {
+                        if(res.ok){
                             alert(`Edited Successfully`);
-                            window.location.href = "admin_dashboard.html";
+                            window.location.href="admin_dashboard.html";
                         }
                     } catch (error) {
                         console.log(error);
