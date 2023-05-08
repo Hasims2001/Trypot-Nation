@@ -359,8 +359,10 @@
                             body: JSON.stringify(temp)
                         });
                         let data = await res.json();
-                        console.log(data);
-
+                        if(res.ok){
+                            alert(`Added Successfully`);
+                            window.location.href="admin_dashboard";
+                        }
                     } catch (error) {
                         console.log(error);
                     }
@@ -369,13 +371,18 @@
                 patchdata();
                 async function patchdata() {
                     try {
-                        let res = await fetch(API, {
-                            method: 'PATCH',
+                        console.log(`${API}?id=${data.id}`);
+                        let res = await fetch(`${API}?id=${data.id}`, {
+                            method: 'PUT',
                             headers: {
                                 'Content-Type': 'application/json'
                             },
                             body: JSON.stringify(temp)
                         });
+                        if(res.ok){
+                            alert(`Edited Successfully`);
+                            window.location.href="admin_dashboard.html";
+                        }
                     } catch (error) {
                         console.log(error);
                     }

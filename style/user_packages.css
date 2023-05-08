@@ -16,6 +16,7 @@
     #first {
         display: flex;
         margin: 4em 2em ;
+        justify-content: center;
     }
 
     /* side */
@@ -39,6 +40,7 @@
         display: flex;
         padding: 10px;
         margin: 10px;
+        width: 60vw;
         cursor: pointer;
 
     }
@@ -56,6 +58,8 @@
         border-radius: 10px;
     }
     .details{
+        width: 100%;
+        padding: 0 10px;
         margin-left: 20px;
     }
     #title{
@@ -164,7 +168,7 @@
       }
       
       .card_load_extreme_title {
-        width: 60vw;
+        width: 50vw;
         height: 10px;
         position: relative;
         float: right;
@@ -177,7 +181,7 @@
       }
       
       .card_load_extreme_descripion {
-        width: 60vw;
+        width: 50vw;
         height: 47px;
         position: relative;
         float: right;

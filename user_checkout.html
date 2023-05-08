@@ -217,8 +217,11 @@
     let finalprice = document.querySelector('#finalprice');
     let payusing = document.querySelector('#payusing');
     let userdetails = document.querySelector('#userdetails');
-    
+    var newDate =new Date().toISOString().split('T')[0];
+
     const API = "https://trypot-nation.onrender.com/packages";
+    const SalesAPI = "https://trypot-nation.onrender.com/sales";
+
     let package_id = localStorage.getItem("package_id") || [];
     let userdata = JSON.parse(localStorage.getItem('user')) || [];
 
@@ -236,7 +239,30 @@
             if(payusing.textContent == ""){
                 alert("Please select a payment method");
             }else{
-                window.location.href = "user_loading.html";
+                let package_name = document.querySelector('.packagedata > h3');
+                postingdata();
+                async function postingdata(){
+                    try {
+                        let res = await fetch(SalesAPI, {
+                            method: "POST",
+                            headers: {
+                                "Content-type" : "application/json"
+                            },
+                            body : JSON.stringify({
+                                packagename : package_name.textContent,
+                                username : userdata.name,
+                                email : userdata.email,
+                                timestamp : newDate,
+                                bill : Number(finalprice.textContent)
+                            })
+                        })
+                        if(res.ok){
+                            window.location.href = "user_loading.html";
+                        }
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
             }
         }
         function checkedpay(value) {
@@ -255,6 +281,7 @@
                 console.log(data);
                 package.innerHTML = null;
                 data.forEach(element => {
+                    
                     package.append(CreateCard(element));
                 });
 
