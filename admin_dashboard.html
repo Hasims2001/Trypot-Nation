@@ -79,12 +79,12 @@
 
         /* Packages */
         #packages_data,
-        #users_data {
+        #users_data, #sales_data {
             margin: 3em 1.5em;
         }
 
         #heading_packages,
-        #heading_user {
+        #heading_user, #heading_sales {
             margin: 1.5em 0;
         }
 
@@ -130,7 +130,9 @@
     color: #7cbba8;
 } */
 
-        td:nth-child(6) button {
+/* button style */
+
+        .edit_button button {
             font-family: inherit;
             background: rgb(48, 158, 48);
             color: white;
@@ -147,27 +149,27 @@
             transition: all 0.2s;
         }
 
-        td:nth-child(6) button span {
+        .edit_button button span {
             display: block;
             margin-left: 0.3em;
             transition: all 0.3s ease-in-out;
         }
 
-        td:nth-child(6) button svg {
+        .edit_button button svg {
             display: block;
             transform-origin: center center;
             transition: transform 0.3s ease-in-out;
         }
 
-        td:nth-child(6) button:hover .svg-wrapper {
+        .edit_button button:hover .svg-wrapper {
             animation: fly-1 0.6s ease-in-out infinite alternate;
         }
 
-        td:nth-child(6) button:hover svg {
+        .edit_button button:hover svg {
             transform: translateX(1.2em) rotate(45deg) scale(1.1);
         }
 
-        td:nth-child(6) button:hover span {
+        .edit_button button:hover span {
             transform: translateX(5em);
         }
 
@@ -185,7 +187,7 @@
             }
         }
 
-        td:nth-child(7) button {
+        .delete_button button {
             width: 150px;
             height: 50px;
             cursor: pointer;
@@ -198,18 +200,18 @@
             background: #e62222;
         }
 
-        td:nth-child(7) button,
-        td:nth-child(7) button span {
+        .delete_button button,
+        .delete_button button span {
             transition: 200ms;
         }
 
-        td:nth-child(7) button .text {
+        .delete_button button .text {
             transform: translateX(35px);
             color: white;
             font-weight: bold;
         }
 
-        td:nth-child(7) button .icon {
+        .delete_button button .icon {
             position: absolute;
             border-left: 1px solid #c41b1b;
             transform: translateX(110px);
@@ -220,30 +222,30 @@
             justify-content: center;
         }
 
-        td:nth-child(7) button svg {
+        .delete_button button svg {
             width: 15px;
             fill: #eee;
         }
 
-        td:nth-child(7) button:hover {
+        .delete_button button:hover {
             background: #ff3636;
         }
 
-        td:nth-child(7) button:hover .text {
+        .delete_button button:hover .text {
             color: transparent;
         }
 
-        td:nth-child(7) button:hover .icon {
+        .delete_button button:hover .icon {
             width: 150px;
             border-left: none;
             transform: translateX(0);
         }
 
-        td:nth-child(7) button:focus {
+        .delete_button button:focus {
             outline: none;
         }
 
-        td:nth-child(7) button:active .icon svg {
+        .delete_button button:active .icon svg {
             transform: scale(0.8);
         }
 
@@ -431,7 +433,7 @@
         <h1 id="heading_packages">Packages</h1>
         <div class="optionsdata">
             <div id="newdata">
-                <button class="cta">
+                <button class="cta" >
                     <span>Add New</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                         <path d="M1,5 L11,5"></path>
@@ -481,17 +483,17 @@
         </table>
 
     </section>
-    <!-- <section id="users_data">
-        <h1 id="heading_user">Users</h1>
+    <section id="sales_data">
+        <h1 id="heading_sales">Sales</h1>
         <div class="optionsdata">
             <div id="newdata">
-                <button class="cta">
+                <button class="cta" id="sales_add">
                     <span>Add New</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
-                  </button>
+                </button>
             </div>
             <div id="searchbar">
                 <select name="type" id="type">
@@ -502,19 +504,60 @@
                 </select>
                 <input class="input" id="search" name="text" placeholder="Search..." type="search">
             </div>
-            <div id="filteringdata">
+            <!-- <div id="filteringdata">
                 <select name="filtering" id="filtering">
                     <option value="">Filter By</option>
                     <option value="asc">Low To High</option>
                     <option value="desc">High To Low</option>
                 </select>
-            </div>
+            </div> -->
             <div id="sortingdata">
                 <select name="sorting" id="sorting">
                     <option value="">Sort By Price</option>
                     <option value="asc">Low To High</option>
                     <option value="desc">High To Low</option>
                 </select>
+            </div>
+        </div>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Package Name</th>
+                    <th>User Name</th>
+                    <th>Email</th>
+                    <th>Bill</th>
+                    <th>TimeStamp</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="sales_tbody">
+
+            </tbody>
+        </table>
+
+    </section>
+    <section id="users_data">
+        <h1 id="heading_user">Users</h1>
+        <div class="optionsdata">
+            <div id="newdata">
+                <button class="cta" id="user_add">
+                    <span>Add New</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <div id="searchbar">
+                <select name="type" id="type">
+                    <option value="title">Type</option>
+                    <option value="id">ID</option>
+                    <option value="title">Package Name</option>
+                    <option value="destination">destination</option>
+                </select>
+                <input class="input" id="search" name="text" placeholder="Search..." type="search">
             </div>
         </div>
         <table class="styled-table">
@@ -534,7 +577,59 @@
 
             </tbody>
         </table>
-    </section> -->
+    </section>
+    <section id="admin_data">
+        <h1 id="heading_admin">Admin</h1>
+        <div class="optionsdata">
+            <div id="newdata">
+                <button class="cta" id="sales_add">
+                    <span>Add New</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <div id="searchbar">
+                <select name="type" id="type">
+                    <option value="title">Type</option>
+                    <option value="id">ID</option>
+                    <option value="title">Package Name</option>
+                    <option value="destination">destination</option>
+                </select>
+                <input class="input" id="search" name="text" placeholder="Search..." type="search">
+            </div>
+            <!-- <div id="filteringdata">
+                <select name="filtering" id="filtering">
+                    <option value="">Filter By</option>
+                    <option value="asc">Low To High</option>
+                    <option value="desc">High To Low</option>
+                </select>
+            </div> -->
+            <div id="sortingdata">
+                <select name="sorting" id="sorting">
+                    <option value="">Sort By Price</option>
+                    <option value="asc">Low To High</option>
+                    <option value="desc">High To Low</option>
+                </select>
+            </div>
+        </div>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>User Name</th>
+                    <th>Email</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="sales_tbody">
+
+            </tbody>
+        </table>
+
+    </section>
 </body>
 <script src="https://kit.fontawesome.com/4f987be9b3.js" crossorigin="anonymous"></script>
 <script>
@@ -545,6 +640,7 @@
     let sorting = document.querySelector("#sorting");
     let heading = document.querySelector('#container > h2');
     let cta = document.querySelector('.cta');
+
     let admindata = JSON.parse(localStorage.getItem('AdminData')) || [];
 
     if (admindata.length === 0) {
@@ -556,14 +652,111 @@
 
     const API = "https://trypot-nation.onrender.com/packages?_sort=id&_order=asc";
     const BaseAPI = "https://trypot-nation.onrender.com/packages";
+    const UserAPI = "https://trypot-nation.onrender.com/users";
+    const SalesAPI = "https://trypot-nation.onrender.com/sales";
     let searchAPI = "https://trypot-nation.onrender.com/packages";
 
     operations(API);
+    fetchSalesData(SalesAPI);
+    fetchUserData(UserAPI);
+
+    // sales
+    let sales_tbody = document.querySelector("#sales_tbody");
+    let sales_add = document.querySelector('#sales_add');
+    async function fetchSalesData(SalesAPI) {
+        try {
+            let res = await fetch(SalesAPI);
+            let data = await res.json();
+            sales_tbody.innerHTML = "";
+            data.forEach(element => {
+                sales_tbody.append(CreateSales(element));
+            })
+        } catch (error) {
+            console.log(error);        
+        }
+    }
+
+    function CreateSales(element){
+        let tr = document.createElement('tr');
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        let td5 = document.createElement('td');
+        let td8 = document.createElement('td');
+        let td6 = document.createElement('td');
+        td6.className = "edit_button";
+        let td7 = document.createElement('td');
+        td7.className  = "delete_button";
+
+
+        td1.innerHTML = element.id;
+        td2.innerHTML = element.packagename;
+        td3.innerHTML = element.username;
+        td4.innerHTML = element.email;
+        td5.innerHTML = element.bill;
+        td8.innerHTML = element.timestamp;
+
+        td6.innerHTML = edit_btn();
+        td7.innerHTML = delete_btn();
+
+        tr.append(td1, td2, td3, td4, td5, td8, td6, td7);
+        return tr;
+    }
+    // user
+    let user_tbody = document.querySelector('#user_tbody');
+    let user_add = document.querySelector('#user_add');
+    user_add.addEventListener('click', () => {
+        alert(`It is pending.`);
+    })
+    async function fetchUserData(UserAPI) {
+        try {
+            let res = await fetch(UserAPI);
+            let data = await res.json();
+            user_tbody.innerHTML = "";
+            data.forEach(element => {
+                user_tbody.append(CreateUser(element));
+            })
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    function CreateUser(element) {
+        let tr = document.createElement('tr');
+
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        let td5 = document.createElement('td');
+        let td6 = document.createElement('td');
+        let td7 = document.createElement('td');
+        td7.className = "edit_button";
+        let td8 = document.createElement('td');
+        td8.className  = "delete_button";
+
+
+        td1.innerHTML = element.id;
+        td2.innerHTML = element.name;
+        td3.innerHTML = element.email;
+        td4.innerHTML = element.password;
+        td5.innerHTML = element.phone;
+        td6.innerHTML = element.state;
+        td7.innerHTML = edit_btn();
+        td8.innerHTML = delete_btn();
+
+        tr.append(td1, td2, td3, td4, td5, td6, td7, td8);
+        return tr;
+    }
+
+
+    // packages data
     // add new data
     cta.addEventListener('click', () => {
         let len = localStorage.getItem('DataLength');
         localStorage.setItem('addnew', JSON.stringify({
-            id: Number(len) + 1,
+            // id: Number(len) + 1,
             addnew: true
         }));
         window.location.href = "admin_edit_packages.html";
@@ -638,26 +831,17 @@
         td4.textContent = item.duration;
         td5.textContent = item.price;
 
-        td6.innerHTML = `<button>
-  <div class="svg-wrapper-1">
-    <div class="svg-wrapper">
-      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 0h24v24H0z" fill="none"></path>
-        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
-      </svg>
-    </div>
-  </div>
-  <span>Edit</span>
-</button>`;
-
+        td6.className = "edit_button";
+        td6.innerHTML = edit_btn();
         td6.addEventListener('click', () => {
             console.log(item.id);
             localStorage.setItem('edit', JSON.stringify(item));
             window.location.href = 'admin_edit_packages.html';
         });
 
-        td7.innerHTML = `
-<button class="noselect"><span class="text">Delete</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg></span></button>`;
+        td7.className = "delete_button";
+        td7.innerHTML = delete_btn();
+
         td7.addEventListener("click", () => {
             let ans = confirm(`${item.id} will delete, are you sure?`);
 
@@ -670,10 +854,11 @@
                             headers: {
                                 "Content-type": "application/json"
                             }
-                           
+
                         });
-                        if(res.ok ){
+                        if (res.ok) {
                             alert(`Deleted`);
+                            location.reload();
                         }
                     } catch (error) {
                         console.log(error);
@@ -688,6 +873,25 @@
     }
 
 
+    function edit_btn(){
+        return `<button>
+  <div class="svg-wrapper-1">
+    <div class="svg-wrapper">
+      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+  <span>Edit</span>
+</button>`;
+
+    }
+    function delete_btn(){
+        return `<button class="noselect"><span class="text">Delete</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg></span></button>`;
+    }
+
+    
     // side bar
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
