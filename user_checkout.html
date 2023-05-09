@@ -160,6 +160,41 @@
             right:10px;
         }
 
+
+        #selectdate {
+            width: auto;
+            margin: .3rem;
+            background-color: #1b2c39;
+            color: #fff;
+            padding: .45rem 1rem;
+            min-height: 40px;
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+            border: none;
+            line-height: 1.15;
+            box-shadow: 0px 10px 20px -18px;
+        }
+
+        #selectdate::placeholder {
+            color: #fff;
+        }
+
+        #selectdate:focus {
+            border-bottom: 2px solid #7cbba8;
+            border-radius: 4px 4px 2px 2px;
+        }
+
+        #selectdate:hover {
+            outline: 1px solid lightgrey;
+        }
+
+
+
+        #selectdate  {
+            padding: .15rem .5rem;
+        }
+
         @media screen and (max-width:768px) and (min-width:300px){
             .maincontainer{
                 flex-direction: column;
@@ -206,6 +241,14 @@
                             Card</label> -->
                     </div>
                     <div id="payusing"></div>
+                    <div id="selectdatediv">
+                        <select name="selectdate" id="selectdate">
+                            <option value="">Choose Date</option>
+                            <option value="2023/06/14">Wed June 14, 2023</option>
+                            <option value="2023/06/27">Sat June 27, 2023</option>
+                            <option value="2023/06/31">Wed June 31, 2023</option>
+                        </select>
+                    </div>
                     <div id="btndiv">
                     <button onclick="booknow()">Book Now</button>
                 </div>
@@ -220,9 +263,10 @@
     let h2 = document.querySelector('#first_section > h2');
     let finalprice = document.querySelector('#finalprice');
     let payusing = document.querySelector('#payusing');
+    let selectdate = document.querySelector('#selectdate');
     let userdetails = document.querySelector('#userdetails');
     let newDate =new Date();
-    console.log(newDate);
+
 
     const API = "https://trypot-nation.onrender.com/packages";
     const SalesAPI = "https://trypot-nation.onrender.com/sales";
@@ -243,6 +287,8 @@
         function booknow (){
             if(payusing.textContent == ""){
                 alert("Please select a payment method");
+            }else if(selectdate.value == ""){
+                alert("Please select a date");
             }else{
                 let package_name = document.querySelector('.packagedata > h3');
                 postingdata();
@@ -254,9 +300,10 @@
                                 "Content-type" : "application/json"
                             },
                             body : JSON.stringify({
-                                packagename : package_name.textContent,
-                                username : userdata.name,
+                                package_name : package_name.textContent,
+                                name : userdata.name,
                                 email : userdata.email,
+                                tourdate : selectdate.value,
                                 timestamp : String(newDate),
                                 bill : Number(finalprice.textContent)
                             })

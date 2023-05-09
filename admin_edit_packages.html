@@ -365,6 +365,7 @@
                         let data = await res.json();
                         if (res.ok) {
                             alert(`Added Successfully`);
+                            localStorage.removeItem('addnew');
                             window.location.href = "admin_dashboard.html";
                         }
                     } catch (error) {
