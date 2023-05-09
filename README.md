@@ -21,7 +21,7 @@
 
 The demo is under free hosting, so it may require a bit of a patience ☺
 
-## Deployed Link : [https://frolicking-frangipane-b79434.netlify.app/]
+## Deployed Link : https://frolicking-frangipane-b79434.netlify.app/
 
 
 ✦ You can browse items or select an item from the showcase and preview.
