@@ -264,3 +264,57 @@
         
         width: fit-content;
        }
+
+
+       @media screen and (max-width: 768px) and (min-width:426px) {
+        #first{
+            flex-direction: column;
+        }
+       
+        #side, #content{
+            width: 100%;
+        }
+        #side{
+            text-align: center;
+        }
+        #sortingdata select{
+            width: 80vw;
+        }
+
+        .cardiv{
+            width: 100%;
+        }
+
+      
+       }
+
+
+       @media screen and (max-width: 425px) and (min-width:300px) {
+        #first{
+            flex-direction: column;
+        }
+       
+        #side, #content{
+            width: 100%;
+        }
+        #side{
+            text-align: center;
+        }
+        #sortingdata select{
+            width: 80vw;
+        }
+
+        .cardiv{
+            width: 100%;
+            flex-direction: column;
+        }
+        .img_slide{
+            margin: auto;
+        }
+        .details{
+            margin-left: 0px;
+        }
+        .mainimg{
+            width: 100%;
+        }
+    }
