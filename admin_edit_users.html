@@ -357,6 +357,7 @@
                         });
                         let data = await res.json();
                         if (res.ok) {
+                            localStorage.removeItem('addnew');
                             alert(`Added Successfully`);
                             window.location.href = "admin_dashboard.html";
                         }

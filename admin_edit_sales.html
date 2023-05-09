@@ -251,8 +251,12 @@
                 <td><input type="number" id="user_bill"></td>
             </tr>
             <tr>
+                <td>Date Booked: </td>
+                <td><input type="date" id="user_booked"></td>
+            </tr>
+            <tr>
                 <td>TimeStamp: </td>
-                <td><input type="text" id="timestamp"></td>
+                <td><input type="text" value="Mon May 08 2023 02:09:40 GMT+0530 (India Standard Time)" id="timestamp"></td>
             </tr>
             <tr style="text-align: center;">
                 <th id="add">
@@ -282,15 +286,15 @@
             let user_email = document.querySelector('#user_email');
             let user_bill = document.querySelector('#user_bill');
             let timestamp = document.querySelector('#timestamp');
-
+            let user_booked = document.querySelector('#user_booked');
     if (addnew.length === 0) {
         if (data.length !== 0) {
             h1.textContent = "Edit Sales";
-            
             package_name.value = data.package_name;
             user_name.value = data.name;
             user_email.value = data.email;
             user_bill.value = data.bill;
+            user_booked.value =data.tourdate.replaceAll("/", "-");
             timestamp.value = data.timestamp;
            
         } else {
@@ -315,14 +319,15 @@
 </button>`;
     let adding = document.querySelector('#adding');
     adding.addEventListener('click', () => {
-        if (package_name.value == "" || user_name.value == "" || user_email.value == "" || user_bill.value == "" || timestamp.value == "") {
+        if (package_name.value == "" || user_name.value == "" || user_email.value == "" || user_bill.value == "" || timestamp.value == "" || user_booked.value == "") {
             alert('All the fields are required');
         } else {
             let temp = {
                 package_name: package_name.value,
                 name: user_name.value,
                 email: user_email.value,
-                bill: user_bill.value,
+                bill: Number(user_bill.value),
+                tourdate : user_booked.value,
                 timestamp: timestamp.value
             };
 
@@ -341,6 +346,7 @@
                         let data = await res.json();
                         if(res.ok){
                             alert(`Added Successfully`);
+                            localStorage.removeItem('addnew');
                             window.location.href="admin_dashboard.html";
                         }
                     } catch (error) {
