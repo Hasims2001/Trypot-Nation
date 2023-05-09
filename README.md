@@ -2,13 +2,16 @@
 ## Project Code : indigo-price-1615
 > Project Name : **Trypot Nation**,   
 > Contributors : 
-* [Achal Gaddamwar](https://github.com/AchalGaddamwar) 
-* [Md. Hasim Shaikh](https://github.com/Hasims2001)
-* [Abhiraj Kannojia](https://github.com/Abhiraj19)
-* [Abhay V](https://github.com/abii225)
-* [Piyush Sharma](https://github.com/pspiyush130)
 
-## 
+
+ ![Achal_photo](https://user-images.githubusercontent.com/118152296/237016839-1b4b8043-c749-4857-a57b-36915a7cb182.jpg)  ✦ [Achal Gaddamwar](https://github.com/AchalGaddamwar)       
+ ![hasim_2](https://user-images.githubusercontent.com/118152296/237017511-897c770a-89ce-41c9-a58a-9b26453535cd.jpeg)   ✦  [Md. Hasim Shaikh](https://github.com/Hasims2001) 
+
+  ![Abhay](https://user-images.githubusercontent.com/118152296/237017706-5fecf34b-c18c-4071-9d38-289f536db81e.jpg) ✦ [Abhay V](https://github.com/abii225)     
+ ![Piyush](https://user-images.githubusercontent.com/118152296/237017919-8398c051-aa6f-4cdf-9a45-c7cc854d5e63.png)  ✦ [Piyush Sharma](https://github.com/pspiyush130)
+
+ [Abhiraj Kannojia](https://github.com/Abhiraj19)
+
 # logo:
 ![logo](https://user-images.githubusercontent.com/118152296/236059691-a316bff2-97fc-4a2d-bbf6-bd6245724592.png)
 # About This Project
