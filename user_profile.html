@@ -20,18 +20,20 @@
         });
     </script>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
+
         #first {
             margin: 3em auto;
 
         }
 
-        #container,#orderhistory {
+        #container,
+        #orderhistory {
             padding: 2em;
             border-radius: 1em;
             display: flex;
@@ -41,16 +43,24 @@
             justify-content: center;
         }
 
-        #orderhistory{
+        #orderhistory {
             padding: 3em;
             margin-top: 3em;
             display: block;
         }
-        #orderhistory > div{
-            padding-bottom: 3em ; 
+
+        #orderhistory>div {
+            padding-bottom: 3em;
         }
+
         #descdiv {
             margin-left: 3em;
+        }
+
+        #logoutd {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
         }
     </style>
 </head>
@@ -59,7 +69,7 @@
     <header id="header"></header>
     <section id="first">
         <div id="container">
-                <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" width="25%" lt="">
+            <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" width="25%" lt="">
             <div id="descdiv">
             </div>
         </div>
@@ -78,7 +88,7 @@
     const SalesAPI = "https://trypot-nation.onrender.com/sales";
     let userLS = JSON.parse(localStorage.getItem('user')) || [];
 
-    if (userLS.localStorage == 0) {
+    if (userLS.length == 0) {
         alert(`Please login first`);
         window.location.href = "login.html";
     } else {
@@ -87,7 +97,7 @@
         let descdiv = document.querySelector("#descdiv");
         let orderhistory = document.querySelector("#orderhistory");
         let useremail = "";
-        
+
         async function fetchData(link) {
             try {
                 let res = await fetch(link);
@@ -105,39 +115,44 @@
                 <p id="phone">Phone : ${data.phone}</p>
                 <p id="address">Address :${data.address}</p>
                 <p id="state">State : ${data.state}</p>
-                <p id="country">Country : ${data.country}</p>`;
-                
+                <p id="country">Country : ${data.country}</p>
+                <button id="logoutd">Logout</button>`;
+
+            let logout = document.querySelector("#logoutd");
+            logout.addEventListener('click', () => {
+                localStorage.removeItem('user');
+                window.location.href = "index.html";
+            });
 
         }
-        
-        
+
         fetchSalesData(`${SalesAPI}?email=${userLS.email}`);
-        async function fetchSalesData(link){
+        async function fetchSalesData(link) {
             try {
                 let res = await fetch(link);
                 let data = await res.json();
-                if(data.length == 0){
+                if (data.length == 0) {
                     orderhistory.innerHTML = `<h2>No Ordered yet</h2>`;
-                }else{
+                } else {
                     data.forEach(element => {
                         orderhistory.append(displayOrder(element));
                     });
-                    
+
                 }
             } catch (error) {
                 console.log(error);
             }
         }
 
-        function displayOrder(element){
+        function displayOrder(element) {
             let div = document.createElement("div");
-            div.innerHTML =`<h2 id="packagename">${element.package_name}</h2>
+            div.innerHTML = `<h2 id="packagename">${element.package_name}</h2>
             <p id="name">ordered by : ${element.name}</p>
             <p id="date">Tour Date : ${element.tourdate}</p>
             <p id="time">Time of booking : ${element.timestamp}</p>
             <p id="bill">Total Bill : ${element.bill}</p>`;
             return div;
-                    
+
         }
 
     }
