@@ -277,12 +277,22 @@ body {
     
             /* Small Screen */
           @media only screen and (min-width: 320px) and (max-width: 499px) {
-            .parallax>img{
-               width: fit-content;
+            #Hill3,#hill4,#hill5,#Ttree,#leaf,#Pplan {
+               visibility: hidden;
             }
+            .parallax>img{
+               /* width: fit-content; */
+               width: min-content;
+              size-adjust: auto;
+              
+            }
+           
+
+
             .parallax>h5{
                 
-                display: none;
+                visibility: hidden;
+
                 margin-top: 0;
             }
             #viidiofram{
@@ -293,10 +303,10 @@ body {
             }
             #destination-container{
          
-                grid-template-columns:  repeat(1, 1fr);
+                grid-template-columns:  repeat(2, 1fr);
             }
             #activity-container {
-            grid-template-columns:  repeat(1, 1fr);
+            grid-template-columns:  repeat(2, 1fr);
            }
            .aboutsec{
             display: none;
