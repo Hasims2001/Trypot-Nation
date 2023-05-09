@@ -10,7 +10,7 @@
   ![Abhay](https://user-images.githubusercontent.com/118152296/237017706-5fecf34b-c18c-4071-9d38-289f536db81e.jpg) ⦿ [Abhay V](https://github.com/abii225)     
  ![Piyush](https://user-images.githubusercontent.com/118152296/237017919-8398c051-aa6f-4cdf-9a45-c7cc854d5e63.png)  ⦿ [Piyush Sharma](https://github.com/pspiyush130)
 
- [Abhiraj Kannojia](https://github.com/Abhiraj19)
+
 ##
 
 # logo:              
