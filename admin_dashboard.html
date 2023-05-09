@@ -435,7 +435,7 @@
             <div id="box1">
                 <div class="contain">
                     <h4>Sales Made Today</h4>
-                    <p id="todaySales">₹ 10,500.00</p>
+                    <p id="todaySales"></p>
                 </div>
                 <div class="img_div">
                     <img src="./img/upsales.png" alt="sales">
@@ -443,8 +443,8 @@
             </div>
             <div id="box2">
                 <div class="contain">
-                    <h4>Sales Made Weekly</h4>
-                    <p id="weeklySales">₹ 90,000.00</p>
+                    <h4>Sales Made This Week</h4>
+                    <p id="weeklySales"></p>
                 </div>
                 <div class="img_div">
                     <img src="./img/weeksales.png" alt="sales">
@@ -452,8 +452,8 @@
             </div>
             <div id="box3">
                 <div class="contain">
-                    <h4>Sales Made Monthly</h4>
-                    <p id="monthlySales">₹ 5,50,000.00</p>
+                    <h4>Sales Made This Month</h4>
+                    <p id="monthlySales"></p>
                 </div>
                 <div class="img_div">
                     <img src="./img/sales.png" alt="sales">
@@ -677,8 +677,13 @@
     let sorting = document.querySelector("#sorting");
     let heading = document.querySelector('#container > h2');
     let cta = document.querySelector('.cta');
+    let todaySales = document.querySelector('#todaySales'); 
+    let weeklySales = document.querySelector('#weeklySales');
+    let monthlySales = document.querySelector('#monthlySales');
+    let todaydata = 0;
+    let weekdata = 0;
+    let monthdata = 0;
 
-    let datediff = [];
 
     let admindata = JSON.parse(localStorage.getItem('AdminData')) || [];
 
@@ -688,7 +693,7 @@
     } else {
         heading.textContent = "Welcome, " + admindata.username;
     }
-
+    // 2023-06-30
     const API = "https://trypot-nation.onrender.com/packages?_sort=id&_order=asc";
     const BaseAPI = "https://trypot-nation.onrender.com/packages";
     const UserAPI = "https://trypot-nation.onrender.com/users";
@@ -883,10 +888,24 @@
         })
 
 
-        // let current = new Date();
-        // let difference = current.getTime() - element.timestamp.getTime();
-        // let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-        // datediff.push(TotalDays);
+        let curr = new Date();
+        let prev = new Date(element.timestamp);
+        let difference = curr.getTime() - prev.getTime();
+        let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+        if(TotalDays < 8){
+            weekdata  = weekdata + element.bill;
+        weeklySales.textContent = "₹ "+ weekdata + ".00";
+        }
+
+        if(TotalDays < 30){
+            monthdata = monthdata + element.bill;
+            monthlySales.textContent = "₹ "+ monthdata + ".00";
+        }
+        
+        if(TotalDays <= 1){
+            todaydata = todaydata + element.bill;
+            todaySales.textContent = "₹ "+ todaydata + ".00";
+        }
 
         td1.innerHTML = element.id;
         td2.innerHTML = element.package_name;
@@ -900,8 +919,6 @@
         tr.append(td1, td2, td3, td4, td5, td8, td6, td7);
         return tr;
     }
-
-
 
 
     // user completed
@@ -1151,7 +1168,6 @@
         document.getElementById("mySidenav").style.width = "0";
     }
 
-    console.log(datediff);
 </script>
 
 </html>
