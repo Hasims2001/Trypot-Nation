@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("user_header.html");
+            $("#footer").load("user_footer.html");
+
+        });
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        #first {
+            margin: 3em auto;
+
+        }
+
+        #container,#orderhistory {
+            padding: 2em;
+            border-radius: 1em;
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+            width: fit-content;
+            margin: auto;
+            justify-content: center;
+        }
+
+        #orderhistory{
+            padding: 3em;
+            margin-top: 3em;
+            display: block;
+        }
+        #orderhistory > div{
+            padding-bottom: 3em ; 
+        }
+        #descdiv {
+            margin-left: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header"></header>
+    <section id="first">
+        <div id="container">
+                <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png" width="25%" lt="">
+            <div id="descdiv">
+            </div>
+        </div>
+        <div id="orderhistory">
+            <!-- <h1 id="packagename">packagename</h1>
+            <p id="name">ordered by : </p>
+            <p id="date">Tour Date : </p>
+            <p id="time">Time of booking : </p>
+            <p id="bill">Total Bill : </p> -->
+        </div>
+    </section>
+    <footer id="footer"></footer>
+</body>
+<script>
+    const UserAPI = "https://trypot-nation.onrender.com/users";
+    const SalesAPI = "https://trypot-nation.onrender.com/sales";
+    let userLS = JSON.parse(localStorage.getItem('user')) || [];
+
+    if (userLS.localStorage == 0) {
+        alert(`Please login first`);
+        window.location.href = "login.html";
+    } else {
+        fetchData(`${UserAPI}/${userLS.userid}`);
+
+        let descdiv = document.querySelector("#descdiv");
+        let orderhistory = document.querySelector("#orderhistory");
+        let useremail = "";
+        
+        async function fetchData(link) {
+            try {
+                let res = await fetch(link);
+                let data = await res.json();
+                useremail = data.email;
+                displayUserDetails(data);
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        function displayUserDetails(data) {
+            descdiv.innerHTML = null;
+            descdiv.innerHTML = `<h2 id="name">${data.name}</h2>
+                 <p id="email">Email : ${data.email}</p>
+                <p id="phone">Phone : ${data.phone}</p>
+                <p id="address">Address :${data.address}</p>
+                <p id="state">State : ${data.state}</p>
+                <p id="country">Country : ${data.country}</p>`;
+                
+
+        }
+        
+        
+        fetchSalesData(`${SalesAPI}?email=${userLS.email}`);
+        async function fetchSalesData(link){
+            try {
+                let res = await fetch(link);
+                let data = await res.json();
+                if(data.length == 0){
+                    orderhistory.innerHTML = `<h2>No Ordered yet</h2>`;
+                }else{
+                    data.forEach(element => {
+                        orderhistory.append(displayOrder(element));
+                    });
+                    
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        function displayOrder(element){
+            let div = document.createElement("div");
+            div.innerHTML =`<h2 id="packagename">${element.package_name}</h2>
+            <p id="name">ordered by : ${element.name}</p>
+            <p id="date">Tour Date : ${element.tourdate}</p>
+            <p id="time">Time of booking : ${element.timestamp}</p>
+            <p id="bill">Total Bill : ${element.bill}</p>`;
+            return div;
+                    
+        }
+
+    }
+</script>
+
+</html>
