@@ -21,7 +21,7 @@
 This project might ( and certainly does ) have bugs, vulnerabilities or some other types of issues. So, contributions are always welcome ☺
 The demo is under free hosting, so it may require a bit of a patience ☺
 
-## Deployed Link : https://frolicking-frangipane-b79434.netlify.app/
+## Deployed Link : https://tryopot-nation.netlify.app/
 
 
 ✦ You can browse items or select an item from the showcase and preview.
