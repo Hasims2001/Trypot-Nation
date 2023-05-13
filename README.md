@@ -8,6 +8,8 @@
  <h2>Block 25 - Construct Week Group Project</h2>
  <h3>Project Code : indigo-price-1615</h3>
   <h3>Project Name : Trypot Nation</h3>
+  
+
  </div>
 
 
@@ -56,23 +58,30 @@
 
 <h3 align="left"> About This Project 📖</h3>
 
+
  
  <div aling="left">
   <p>   Welcome to Trypot Nation's GitHub page. Here, we share our commitment to promoting sustainable and responsible tourism through the power of technology. Our open-source projects aim to create innovative tools that make it easier for ecotourism enthusiasts to find sustainable travel experiences and learn about environmental conservation. We believe that collaboration and technology can be powerful tools in promoting sustainable tourism, and we invite you to join us in our mission to protect the planet through responsible travel.
 This project might ( and certainly does ) have bugs, vulnerabilities or some other types of issues. So, contributions are always welcome ☺
  The demo is under free hosting, so it may require a bit of a patience ☺ </p>
 
+
+
+  
  </div>
-
-
-
+   
+    
 
 ✦ You can browse items or select an item from the showcase and preview.
 
 ✦ Browse section remembers your list choice,Filter the data according to your choice .
 
 ✦ You can search items.
-
+ <div align="center">
+   <h4> 🌏 “ Save The Nature   Go Grren” 🌴 </h4>
+   </div>
+   
+   
 
 ##
 
@@ -82,23 +91,26 @@ This project might ( and certainly does ) have bugs, vulnerabilities or some oth
 
 ##
 ## ScreenShots 📷
-✦Index Page  
+<h4>» Index Page </h4>
+
 
  ![indxp](https://github.com/Hasims2001/indigo-price-1615/assets/118152296/fa2119e2-c4f1-47dd-be2a-025186194791)
  
- ✦ User Pacakages Page   
+ <h4>» User Pacakages Page </h4>
  
  ![WhatsApp Image 2023-05-13 at 3 22 16 PM](https://github.com/Hasims2001/indigo-price-1615/assets/118152296/69ee58a4-f820-4da2-8058-cde093925454)
 
  
-  ✦Admin Login   
+   <h4>» Admin Login </h4>
   
  ![WhatsApp Image 2023-05-13 at 3 22 34 PM](https://github.com/Hasims2001/indigo-price-1615/assets/118152296/849c91b4-9907-4706-93dc-6cb6964da7a7)
 
+ <h4>» Admin Deshboard </h4>
  
- ✦Admin Deshboard    
  
  ![WhatsApp Image 2023-05-13 at 3 22 54 PM](https://github.com/Hasims2001/indigo-price-1615/assets/118152296/fcf00295-12dd-413c-855d-a2e7e361afdc)
+ 
+ ##
  
 ## Run Locally  💻
 
@@ -128,17 +140,18 @@ npm install --engine-strict
 ```
   npm start
 ```
-
+##
 
 ## Request  🤗
 <div>
 <li>If You find any bug then please create issue i love to solve that</li>
 <li>If you want to contribute this project then feel free to make pull request i love to merge your request</li>
 <li>If You have suggestion or want new feature the feel free to create an issue with label features.</li>
- <div>
-  
-  If you like project then feel free to give Star 😅
-  
+ </div>
+   
+  <div align="center">
+   <h4>  If you like project then feel free to give Star 😅</h4>
+   </div>
   
  ## Feedback / Contributing 🤝
  > Contributions are always welcome! Just raise an issue, we will discuss it.
