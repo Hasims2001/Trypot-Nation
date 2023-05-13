@@ -34,9 +34,37 @@ The demo is under free hosting, so it may require a bit of a patience ☺
 ##
 
 
-
 ## Tech Stack 💻
 ![cover](https://user-images.githubusercontent.com/118152296/236819635-30b75b4a-c991-4060-a7f8-90a1da8fa728.jpg)
+
+##
+## ScreenShots 📷
+✦Index Page  
+
+ ![indxp](https://github.com/Hasims2001/indigo-price-1615/assets/118152296/fa2119e2-c4f1-47dd-be2a-025186194791)
+ 
+ ✦ User Pacakages Page   
+ 
+ ![WhatsApp Image 2023-05-13 at 3 22 16 PM](https://github.com/Hasims2001/indigo-price-1615/assets/118152296/69ee58a4-f820-4da2-8058-cde093925454)
+
+ 
+  ✦Admin Login   
+  
+ ![WhatsApp Image 2023-05-13 at 3 22 34 PM](https://github.com/Hasims2001/indigo-price-1615/assets/118152296/849c91b4-9907-4706-93dc-6cb6964da7a7)
+
+ 
+ ✦Admin Deshboard    
+ 
+ ![WhatsApp Image 2023-05-13 at 3 22 54 PM](https://github.com/Hasims2001/indigo-price-1615/assets/118152296/fcf00295-12dd-413c-855d-a2e7e361afdc)
+ 
+## Installation  💻
+> npm install --engine-strict  
+> Use node version(LTS) should be v16.16.0
+Don't change/override package.json
+
+ 
+
+
 
 
 
