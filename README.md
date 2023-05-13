@@ -40,7 +40,7 @@
  ![Eco](https://user-images.githubusercontent.com/118152296/237020208-39921b92-670b-476e-8fd7-ac3a0cf9862d.png)
  <h3>logo :"Trypot Nation"</h3>
  
- ## 🌐 Deployed Link : https://tryopot-nation.netlify.app/
+ ## 🌐 Deployed Link : https://trypot-nation-dkah.netlify.app
  
 
  </div>
