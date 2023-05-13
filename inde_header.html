@@ -60,11 +60,12 @@ header {
 
 .navigation a {
     text-decoration: none;
-    color: #359381;
+    color: #fff;
     padding: 6px 15px;
+    background-color: #359381;
     border-radius: 20px;
     margin: 0 10px;
-    font-weight: 600;
+    font-weight: 500;
 
 }
 
@@ -96,3 +97,23 @@ header {
        
        </nav>
 </body>
+<script>
+     let txt = document.querySelector(".navigation");
+    let user = JSON.parse(localStorage.getItem('user')) || [];
+
+    if(user.length !== 0){
+        txt.innerHTML = `<a class="index.html">Home</a>
+        <a href="destination.html">Destination</a>
+        <a href="activities.html">Activities</a>
+        <a href="user_packages.html">Packages</a>
+        <a href="index.html" class="scrollLink">AboutUs</a>
+        <a href="user_profile.html" class="active1">Profile</a>`;
+    }else{
+        txt.innerHTML =  `<a class="index.html">Home</a>
+        <a href="destination.html">Destination</a>
+        <a href="activities.html">Activities</a>
+        <a href="user_packages.html">Packages</a>
+        <a href="index.html" class="scrollLink">AboutUs</a>
+        <a href="login.html" class="active1">Login</a>`;
+    }
+</script>

@@ -3,7 +3,7 @@
 //     console.log("BBBBB");
 // })
 
-let apiUrl=`https://trypot-nation.onrender.com/activities`;
+let apiUrl=`https://trypot-nation-dkah.onrender.com/activities`;
 
 async function fetchData(apiUrl){
     try{

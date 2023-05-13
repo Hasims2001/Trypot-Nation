@@ -60,7 +60,7 @@ $(document).ready(function() {
         
      //----------->> Destinations  <<-------------------  
 
-let apiUrl=`https://trypot-nation.onrender.com/packages`;
+let apiUrl=`https://trypot-nation-dkah.onrender.com/packages`;
 
 async function Fetchdata(apiUrl){
          try{
@@ -131,7 +131,7 @@ window.addEventListener("load",Fetchdata(apiUrl));
 
 //    ------>> activity <<<<----------------
 
-   let apiactivityUrl=`https://trypot-nation.onrender.com/activities`;
+   let apiactivityUrl=`https://trypot-nation-dkah.onrender.com/activities`;
 
    async function Fetchactivitydata(){
             try{
