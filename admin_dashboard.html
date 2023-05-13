@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -98,6 +99,7 @@
             text-align: center;
             font-size: large;
             width: 100%;
+            
             font-family: 'Poppins', sans-serif;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
         }
@@ -461,9 +463,9 @@
             </div>
         </div>
     </section>
-    <section id="packages_data">
+    <section id="packages_data" style="overflow-x:auto;">
         <h1 id="heading_packages">Packages</h1>
-        <div class="optionsdata">
+        <div class="optionsdata" >
             <div id="newdata">
                 <button class="cta">
                     <span>Add New</span>
@@ -497,7 +499,7 @@
                 </select>
             </div>
         </div>
-        <table class="styled-table">
+        <table class="styled-table responsive">
             <thead>
                 <tr>
                     <th>Id</th>
@@ -515,7 +517,7 @@
         </table>
 
     </section>
-    <section id="sales_data">
+    <section id="sales_data" style="overflow-x:auto;">
         <h1 id="heading_sales">Sales</h1>
         <div class="optionsdata">
             <div id="newdata">
@@ -564,7 +566,7 @@
         </table>
 
     </section>
-    <section id="users_data">
+    <section id="users_data" style="overflow-x:auto;">
         <h1 id="heading_users">Users</h1>
         <div class="optionsdata">
             <div id="newdata">
@@ -614,7 +616,7 @@
             </tbody>
         </table>
     </section>
-    <section id="admin_data">
+    <section id="admin_data" style="overflow-x:auto;">
         <h1 id="heading_admin">Admin</h1>
         <div class="optionsdata">
             <div id="newdata">
@@ -694,12 +696,12 @@
         heading.textContent = "Welcome, " + admindata.username;
     }
     // 2023-06-30
-    const API = "https://trypot-nation.onrender.com/packages?_sort=id&_order=asc";
-    const BaseAPI = "https://trypot-nation.onrender.com/packages";
-    const UserAPI = "https://trypot-nation.onrender.com/users";
-    const SalesAPI = "https://trypot-nation.onrender.com/sales";
-    const AdminAPI = "https://trypot-nation.onrender.com/login";
-    let searchAPI = "https://trypot-nation.onrender.com/packages";
+    const API = "https://trypot-nation-dkah.onrender.com/packages?_sort=id&_order=asc";
+    const BaseAPI = "https://trypot-nation-dkah.onrender.com/packages";
+    const UserAPI = "https://trypot-nation-dkah.onrender.com/users";
+    const SalesAPI = "https://trypot-nation-dkah.onrender.com/sales";
+    const AdminAPI = "https://trypot-nation-dkah.onrender.com/login";
+    let searchAPI = "https://trypot-nation-dkah.onrender.com/packages";
     // sendtop
     function sendtop() {
         document.body.scrollTop = 0;

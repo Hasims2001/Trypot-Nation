@@ -18,7 +18,7 @@ Content-Type:application/json
 GET https://api-by-alisha-khan.onrender.com/hotels/
 
 ###
-GET https://trypot-nation.onrender.com/packages?id=27
+GET https://trypot-nation-dkah.onrender.com/packages?id=27
 
 ###GET Flights  
 GET https://api-by-alisha-khan.onrender.com/flights/
