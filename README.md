@@ -91,24 +91,38 @@ This project might ( and certainly does ) have bugs, vulnerabilities or some oth
 
 ##
 ## ScreenShots 📷
+
 <h4>» Index Page </h4>
 
+![indexpage](https://github.com/Hasims2001/indigo-price-1615/assets/58412185/8c5cdd30-b34b-459c-afa4-1545747389d7)
 
- ![indxp](https://github.com/Hasims2001/indigo-price-1615/assets/118152296/fa2119e2-c4f1-47dd-be2a-025186194791)
- 
+![indexpage](https://github.com/Hasims2001/indigo-price-1615/assets/58412185/833ca33b-0345-4d17-8957-23931ffa4cf3)
+
+<h4>» Login Page </h4>
+
+ ![Login](https://github.com/Hasims2001/indigo-price-1615/assets/58412185/046ffd46-fe7c-49da-b077-f6ee1a49c601)
+
  <h4>» User Pacakages Page </h4>
- 
- ![WhatsApp Image 2023-05-13 at 3 22 16 PM](https://github.com/Hasims2001/indigo-price-1615/assets/118152296/69ee58a4-f820-4da2-8058-cde093925454)
+
+![Pacakages](https://github.com/Hasims2001/indigo-price-1615/assets/58412185/9fcc081e-8641-49e8-8d41-18d029ba67e7)
+
+![Pacakages](https://github.com/Hasims2001/indigo-price-1615/assets/58412185/048387ef-4fc3-496b-8bfa-150b2b0a5815)
+
 
  
-   <h4>» Admin Login </h4>
-  
- ![WhatsApp Image 2023-05-13 at 3 22 34 PM](https://github.com/Hasims2001/indigo-price-1615/assets/118152296/849c91b4-9907-4706-93dc-6cb6964da7a7)
+<h4>» Admin Login </h4>
+   
+![image](https://github.com/Hasims2001/indigo-price-1615/assets/58412185/f99a84f0-aacb-481a-b4aa-309b9132bf3c)
 
- <h4>» Admin Deshboard </h4>
+
+<h4>» Admin Deshboard </h4>
+
+ ![Admin](https://github.com/Hasims2001/indigo-price-1615/assets/58412185/b5eef0ed-dfa2-4e00-a104-35bb12618660)
  
- 
- ![WhatsApp Image 2023-05-13 at 3 22 54 PM](https://github.com/Hasims2001/indigo-price-1615/assets/118152296/fcf00295-12dd-413c-855d-a2e7e361afdc)
+![Admin](https://github.com/Hasims2001/indigo-price-1615/assets/58412185/345809e6-8e9a-47c0-907c-ed3f655af064)
+
+![Admin](https://github.com/Hasims2001/indigo-price-1615/assets/58412185/0b45ff0f-b852-4482-a2a7-924a510c5c47)
+
  
  ##
  
